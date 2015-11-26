@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:DSHFrameworks"
+      name = "DSHFrameworks">
+      <FileRef
+         location = "group:DSHFrameworks.h">
+      </FileRef>
+      <Group
+         location = "group:UILayer"
+         name = "UILayer">
+         <Group
+            location = "group:Categories"
+            name = "Categories">
+            <FileRef
+               location = "group:UIView+DSHViewCategory.h">
+            </FileRef>
+            <FileRef
+               location = "group:UIView+DSHViewCategory.m">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Controllers"
+            name = "Controllers">
+            <FileRef
+               location = "group:DSHCollectionViewController.h">
+            </FileRef>
+            <FileRef
+               location = "group:DSHCollectionViewController.m">
+            </FileRef>
+            <FileRef
+               location = "group:DSHListViewController.h">
+            </FileRef>
+            <FileRef
+               location = "group:DSHListViewController.m">
+            </FileRef>
+            <FileRef
+               location = "group:DSHTableViewController.h">
+            </FileRef>
+            <FileRef
+               location = "group:DSHTableViewController.m">
+            </FileRef>
+            <FileRef
+               location = "group:DSHViewController.h">
+            </FileRef>
+            <FileRef
+               location = "group:DSHViewController.m">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:DSHApplication.h">
+         </FileRef>
+         <FileRef
+            location = "group:DSHApplication.m">
+         </FileRef>
+         <Group
+            location = "group:Views"
+            name = "Views">
+            <FileRef
+               location = "group:DSHCollectionViewCell.h">
+            </FileRef>
+            <FileRef
+               location = "group:DSHCollectionViewCell.m">
+            </FileRef>
+            <FileRef
+               location = "group:DSHTableViewCell.h">
+            </FileRef>
+            <FileRef
+               location = "group:DSHTableViewCell.m">
+            </FileRef>
+         </Group>
+      </Group>
+      <Group
+         location = "group:Utiltities"
+         name = "Utiltities">
+         <Group
+            location = "group:Categories"
+            name = "Categories">
+            <FileRef
+               location = "group:NSData+DSHDataCategory.h">
+            </FileRef>
+            <FileRef
+               location = "group:NSData+DSHDataCategory.m">
+            </FileRef>
+            <FileRef
+               location = "group:NSDictionary+DSHDictionaryCategory.h">
+            </FileRef>
+            <FileRef
+               location = "group:NSDictionary+DSHDictionaryCategory.m">
+            </FileRef>
+            <FileRef
+               location = "group:NSObject+DSHObjectCategory.h">
+            </FileRef>
+            <FileRef
+               location = "group:NSObject+DSHObjectCategory.m">
+            </FileRef>
+            <FileRef
+               location = "group:NSString+DSHStringCategory.h">
+            </FileRef>
+            <FileRef
+               location = "group:NSString+DSHStringCategory.m">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:DSHDevelopmentHelper.h">
+         </FileRef>
+         <FileRef
+            location = "group:DSHDevelopmentHelper.m">
+         </FileRef>
+         <FileRef
+            location = "group:DSHHttpClient.h">
+         </FileRef>
+         <FileRef
+            location = "group:DSHHttpClient.m">
+         </FileRef>
+      </Group>
+   </Group>
+   <Group
+      location = "group:Example"
+      name = "Example">
+      <FileRef
+         location = "group:DSHFrameworksIOSExample/DSHFrameworksIOSExample.xcodeproj">
+      </FileRef>
+   </Group>
+</Workspace>

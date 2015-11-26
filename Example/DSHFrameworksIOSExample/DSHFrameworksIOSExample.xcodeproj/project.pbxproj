@@ -1,0 +1,728 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DAA186421C0734DD00CE003B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186411C0734DD00CE003B /* main.m */; };
+		DAA186451C0734DD00CE003B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186441C0734DD00CE003B /* AppDelegate.m */; };
+		DAA186481C0734DD00CE003B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186471C0734DD00CE003B /* ViewController.m */; };
+		DAA1864B1C0734DD00CE003B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA186491C0734DD00CE003B /* Main.storyboard */; };
+		DAA1864D1C0734DD00CE003B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAA1864C1C0734DD00CE003B /* Assets.xcassets */; };
+		DAA186501C0734DD00CE003B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA1864E1C0734DD00CE003B /* LaunchScreen.storyboard */; };
+		DAA1865B1C0734DD00CE003B /* DSHFrameworksIOSExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA1865A1C0734DD00CE003B /* DSHFrameworksIOSExampleTests.m */; };
+		DAA186661C0734DD00CE003B /* DSHFrameworksIOSExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186651C0734DD00CE003B /* DSHFrameworksIOSExampleUITests.m */; };
+		DAA186E51C07352600CE003B /* UIView+DSHViewCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186C61C07352600CE003B /* UIView+DSHViewCategory.m */; };
+		DAA186E61C07352600CE003B /* UIView+DSHViewCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186C61C07352600CE003B /* UIView+DSHViewCategory.m */; };
+		DAA186E71C07352600CE003B /* UIView+DSHViewCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186C61C07352600CE003B /* UIView+DSHViewCategory.m */; };
+		DAA186E81C07352600CE003B /* DSHCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186C91C07352600CE003B /* DSHCollectionViewController.m */; };
+		DAA186E91C07352600CE003B /* DSHCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186C91C07352600CE003B /* DSHCollectionViewController.m */; };
+		DAA186EA1C07352600CE003B /* DSHCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186C91C07352600CE003B /* DSHCollectionViewController.m */; };
+		DAA186EB1C07352600CE003B /* DSHListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186CB1C07352600CE003B /* DSHListViewController.m */; };
+		DAA186EC1C07352600CE003B /* DSHListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186CB1C07352600CE003B /* DSHListViewController.m */; };
+		DAA186ED1C07352600CE003B /* DSHListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186CB1C07352600CE003B /* DSHListViewController.m */; };
+		DAA186EE1C07352600CE003B /* DSHTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186CD1C07352600CE003B /* DSHTableViewController.m */; };
+		DAA186EF1C07352600CE003B /* DSHTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186CD1C07352600CE003B /* DSHTableViewController.m */; };
+		DAA186F01C07352600CE003B /* DSHTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186CD1C07352600CE003B /* DSHTableViewController.m */; };
+		DAA186F11C07352600CE003B /* DSHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186CF1C07352600CE003B /* DSHViewController.m */; };
+		DAA186F21C07352600CE003B /* DSHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186CF1C07352600CE003B /* DSHViewController.m */; };
+		DAA186F31C07352600CE003B /* DSHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186CF1C07352600CE003B /* DSHViewController.m */; };
+		DAA186F41C07352600CE003B /* DSHApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186D11C07352600CE003B /* DSHApplication.m */; };
+		DAA186F51C07352600CE003B /* DSHApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186D11C07352600CE003B /* DSHApplication.m */; };
+		DAA186F61C07352600CE003B /* DSHApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186D11C07352600CE003B /* DSHApplication.m */; };
+		DAA186F71C07352600CE003B /* DSHCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186D41C07352600CE003B /* DSHCollectionViewCell.m */; };
+		DAA186F81C07352600CE003B /* DSHCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186D41C07352600CE003B /* DSHCollectionViewCell.m */; };
+		DAA186F91C07352600CE003B /* DSHCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186D41C07352600CE003B /* DSHCollectionViewCell.m */; };
+		DAA186FA1C07352600CE003B /* DSHTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186D61C07352600CE003B /* DSHTableViewCell.m */; };
+		DAA186FB1C07352600CE003B /* DSHTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186D61C07352600CE003B /* DSHTableViewCell.m */; };
+		DAA186FC1C07352600CE003B /* DSHTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186D61C07352600CE003B /* DSHTableViewCell.m */; };
+		DAA186FD1C07352600CE003B /* NSData+DSHDataCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186DA1C07352600CE003B /* NSData+DSHDataCategory.m */; };
+		DAA186FE1C07352600CE003B /* NSData+DSHDataCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186DA1C07352600CE003B /* NSData+DSHDataCategory.m */; };
+		DAA186FF1C07352600CE003B /* NSData+DSHDataCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186DA1C07352600CE003B /* NSData+DSHDataCategory.m */; };
+		DAA187001C07352600CE003B /* NSDictionary+DSHDictionaryCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186DC1C07352600CE003B /* NSDictionary+DSHDictionaryCategory.m */; };
+		DAA187011C07352600CE003B /* NSDictionary+DSHDictionaryCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186DC1C07352600CE003B /* NSDictionary+DSHDictionaryCategory.m */; };
+		DAA187021C07352600CE003B /* NSDictionary+DSHDictionaryCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186DC1C07352600CE003B /* NSDictionary+DSHDictionaryCategory.m */; };
+		DAA187031C07352600CE003B /* NSObject+DSHObjectCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186DE1C07352600CE003B /* NSObject+DSHObjectCategory.m */; };
+		DAA187041C07352600CE003B /* NSObject+DSHObjectCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186DE1C07352600CE003B /* NSObject+DSHObjectCategory.m */; };
+		DAA187051C07352600CE003B /* NSObject+DSHObjectCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186DE1C07352600CE003B /* NSObject+DSHObjectCategory.m */; };
+		DAA187061C07352600CE003B /* NSString+DSHStringCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186E01C07352600CE003B /* NSString+DSHStringCategory.m */; };
+		DAA187071C07352600CE003B /* NSString+DSHStringCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186E01C07352600CE003B /* NSString+DSHStringCategory.m */; };
+		DAA187081C07352600CE003B /* NSString+DSHStringCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186E01C07352600CE003B /* NSString+DSHStringCategory.m */; };
+		DAA187091C07352600CE003B /* DSHDevelopmentHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186E21C07352600CE003B /* DSHDevelopmentHelper.m */; };
+		DAA1870A1C07352600CE003B /* DSHDevelopmentHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186E21C07352600CE003B /* DSHDevelopmentHelper.m */; };
+		DAA1870B1C07352600CE003B /* DSHDevelopmentHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186E21C07352600CE003B /* DSHDevelopmentHelper.m */; };
+		DAA1870C1C07352600CE003B /* DSHHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186E41C07352600CE003B /* DSHHttpClient.m */; };
+		DAA1870D1C07352600CE003B /* DSHHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186E41C07352600CE003B /* DSHHttpClient.m */; };
+		DAA1870E1C07352600CE003B /* DSHHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186E41C07352600CE003B /* DSHHttpClient.m */; };
+		DAA187111C0735F500CE003B /* UILabel+DSHLabelCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA187101C0735F500CE003B /* UILabel+DSHLabelCategory.m */; };
+		DAA187121C0735F500CE003B /* UILabel+DSHLabelCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA187101C0735F500CE003B /* UILabel+DSHLabelCategory.m */; };
+		DAA187131C0735F500CE003B /* UILabel+DSHLabelCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA187101C0735F500CE003B /* UILabel+DSHLabelCategory.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DAA186571C0734DD00CE003B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAA186351C0734DD00CE003B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAA1863C1C0734DD00CE003B;
+			remoteInfo = DSHFrameworksIOSExample;
+		};
+		DAA186621C0734DD00CE003B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAA186351C0734DD00CE003B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAA1863C1C0734DD00CE003B;
+			remoteInfo = DSHFrameworksIOSExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DAA1863D1C0734DD00CE003B /* DSHFrameworksIOSExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSHFrameworksIOSExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAA186411C0734DD00CE003B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DAA186431C0734DD00CE003B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DAA186441C0734DD00CE003B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DAA186461C0734DD00CE003B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DAA186471C0734DD00CE003B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DAA1864A1C0734DD00CE003B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DAA1864C1C0734DD00CE003B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DAA1864F1C0734DD00CE003B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DAA186511C0734DD00CE003B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAA186561C0734DD00CE003B /* DSHFrameworksIOSExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DSHFrameworksIOSExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAA1865A1C0734DD00CE003B /* DSHFrameworksIOSExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSHFrameworksIOSExampleTests.m; sourceTree = "<group>"; };
+		DAA1865C1C0734DD00CE003B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAA186611C0734DD00CE003B /* DSHFrameworksIOSExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DSHFrameworksIOSExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAA186651C0734DD00CE003B /* DSHFrameworksIOSExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSHFrameworksIOSExampleUITests.m; sourceTree = "<group>"; };
+		DAA186671C0734DD00CE003B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAA186C21C07352600CE003B /* DSHFrameworks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSHFrameworks.h; sourceTree = "<group>"; };
+		DAA186C51C07352600CE003B /* UIView+DSHViewCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DSHViewCategory.h"; sourceTree = "<group>"; };
+		DAA186C61C07352600CE003B /* UIView+DSHViewCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DSHViewCategory.m"; sourceTree = "<group>"; };
+		DAA186C81C07352600CE003B /* DSHCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSHCollectionViewController.h; sourceTree = "<group>"; };
+		DAA186C91C07352600CE003B /* DSHCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSHCollectionViewController.m; sourceTree = "<group>"; };
+		DAA186CA1C07352600CE003B /* DSHListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSHListViewController.h; sourceTree = "<group>"; };
+		DAA186CB1C07352600CE003B /* DSHListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSHListViewController.m; sourceTree = "<group>"; };
+		DAA186CC1C07352600CE003B /* DSHTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSHTableViewController.h; sourceTree = "<group>"; };
+		DAA186CD1C07352600CE003B /* DSHTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSHTableViewController.m; sourceTree = "<group>"; };
+		DAA186CE1C07352600CE003B /* DSHViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSHViewController.h; sourceTree = "<group>"; };
+		DAA186CF1C07352600CE003B /* DSHViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSHViewController.m; sourceTree = "<group>"; };
+		DAA186D01C07352600CE003B /* DSHApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSHApplication.h; sourceTree = "<group>"; };
+		DAA186D11C07352600CE003B /* DSHApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSHApplication.m; sourceTree = "<group>"; };
+		DAA186D31C07352600CE003B /* DSHCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSHCollectionViewCell.h; sourceTree = "<group>"; };
+		DAA186D41C07352600CE003B /* DSHCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSHCollectionViewCell.m; sourceTree = "<group>"; };
+		DAA186D51C07352600CE003B /* DSHTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSHTableViewCell.h; sourceTree = "<group>"; };
+		DAA186D61C07352600CE003B /* DSHTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSHTableViewCell.m; sourceTree = "<group>"; };
+		DAA186D91C07352600CE003B /* NSData+DSHDataCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+DSHDataCategory.h"; sourceTree = "<group>"; };
+		DAA186DA1C07352600CE003B /* NSData+DSHDataCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+DSHDataCategory.m"; sourceTree = "<group>"; };
+		DAA186DB1C07352600CE003B /* NSDictionary+DSHDictionaryCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+DSHDictionaryCategory.h"; sourceTree = "<group>"; };
+		DAA186DC1C07352600CE003B /* NSDictionary+DSHDictionaryCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+DSHDictionaryCategory.m"; sourceTree = "<group>"; };
+		DAA186DD1C07352600CE003B /* NSObject+DSHObjectCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DSHObjectCategory.h"; sourceTree = "<group>"; };
+		DAA186DE1C07352600CE003B /* NSObject+DSHObjectCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DSHObjectCategory.m"; sourceTree = "<group>"; };
+		DAA186DF1C07352600CE003B /* NSString+DSHStringCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DSHStringCategory.h"; sourceTree = "<group>"; };
+		DAA186E01C07352600CE003B /* NSString+DSHStringCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DSHStringCategory.m"; sourceTree = "<group>"; };
+		DAA186E11C07352600CE003B /* DSHDevelopmentHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSHDevelopmentHelper.h; sourceTree = "<group>"; };
+		DAA186E21C07352600CE003B /* DSHDevelopmentHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSHDevelopmentHelper.m; sourceTree = "<group>"; };
+		DAA186E31C07352600CE003B /* DSHHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSHHttpClient.h; sourceTree = "<group>"; };
+		DAA186E41C07352600CE003B /* DSHHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSHHttpClient.m; sourceTree = "<group>"; };
+		DAA1870F1C0735F500CE003B /* UILabel+DSHLabelCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+DSHLabelCategory.h"; sourceTree = "<group>"; };
+		DAA187101C0735F500CE003B /* UILabel+DSHLabelCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+DSHLabelCategory.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAA1863A1C0734DD00CE003B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAA186531C0734DD00CE003B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAA1865E1C0734DD00CE003B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DAA186341C0734DD00CE003B = {
+			isa = PBXGroup;
+			children = (
+				DAA186C11C07352600CE003B /* DSHFrameworks */,
+				DAA1863F1C0734DD00CE003B /* DSHFrameworksIOSExample */,
+				DAA186591C0734DD00CE003B /* DSHFrameworksIOSExampleTests */,
+				DAA186641C0734DD00CE003B /* DSHFrameworksIOSExampleUITests */,
+				DAA1863E1C0734DD00CE003B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DAA1863E1C0734DD00CE003B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAA1863D1C0734DD00CE003B /* DSHFrameworksIOSExample.app */,
+				DAA186561C0734DD00CE003B /* DSHFrameworksIOSExampleTests.xctest */,
+				DAA186611C0734DD00CE003B /* DSHFrameworksIOSExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAA1863F1C0734DD00CE003B /* DSHFrameworksIOSExample */ = {
+			isa = PBXGroup;
+			children = (
+				DAA186431C0734DD00CE003B /* AppDelegate.h */,
+				DAA186441C0734DD00CE003B /* AppDelegate.m */,
+				DAA186461C0734DD00CE003B /* ViewController.h */,
+				DAA186471C0734DD00CE003B /* ViewController.m */,
+				DAA186491C0734DD00CE003B /* Main.storyboard */,
+				DAA1864C1C0734DD00CE003B /* Assets.xcassets */,
+				DAA1864E1C0734DD00CE003B /* LaunchScreen.storyboard */,
+				DAA186511C0734DD00CE003B /* Info.plist */,
+				DAA186401C0734DD00CE003B /* Supporting Files */,
+			);
+			path = DSHFrameworksIOSExample;
+			sourceTree = "<group>";
+		};
+		DAA186401C0734DD00CE003B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAA186411C0734DD00CE003B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DAA186591C0734DD00CE003B /* DSHFrameworksIOSExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				DAA1865A1C0734DD00CE003B /* DSHFrameworksIOSExampleTests.m */,
+				DAA1865C1C0734DD00CE003B /* Info.plist */,
+			);
+			path = DSHFrameworksIOSExampleTests;
+			sourceTree = "<group>";
+		};
+		DAA186641C0734DD00CE003B /* DSHFrameworksIOSExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DAA186651C0734DD00CE003B /* DSHFrameworksIOSExampleUITests.m */,
+				DAA186671C0734DD00CE003B /* Info.plist */,
+			);
+			path = DSHFrameworksIOSExampleUITests;
+			sourceTree = "<group>";
+		};
+		DAA186C11C07352600CE003B /* DSHFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAA186C21C07352600CE003B /* DSHFrameworks.h */,
+				DAA186C31C07352600CE003B /* UILayer */,
+				DAA186D71C07352600CE003B /* Utiltities */,
+			);
+			name = DSHFrameworks;
+			path = ../../DSHFrameworks;
+			sourceTree = "<group>";
+		};
+		DAA186C31C07352600CE003B /* UILayer */ = {
+			isa = PBXGroup;
+			children = (
+				DAA186C41C07352600CE003B /* Categories */,
+				DAA186C71C07352600CE003B /* Controllers */,
+				DAA186D01C07352600CE003B /* DSHApplication.h */,
+				DAA186D11C07352600CE003B /* DSHApplication.m */,
+				DAA186D21C07352600CE003B /* Views */,
+			);
+			path = UILayer;
+			sourceTree = "<group>";
+		};
+		DAA186C41C07352600CE003B /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				DAA186C51C07352600CE003B /* UIView+DSHViewCategory.h */,
+				DAA186C61C07352600CE003B /* UIView+DSHViewCategory.m */,
+				DAA1870F1C0735F500CE003B /* UILabel+DSHLabelCategory.h */,
+				DAA187101C0735F500CE003B /* UILabel+DSHLabelCategory.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		DAA186C71C07352600CE003B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DAA186C81C07352600CE003B /* DSHCollectionViewController.h */,
+				DAA186C91C07352600CE003B /* DSHCollectionViewController.m */,
+				DAA186CA1C07352600CE003B /* DSHListViewController.h */,
+				DAA186CB1C07352600CE003B /* DSHListViewController.m */,
+				DAA186CC1C07352600CE003B /* DSHTableViewController.h */,
+				DAA186CD1C07352600CE003B /* DSHTableViewController.m */,
+				DAA186CE1C07352600CE003B /* DSHViewController.h */,
+				DAA186CF1C07352600CE003B /* DSHViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DAA186D21C07352600CE003B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DAA186D31C07352600CE003B /* DSHCollectionViewCell.h */,
+				DAA186D41C07352600CE003B /* DSHCollectionViewCell.m */,
+				DAA186D51C07352600CE003B /* DSHTableViewCell.h */,
+				DAA186D61C07352600CE003B /* DSHTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DAA186D71C07352600CE003B /* Utiltities */ = {
+			isa = PBXGroup;
+			children = (
+				DAA186D81C07352600CE003B /* Categories */,
+				DAA186E11C07352600CE003B /* DSHDevelopmentHelper.h */,
+				DAA186E21C07352600CE003B /* DSHDevelopmentHelper.m */,
+				DAA186E31C07352600CE003B /* DSHHttpClient.h */,
+				DAA186E41C07352600CE003B /* DSHHttpClient.m */,
+			);
+			path = Utiltities;
+			sourceTree = "<group>";
+		};
+		DAA186D81C07352600CE003B /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				DAA186D91C07352600CE003B /* NSData+DSHDataCategory.h */,
+				DAA186DA1C07352600CE003B /* NSData+DSHDataCategory.m */,
+				DAA186DB1C07352600CE003B /* NSDictionary+DSHDictionaryCategory.h */,
+				DAA186DC1C07352600CE003B /* NSDictionary+DSHDictionaryCategory.m */,
+				DAA186DD1C07352600CE003B /* NSObject+DSHObjectCategory.h */,
+				DAA186DE1C07352600CE003B /* NSObject+DSHObjectCategory.m */,
+				DAA186DF1C07352600CE003B /* NSString+DSHStringCategory.h */,
+				DAA186E01C07352600CE003B /* NSString+DSHStringCategory.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAA1863C1C0734DD00CE003B /* DSHFrameworksIOSExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAA1866A1C0734DD00CE003B /* Build configuration list for PBXNativeTarget "DSHFrameworksIOSExample" */;
+			buildPhases = (
+				DAA186391C0734DD00CE003B /* Sources */,
+				DAA1863A1C0734DD00CE003B /* Frameworks */,
+				DAA1863B1C0734DD00CE003B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DSHFrameworksIOSExample;
+			productName = DSHFrameworksIOSExample;
+			productReference = DAA1863D1C0734DD00CE003B /* DSHFrameworksIOSExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DAA186551C0734DD00CE003B /* DSHFrameworksIOSExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAA1866D1C0734DD00CE003B /* Build configuration list for PBXNativeTarget "DSHFrameworksIOSExampleTests" */;
+			buildPhases = (
+				DAA186521C0734DD00CE003B /* Sources */,
+				DAA186531C0734DD00CE003B /* Frameworks */,
+				DAA186541C0734DD00CE003B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAA186581C0734DD00CE003B /* PBXTargetDependency */,
+			);
+			name = DSHFrameworksIOSExampleTests;
+			productName = DSHFrameworksIOSExampleTests;
+			productReference = DAA186561C0734DD00CE003B /* DSHFrameworksIOSExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DAA186601C0734DD00CE003B /* DSHFrameworksIOSExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAA186701C0734DD00CE003B /* Build configuration list for PBXNativeTarget "DSHFrameworksIOSExampleUITests" */;
+			buildPhases = (
+				DAA1865D1C0734DD00CE003B /* Sources */,
+				DAA1865E1C0734DD00CE003B /* Frameworks */,
+				DAA1865F1C0734DD00CE003B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAA186631C0734DD00CE003B /* PBXTargetDependency */,
+			);
+			name = DSHFrameworksIOSExampleUITests;
+			productName = DSHFrameworksIOSExampleUITests;
+			productReference = DAA186611C0734DD00CE003B /* DSHFrameworksIOSExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAA186351C0734DD00CE003B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = dongsh;
+				TargetAttributes = {
+					DAA1863C1C0734DD00CE003B = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					DAA186551C0734DD00CE003B = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = DAA1863C1C0734DD00CE003B;
+					};
+					DAA186601C0734DD00CE003B = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = DAA1863C1C0734DD00CE003B;
+					};
+				};
+			};
+			buildConfigurationList = DAA186381C0734DD00CE003B /* Build configuration list for PBXProject "DSHFrameworksIOSExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DAA186341C0734DD00CE003B;
+			productRefGroup = DAA1863E1C0734DD00CE003B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAA1863C1C0734DD00CE003B /* DSHFrameworksIOSExample */,
+				DAA186551C0734DD00CE003B /* DSHFrameworksIOSExampleTests */,
+				DAA186601C0734DD00CE003B /* DSHFrameworksIOSExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAA1863B1C0734DD00CE003B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAA186501C0734DD00CE003B /* LaunchScreen.storyboard in Resources */,
+				DAA1864D1C0734DD00CE003B /* Assets.xcassets in Resources */,
+				DAA1864B1C0734DD00CE003B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAA186541C0734DD00CE003B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAA1865F1C0734DD00CE003B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAA186391C0734DD00CE003B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAA186FD1C07352600CE003B /* NSData+DSHDataCategory.m in Sources */,
+				DAA186F71C07352600CE003B /* DSHCollectionViewCell.m in Sources */,
+				DAA186481C0734DD00CE003B /* ViewController.m in Sources */,
+				DAA187091C07352600CE003B /* DSHDevelopmentHelper.m in Sources */,
+				DAA186E81C07352600CE003B /* DSHCollectionViewController.m in Sources */,
+				DAA187031C07352600CE003B /* NSObject+DSHObjectCategory.m in Sources */,
+				DAA186EB1C07352600CE003B /* DSHListViewController.m in Sources */,
+				DAA186451C0734DD00CE003B /* AppDelegate.m in Sources */,
+				DAA1870C1C07352600CE003B /* DSHHttpClient.m in Sources */,
+				DAA186F11C07352600CE003B /* DSHViewController.m in Sources */,
+				DAA186F41C07352600CE003B /* DSHApplication.m in Sources */,
+				DAA187061C07352600CE003B /* NSString+DSHStringCategory.m in Sources */,
+				DAA186EE1C07352600CE003B /* DSHTableViewController.m in Sources */,
+				DAA186421C0734DD00CE003B /* main.m in Sources */,
+				DAA186FA1C07352600CE003B /* DSHTableViewCell.m in Sources */,
+				DAA187111C0735F500CE003B /* UILabel+DSHLabelCategory.m in Sources */,
+				DAA186E51C07352600CE003B /* UIView+DSHViewCategory.m in Sources */,
+				DAA187001C07352600CE003B /* NSDictionary+DSHDictionaryCategory.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAA186521C0734DD00CE003B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAA186F81C07352600CE003B /* DSHCollectionViewCell.m in Sources */,
+				DAA186EC1C07352600CE003B /* DSHListViewController.m in Sources */,
+				DAA187041C07352600CE003B /* NSObject+DSHObjectCategory.m in Sources */,
+				DAA186EF1C07352600CE003B /* DSHTableViewController.m in Sources */,
+				DAA186FB1C07352600CE003B /* DSHTableViewCell.m in Sources */,
+				DAA186FE1C07352600CE003B /* NSData+DSHDataCategory.m in Sources */,
+				DAA1870D1C07352600CE003B /* DSHHttpClient.m in Sources */,
+				DAA186F21C07352600CE003B /* DSHViewController.m in Sources */,
+				DAA186F51C07352600CE003B /* DSHApplication.m in Sources */,
+				DAA187011C07352600CE003B /* NSDictionary+DSHDictionaryCategory.m in Sources */,
+				DAA1870A1C07352600CE003B /* DSHDevelopmentHelper.m in Sources */,
+				DAA187121C0735F500CE003B /* UILabel+DSHLabelCategory.m in Sources */,
+				DAA186E91C07352600CE003B /* DSHCollectionViewController.m in Sources */,
+				DAA187071C07352600CE003B /* NSString+DSHStringCategory.m in Sources */,
+				DAA1865B1C0734DD00CE003B /* DSHFrameworksIOSExampleTests.m in Sources */,
+				DAA186E61C07352600CE003B /* UIView+DSHViewCategory.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAA1865D1C0734DD00CE003B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAA186F91C07352600CE003B /* DSHCollectionViewCell.m in Sources */,
+				DAA186ED1C07352600CE003B /* DSHListViewController.m in Sources */,
+				DAA187051C07352600CE003B /* NSObject+DSHObjectCategory.m in Sources */,
+				DAA186F01C07352600CE003B /* DSHTableViewController.m in Sources */,
+				DAA186FC1C07352600CE003B /* DSHTableViewCell.m in Sources */,
+				DAA186FF1C07352600CE003B /* NSData+DSHDataCategory.m in Sources */,
+				DAA1870E1C07352600CE003B /* DSHHttpClient.m in Sources */,
+				DAA186F31C07352600CE003B /* DSHViewController.m in Sources */,
+				DAA186F61C07352600CE003B /* DSHApplication.m in Sources */,
+				DAA187021C07352600CE003B /* NSDictionary+DSHDictionaryCategory.m in Sources */,
+				DAA1870B1C07352600CE003B /* DSHDevelopmentHelper.m in Sources */,
+				DAA187131C0735F500CE003B /* UILabel+DSHLabelCategory.m in Sources */,
+				DAA186EA1C07352600CE003B /* DSHCollectionViewController.m in Sources */,
+				DAA187081C07352600CE003B /* NSString+DSHStringCategory.m in Sources */,
+				DAA186661C0734DD00CE003B /* DSHFrameworksIOSExampleUITests.m in Sources */,
+				DAA186E71C07352600CE003B /* UIView+DSHViewCategory.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DAA186581C0734DD00CE003B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAA1863C1C0734DD00CE003B /* DSHFrameworksIOSExample */;
+			targetProxy = DAA186571C0734DD00CE003B /* PBXContainerItemProxy */;
+		};
+		DAA186631C0734DD00CE003B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAA1863C1C0734DD00CE003B /* DSHFrameworksIOSExample */;
+			targetProxy = DAA186621C0734DD00CE003B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DAA186491C0734DD00CE003B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAA1864A1C0734DD00CE003B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DAA1864E1C0734DD00CE003B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAA1864F1C0734DD00CE003B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DAA186681C0734DD00CE003B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DAA186691C0734DD00CE003B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAA1866B1C0734DD00CE003B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DSHFrameworksIOSExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dongsh.DSHFrameworksIOSExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DAA1866C1C0734DD00CE003B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DSHFrameworksIOSExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dongsh.DSHFrameworksIOSExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DAA1866E1C0734DD00CE003B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DSHFrameworksIOSExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dongsh.DSHFrameworksIOSExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DSHFrameworksIOSExample.app/DSHFrameworksIOSExample";
+			};
+			name = Debug;
+		};
+		DAA1866F1C0734DD00CE003B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DSHFrameworksIOSExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dongsh.DSHFrameworksIOSExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DSHFrameworksIOSExample.app/DSHFrameworksIOSExample";
+			};
+			name = Release;
+		};
+		DAA186711C0734DD00CE003B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DSHFrameworksIOSExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dongsh.DSHFrameworksIOSExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DSHFrameworksIOSExample;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		DAA186721C0734DD00CE003B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DSHFrameworksIOSExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dongsh.DSHFrameworksIOSExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DSHFrameworksIOSExample;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAA186381C0734DD00CE003B /* Build configuration list for PBXProject "DSHFrameworksIOSExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAA186681C0734DD00CE003B /* Debug */,
+				DAA186691C0734DD00CE003B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAA1866A1C0734DD00CE003B /* Build configuration list for PBXNativeTarget "DSHFrameworksIOSExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAA1866B1C0734DD00CE003B /* Debug */,
+				DAA1866C1C0734DD00CE003B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DAA1866D1C0734DD00CE003B /* Build configuration list for PBXNativeTarget "DSHFrameworksIOSExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAA1866E1C0734DD00CE003B /* Debug */,
+				DAA1866F1C0734DD00CE003B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DAA186701C0734DD00CE003B /* Build configuration list for PBXNativeTarget "DSHFrameworksIOSExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAA186711C0734DD00CE003B /* Debug */,
+				DAA186721C0734DD00CE003B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DAA186351C0734DD00CE003B /* Project object */;
+}
