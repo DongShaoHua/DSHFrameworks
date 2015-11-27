@@ -15,6 +15,9 @@
 #define safe_turn_data_2_dictionary_with_error(parameter, error) \
     _kind_of_data(parameter) ? [parameter toDictionary: error] : nil
 
+#define safe_turn_data_2_model(parameter, class) \
+    _kind_of_data(parameter) ? [parameter toModel: class] : nil
+
 @interface NSData (DSHDataCategory)
 
 /**
@@ -30,6 +33,6 @@
 /**
  将当前对象转换为给定对象类型
  */
-- (id)toModel:(Class)cls;
+- (__kindof id)toModel:(Class)cls;
 
 @end
