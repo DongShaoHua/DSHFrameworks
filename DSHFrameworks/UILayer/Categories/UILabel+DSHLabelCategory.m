@@ -10,4 +10,22 @@
 
 @implementation UILabel (DSHLabelCategory)
 
+- (CGSize)contentSizeWith:(CGSize)limitedSize {
+    NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
+    style.lineBreakMode = NSLineBreakByWordWrapping;
+    
+    NSDictionary *attrubites = @{
+                                 NSFontAttributeName: self.font,
+                                 NSParagraphStyleAttributeName: style
+                                 };
+    
+    return [self contentSizeWith: limitedSize options: NSStringDrawingUsesFontLeading | NSStringDrawingUsesLineFragmentOrigin attribute: attrubites];
+}
+
+- (CGSize)contentSizeWith:(CGSize)limitedSize options:(NSStringDrawingOptions)options attribute:(NSDictionary *)attribute {
+    return [self.text boundingRectWithSize: limitedSize options: options attributes: attribute context: nil].size;
+}
+
+
+
 @end
