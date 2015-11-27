@@ -10,8 +10,19 @@
 
 @interface DSHTableViewCell : UITableViewCell
 
+/**
+ 设置Cell的详细信息
+ */
+- (void)setCellDetail:(__kindof id)data;
+
+/**
+ 获取该Cell的Id，默认情况下以类名称做id
+ */
 + (NSString *)getCellId;
 
+/**
+ 获取Cell的高度，默认情况高度为44.0f
+ */
 + (CGFloat)getCellHeight;
 
 @end

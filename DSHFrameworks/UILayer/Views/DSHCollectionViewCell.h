@@ -10,6 +10,14 @@
 
 @interface DSHCollectionViewCell : UICollectionViewCell
 
+/**
+ 设置Cell的详细信息
+ */
+- (void)setCellDetail:(__kindof id)data;
+
+/**
+ 获取该Cell的Id，默认情况下以类名称做id
+ */
 + (NSString *)getCellId;
 
 @end

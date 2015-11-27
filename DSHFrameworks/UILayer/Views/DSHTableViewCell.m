@@ -10,6 +10,10 @@
 
 @implementation DSHTableViewCell
 
+- (void)setCellDetail:(__kindof id)data {
+    
+}
+
 + (NSString *)getCellId {
     return [[self class] description];
 }

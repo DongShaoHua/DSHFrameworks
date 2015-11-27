@@ -7,6 +7,8 @@
 //
 
 #import "DSHListViewController.h"
+#import "DSHTableViewCell.h"
+#import "DSHCollectionViewCell.h"
 
 NSString * const DSHListDefaultCellId = @"DSH_List_Default_Cell_Id";
 
@@ -47,7 +49,18 @@ NSString * const DSHListDefaultCellId = @"DSH_List_Default_Cell_Id";
 }
 
 - (void)configRowDetail:(UIView *)listView cell:(UIView *)cell forIndexPath:(NSIndexPath *)indexPath {
-    
+    if ([listView isEqual: _listView]) {
+        if (_data.count > indexPath.row) {
+            id data = _data[indexPath.row];
+            if (_kind_of_(cell, DSHTableViewCell)) {
+                [((DSHTableViewCell *)cell) setCellDetail: data];
+            } else {
+                if (_kind_of_(cell, DSHCollectionViewCell)) {
+                    [((DSHCollectionViewCell *)cell) setCellDetail: data];
+                }
+            }
+        }
+    }
 }
 
 - (__kindof id)loadListData {
@@ -57,7 +70,6 @@ NSString * const DSHListDefaultCellId = @"DSH_List_Default_Cell_Id";
 - (void)refreshTriggeer:(UIView *)header {
     
 }
-
 
 #if __has_include(header_file_for_mjrefresh)
 
