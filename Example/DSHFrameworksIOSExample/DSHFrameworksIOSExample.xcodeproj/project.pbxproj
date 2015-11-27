@@ -10,9 +10,7 @@
 		DAA186421C0734DD00CE003B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186411C0734DD00CE003B /* main.m */; };
 		DAA186451C0734DD00CE003B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186441C0734DD00CE003B /* AppDelegate.m */; };
 		DAA186481C0734DD00CE003B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186471C0734DD00CE003B /* ViewController.m */; };
-		DAA1864B1C0734DD00CE003B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA186491C0734DD00CE003B /* Main.storyboard */; };
 		DAA1864D1C0734DD00CE003B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAA1864C1C0734DD00CE003B /* Assets.xcassets */; };
-		DAA186501C0734DD00CE003B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA1864E1C0734DD00CE003B /* LaunchScreen.storyboard */; };
 		DAA1865B1C0734DD00CE003B /* DSHFrameworksIOSExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA1865A1C0734DD00CE003B /* DSHFrameworksIOSExampleTests.m */; };
 		DAA186661C0734DD00CE003B /* DSHFrameworksIOSExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186651C0734DD00CE003B /* DSHFrameworksIOSExampleUITests.m */; };
 		DAA186E51C07352600CE003B /* UIView+DSHViewCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186C61C07352600CE003B /* UIView+DSHViewCategory.m */; };
@@ -86,9 +84,7 @@
 		DAA186441C0734DD00CE003B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DAA186461C0734DD00CE003B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		DAA186471C0734DD00CE003B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		DAA1864A1C0734DD00CE003B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DAA1864C1C0734DD00CE003B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DAA1864F1C0734DD00CE003B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAA186511C0734DD00CE003B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAA186561C0734DD00CE003B /* DSHFrameworksIOSExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DSHFrameworksIOSExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA1865A1C0734DD00CE003B /* DSHFrameworksIOSExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSHFrameworksIOSExampleTests.m; sourceTree = "<group>"; };
@@ -182,9 +178,7 @@
 				DAA186441C0734DD00CE003B /* AppDelegate.m */,
 				DAA186461C0734DD00CE003B /* ViewController.h */,
 				DAA186471C0734DD00CE003B /* ViewController.m */,
-				DAA186491C0734DD00CE003B /* Main.storyboard */,
 				DAA1864C1C0734DD00CE003B /* Assets.xcassets */,
-				DAA1864E1C0734DD00CE003B /* LaunchScreen.storyboard */,
 				DAA186511C0734DD00CE003B /* Info.plist */,
 				DAA186401C0734DD00CE003B /* Supporting Files */,
 			);
@@ -407,9 +401,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAA186501C0734DD00CE003B /* LaunchScreen.storyboard in Resources */,
 				DAA1864D1C0734DD00CE003B /* Assets.xcassets in Resources */,
-				DAA1864B1C0734DD00CE003B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,25 +508,6 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		DAA186491C0734DD00CE003B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DAA1864A1C0734DD00CE003B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		DAA1864E1C0734DD00CE003B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DAA1864F1C0734DD00CE003B /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		DAA186681C0734DD00CE003B /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -572,7 +545,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -609,7 +582,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -705,6 +678,7 @@
 				DAA1866C1C0734DD00CE003B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DAA1866D1C0734DD00CE003B /* Build configuration list for PBXNativeTarget "DSHFrameworksIOSExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -713,6 +687,7 @@
 				DAA1866F1C0734DD00CE003B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DAA186701C0734DD00CE003B /* Build configuration list for PBXNativeTarget "DSHFrameworksIOSExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -721,6 +696,7 @@
 				DAA186721C0734DD00CE003B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
