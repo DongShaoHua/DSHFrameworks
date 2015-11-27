@@ -91,7 +91,7 @@ static NSTimeInterval default_timeout = 15;
     } else {
         NSURL *url = [NSURL URLWithString: address];
         NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL: url];
-        [request setTimeoutInterval: self.timeout];
+        request.timeoutInterval = self.timeout;
         AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest: request];
         [self setResponseSerializer: operation responsetype: responseType];
         return operation;
@@ -109,7 +109,7 @@ static NSTimeInterval default_timeout = 15;
 
 - (AFHTTPRequestOperation *)POST:(NSString *)address parameters:(NSDictionary *)parameters responseType:(RESPONSE_BODY_TYPE)responseType completed:(ResponseCompleted)completed {
     
-    [DSHDevelopmentHelper runInDevelopment:^{
+    [DSHDevelopmentHelper runNotInRelease:^{
         NSLog(@"\n===============================\naddress: %@\n======================\nparameter: %@", address, parameters);
     }];
     
@@ -149,6 +149,7 @@ static NSTimeInterval default_timeout = 15;
 - (AFHTTPRequestOperation *)UPLOAD:(NSString *)address parameters:(NSDictionary *)parameters uploadfiles:(UpLoadFiles)uploadfiles responseType:(RESPONSE_BODY_TYPE)responseType completed:(ResponseCompleted)completed {
     if (completed) {
         AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+        manager.requestSerializer.timeoutInterval = self.timeout;
         [self setResponseSerializer: manager responsetype: responseType];
         return [manager POST: address parameters: parameters constructingBodyWithBlock: ^(id<AFMultipartFormData> formData) {
             if (uploadfiles) {
@@ -167,6 +168,7 @@ static NSTimeInterval default_timeout = 15;
                 uploadfiles(formData);
             }
         } error: &error];
+        request.timeoutInterval = self.timeout;
         AFHTTPRequestOperation *operation = nil;
         if (request && !error) {
             operation = [[AFHTTPRequestOperation alloc] initWithRequest: request];
