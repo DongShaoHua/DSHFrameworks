@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "DSHApplication.h"
+#import "DSHMainViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,7 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    _window = [DSHApplication setupWindowWithRootControoler: [UIViewController new]];
+    _window = [DSHApplication setupWindowWithRootControoler: [DSHMainViewController new]];
     return YES;
 }
 

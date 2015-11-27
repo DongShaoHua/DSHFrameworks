@@ -10,4 +10,6 @@
 
 @interface DSHCollectionViewController : DSHListViewController<UICollectionViewDataSource, UICollectionViewDelegate>
 
+@property (weak, nonatomic) UICollectionView *collectionView;
+
 @end

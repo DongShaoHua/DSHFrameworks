@@ -18,4 +18,15 @@
     return [[self class] description];
 }
 
++ (void)registerCellNibForCollectionView:(UICollectionView *)collectionView {
+    [self registerCellNibForCollectionView: collectionView nibName: [self getCellId]];
+}
+
++ (void)registerCellNibForCollectionView:(UICollectionView *)collectionView nibName:(NSString *)nibName {
+    UINib *nib = [UINib nibWithNibName: nibName bundle: [NSBundle mainBundle]];
+    if (nib) {
+        [collectionView registerNib: nib forCellWithReuseIdentifier: [self getCellId]];
+    }
+}
+
 @end

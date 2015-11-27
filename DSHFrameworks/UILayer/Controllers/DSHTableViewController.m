@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    _tableView = [self getListView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -25,9 +26,9 @@
 }
 
 - (UITableViewCell *)getCellWith:(UITableView *)listView forIndexPath:(NSIndexPath *)indePath {
-    NSString *cellid = [self getCellId];
+    NSString *cellid = [self getCellIdWith: listView];
     UITableViewCell *cell = nil;
-    if ( [cellid isEqualToString: DSHListDefaultCellId]) {
+    if ([cellid isEqualToString: DSHListDefaultCellId]) {
         cell = [listView dequeueReusableCellWithIdentifier: cellid];
         if (!cell) {
             cell = [[UITableViewCell alloc] initWithStyle: UITableViewCellStyleDefault reuseIdentifier: cellid];
@@ -44,8 +45,11 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [self getCellWith: tableView forIndexPath: indexPath];
-    [self configRowDetail: tableView cell: cell forIndexPath: indexPath];
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self configRowDetail: tableView cell: cell forIndexPath: indexPath];
 }
 
 @end

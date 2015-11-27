@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    _collectionView = [self getListView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,19 +25,22 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (UICollectionViewCell *)getCellWith:(UICollectionView *)listView forIndexPath:(NSIndexPath *)indePath {
-    NSString *cellid = [self getCellId];
-    return [listView dequeueReusableCellWithReuseIdentifier: cellid forIndexPath: indePath];
-}
-
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return [self getListDataCount];
 }
 
+- (UICollectionViewCell *)getCellWith:(UICollectionView *)listView forIndexPath:(NSIndexPath *)indePath {
+    NSString *cellid = [self getCellIdWith: listView];
+    return [listView dequeueReusableCellWithReuseIdentifier: cellid forIndexPath: indePath];
+}
+
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     UICollectionViewCell *cell = [self getCellWith: collectionView forIndexPath: indexPath];
-    [self configRowDetail: collectionView cell: cell forIndexPath: indexPath];
     return cell;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath {
+    [self configRowDetail: collectionView cell: cell forIndexPath: indexPath];
 }
 
 @end

@@ -32,11 +32,11 @@ NSString * const DSHListDefaultCellId = @"DSH_List_Default_Cell_Id";
     // Dispose of any resources that can be recreated.
 }
 
-- (id)getListView {
+- (__kindof id)getListView {
     return _listView;
 }
 
-- (NSString *)getCellId {
+- (NSString *)getCellIdWith:(UIView *)view {
     return DSHListDefaultCellId;
 }
 
@@ -50,14 +50,16 @@ NSString * const DSHListDefaultCellId = @"DSH_List_Default_Cell_Id";
 
 - (void)configRowDetail:(UIView *)listView cell:(UIView *)cell forIndexPath:(NSIndexPath *)indexPath {
     if ([listView isEqual: _listView]) {
+        id data = nil;
         if (_data.count > indexPath.row) {
-            id data = _data[indexPath.row];
-            if (_kind_of_(cell, DSHTableViewCell)) {
-                [((DSHTableViewCell *)cell) setCellDetail: data];
-            } else {
-                if (_kind_of_(cell, DSHCollectionViewCell)) {
-                    [((DSHCollectionViewCell *)cell) setCellDetail: data];
-                }
+            data = _data[indexPath.row];
+        }
+        
+        if (_kind_of_(cell, DSHTableViewCell)) {
+            [((DSHTableViewCell *)cell) setCellDetail: data];
+        } else {
+            if (_kind_of_(cell, DSHCollectionViewCell)) {
+                [((DSHCollectionViewCell *)cell) setCellDetail: data];
             }
         }
     }

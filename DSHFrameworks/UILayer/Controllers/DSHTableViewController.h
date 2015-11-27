@@ -10,4 +10,6 @@
 
 @interface DSHTableViewController : DSHListViewController<UITableViewDelegate, UITableViewDataSource>
 
+@property (weak, nonatomic) UITableView *tableView;
+
 @end

@@ -20,4 +20,9 @@
  */
 + (NSString *)getCellId;
 
++ (void)registerCellNibForCollectionView:(UICollectionView *)collectionView;
+
++ (void)registerCellNibForCollectionView:(UICollectionView *)collectionView nibName:(NSString *)nibName;
+
+
 @end

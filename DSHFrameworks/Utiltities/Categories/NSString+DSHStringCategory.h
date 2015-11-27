@@ -23,6 +23,9 @@
 #define safe_string_is_match_pattern(original, pattern) \
     _is_string_nil_or_empty(original) ? NO : [original isMatch: pattern]
 
+#define stringformat(format, parameter...) \
+    [NSString stringWithFormat: format, parameter]
+
 @interface NSString (DSHStringCategory)
 
 /**

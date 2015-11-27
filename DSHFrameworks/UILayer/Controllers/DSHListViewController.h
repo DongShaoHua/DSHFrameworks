@@ -34,7 +34,7 @@ extern NSString * const DSHListDefaultCellId;
 /**
  获取Cell的id
  */
-- (NSString *)getCellId;
+- (NSString *)getCellIdWith:(UIView *)view;
 /**
  返回列表视图的数据个数
  */

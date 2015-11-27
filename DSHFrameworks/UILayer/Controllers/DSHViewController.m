@@ -97,7 +97,7 @@ NSString * const DSHViewControllerResetNotification = @"DSHViewControllerResetNo
 #pragma mark ==== 界面跳转，以及登录状态判断等 ====
 - (void)showViewController:(DSHViewController *)controller {
     if ([self willGoToOtherController: controller]) {
-        if (8.0 <= [DSHApplication getSystemVersion]) {
+        if (8.0 <= [DSHApplication getIOSVersion]) {
             [self showViewController: controller sender: self];
         } else {
             [self.navigationController pushViewController: controller animated: YES];
@@ -107,7 +107,7 @@ NSString * const DSHViewControllerResetNotification = @"DSHViewControllerResetNo
 
 - (void)showDetailViewController:(DSHViewController *)controller {
     if ([self willGoToOtherController: controller]) {
-        if (8.0 <= [DSHApplication getSystemVersion]) {
+        if (8.0 <= [DSHApplication getIOSVersion]) {
             [self showDetailViewController: controller sender: self];
         } else {
             [self.navigationController pushViewController: controller animated: YES];

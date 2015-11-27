@@ -22,4 +22,16 @@
     return 44.0f;
 }
 
+
++ (void)registerCellNibForTable:(UITableView *)tableView {
+    [self registerCellNibForTable: tableView nibName: [self getCellId]];
+}
+
++ (void)registerCellNibForTable:(UITableView *)tableView nibName:(NSString *)nibName {
+    UINib *nib = [UINib nibWithNibName: nibName bundle: [NSBundle mainBundle]];
+    if (nib) {
+        [tableView registerNib: nib forCellReuseIdentifier: [self getCellId]];
+    }
+}
+
 @end
