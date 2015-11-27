@@ -7,6 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DSHDevelopmentHelper.h"
+
+#define safe_turn_data_2_dictionary(parameter) \
+    safe_turn_data_2_dictionary_with_error(parameter, nil) \
+
+#define safe_turn_data_2_dictionary_with_error(parameter, error) \
+    _kind_of_data(parameter) ? [parameter toDictionary: error] : nil
 
 @interface NSData (DSHDataCategory)
 

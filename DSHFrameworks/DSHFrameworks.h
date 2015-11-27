@@ -17,6 +17,7 @@
 
 
 #import "NSString+DSHStringCategory.h"
+#import "NSData+DSHDataCategory.h"
 
 
 

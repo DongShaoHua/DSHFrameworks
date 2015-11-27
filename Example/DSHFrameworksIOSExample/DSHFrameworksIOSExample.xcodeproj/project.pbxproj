@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		DAA186421C0734DD00CE003B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186411C0734DD00CE003B /* main.m */; };
 		DAA186451C0734DD00CE003B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186441C0734DD00CE003B /* AppDelegate.m */; };
-		DAA186481C0734DD00CE003B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186471C0734DD00CE003B /* ViewController.m */; };
 		DAA1864D1C0734DD00CE003B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAA1864C1C0734DD00CE003B /* Assets.xcassets */; };
 		DAA1865B1C0734DD00CE003B /* DSHFrameworksIOSExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA1865A1C0734DD00CE003B /* DSHFrameworksIOSExampleTests.m */; };
 		DAA186661C0734DD00CE003B /* DSHFrameworksIOSExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186651C0734DD00CE003B /* DSHFrameworksIOSExampleUITests.m */; };
@@ -82,8 +81,6 @@
 		DAA186411C0734DD00CE003B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DAA186431C0734DD00CE003B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DAA186441C0734DD00CE003B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DAA186461C0734DD00CE003B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DAA186471C0734DD00CE003B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DAA1864C1C0734DD00CE003B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAA186511C0734DD00CE003B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAA186561C0734DD00CE003B /* DSHFrameworksIOSExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DSHFrameworksIOSExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,8 +173,6 @@
 			children = (
 				DAA186431C0734DD00CE003B /* AppDelegate.h */,
 				DAA186441C0734DD00CE003B /* AppDelegate.m */,
-				DAA186461C0734DD00CE003B /* ViewController.h */,
-				DAA186471C0734DD00CE003B /* ViewController.m */,
 				DAA1864C1C0734DD00CE003B /* Assets.xcassets */,
 				DAA186511C0734DD00CE003B /* Info.plist */,
 				DAA186401C0734DD00CE003B /* Supporting Files */,
@@ -428,7 +423,6 @@
 			files = (
 				DAA186FD1C07352600CE003B /* NSData+DSHDataCategory.m in Sources */,
 				DAA186F71C07352600CE003B /* DSHCollectionViewCell.m in Sources */,
-				DAA186481C0734DD00CE003B /* ViewController.m in Sources */,
 				DAA187091C07352600CE003B /* DSHDevelopmentHelper.m in Sources */,
 				DAA186E81C07352600CE003B /* DSHCollectionViewController.m in Sources */,
 				DAA187031C07352600CE003B /* NSObject+DSHObjectCategory.m in Sources */,

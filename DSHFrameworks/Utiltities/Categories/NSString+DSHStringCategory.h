@@ -8,8 +8,20 @@
 
 #import <Foundation/Foundation.h>
 
-#define isStringNibOrEmpty(str) \
+#define _is_string_nil_or_empty(str) \
     [NSString isNilOrEmpty: str]
+
+#define safe_turn_string_2_md5(original) \
+    _is_string_nil_or_empty(original) ? nil : [original toMD5]
+
+#define safe_turn_string_2_json(original) \
+    _is_string_nil_or_empty(original) ? nil : [original toJSON]
+
+#define safe_turn_string_2_url(original) \
+    _is_string_nil_or_empty(original) ? nil : [original toUrl]
+
+#define safe_string_is_match_pattern(original, pattern) \
+    _is_string_nil_or_empty(original) ? NO : [original isMatch: pattern]
 
 @interface NSString (DSHStringCategory)
 

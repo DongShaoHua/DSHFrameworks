@@ -15,7 +15,6 @@
 - (NSInteger)getIntegerWithKey:(NSString *)key {
     NSInteger integer = 0;
     id value = self[key];
-
     if (value && (_kind_of_number(value) || _kind_of_string(value))) {
         integer = [value integerValue];
     }

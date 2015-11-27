@@ -16,7 +16,7 @@
 + (BOOL)isNilOrEmpty:(NSString *)string {
     BOOL isEmpty = YES;
     if (string && _kind_of_(string, NSString) && string.length > 0) {
-        isEmpty = ([string stringByReplacingOccurrencesOfString: @" " withString: @""].length > 0);
+        isEmpty = ([string stringByReplacingOccurrencesOfString: @" " withString: @""].length == 0);
     }
     return isEmpty;
 }

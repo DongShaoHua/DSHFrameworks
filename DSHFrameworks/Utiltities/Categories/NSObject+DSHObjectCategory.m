@@ -21,7 +21,7 @@
     if (properties && count > 0) {
         for (int i = 0; i < count; ++i) {
             NSString *propertyName = @(property_getName(properties[i]));
-            if (!isStringNibOrEmpty(propertyName)) {
+            if (!_is_string_nil_or_empty(propertyName)) {
                 [arrayofProp addObject: propertyName];
             }
         }

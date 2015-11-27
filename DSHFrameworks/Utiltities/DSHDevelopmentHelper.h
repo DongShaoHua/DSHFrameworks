@@ -15,10 +15,16 @@
 
 #define _kind_of_number(val) \
     [val isKindOfClass: NSNumber.class]
+
 #define _kind_of_string(val) \
     [val isKindOfClass: NSString.class]
+
+#define _kind_of_data(val) \
+    [val isKindOfClass: NSData.class]
+
 #define _kind_of_array(val) \
     [val isKindOfClass: NSArray.class]
+
 #define _kind_of_dictionary(val) \
     [val isKindOfClass: NSDictionary.class]
 
