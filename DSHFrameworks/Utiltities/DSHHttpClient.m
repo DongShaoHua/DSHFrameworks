@@ -7,6 +7,7 @@
 //
 
 #import "DSHHttpClient.h"
+#import "DSHDevelopmentHelper.h"
 
 static NSTimeInterval default_timeout = 15;
 
@@ -32,11 +33,10 @@ static NSTimeInterval default_timeout = 15;
 }
 
 + (instancetype)shareInstance {
-    static dispatch_once_t oncetoken = 0;
     static DSHHttpClient *client = nil;
-    dispatch_once(&oncetoken, ^{
-       client = DSHHttpClient.new;
-    });
+    _exec_block_only_one_time(^{
+        client = DSHHttpClient.new;
+    })
     return client;
 }
 

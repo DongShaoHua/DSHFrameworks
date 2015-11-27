@@ -8,6 +8,11 @@
 
 #import "DSHDevelopmentHelper.h"
 
+const CGSize IPHONE_SCREEN_W_320_H_480 = { 320.0f, 480.0f };
+const CGSize IPHONE_SCREEN_W_320_H_568 = { 320.0f, 568.0f };
+const CGSize IPHONE_SCREEN_W_375_H_667 = { 375.0f, 667.0f };
+const CGSize IPHONE_SCREEN_W_414_H_736 = { 413.0f, 736.0f };
+
 @implementation DSHDevelopmentHelper
 
 + (void)runInMainThread:(dispatch_block_t)block {
@@ -29,5 +34,22 @@
         dispatch_async(dispatch_get_global_queue(priority, 0), block);
     }
 }
+
++ (void)runNotInSimulator:(dispatch_block_t)block {
+#if !TARGET_IPHONE_SIMULATOR
+    if (block) {
+        block();
+    }
+#endif 
+}
+
++ (void)runNotInRelease:(dispatch_block_t)block {
+#ifndef __OPTIMIZE__
+    if (block) {
+        block();
+    }
+#endif
+}
+
 
 @end
