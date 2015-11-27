@@ -10,7 +10,7 @@
 
 @implementation DSHApplication
 
-+ (CGFloat)getSystemVersion {
++ (CGFloat)getIOSVersion {
     return [[[UIDevice currentDevice] systemVersion] floatValue];
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA93AE641C08A9B600E85BA5 /* UIButton+DSHButtonCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DA93AE631C08A9B600E85BA5 /* UIButton+DSHButtonCategory.m */; };
 		DAA186421C0734DD00CE003B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186411C0734DD00CE003B /* main.m */; };
 		DAA186451C0734DD00CE003B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186441C0734DD00CE003B /* AppDelegate.m */; };
 		DAA1864D1C0734DD00CE003B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAA1864C1C0734DD00CE003B /* Assets.xcassets */; };
@@ -77,6 +78,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA93AE621C08A9B600E85BA5 /* UIButton+DSHButtonCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+DSHButtonCategory.h"; sourceTree = "<group>"; };
+		DA93AE631C08A9B600E85BA5 /* UIButton+DSHButtonCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DSHButtonCategory.m"; sourceTree = "<group>"; };
 		DAA1863D1C0734DD00CE003B /* DSHFrameworksIOSExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSHFrameworksIOSExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA186411C0734DD00CE003B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DAA186431C0734DD00CE003B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -236,6 +239,8 @@
 				DAA186C61C07352600CE003B /* UIView+DSHViewCategory.m */,
 				DAA1870F1C0735F500CE003B /* UILabel+DSHLabelCategory.h */,
 				DAA187101C0735F500CE003B /* UILabel+DSHLabelCategory.m */,
+				DA93AE621C08A9B600E85BA5 /* UIButton+DSHButtonCategory.h */,
+				DA93AE631C08A9B600E85BA5 /* UIButton+DSHButtonCategory.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -426,6 +431,7 @@
 				DAA187091C07352600CE003B /* DSHDevelopmentHelper.m in Sources */,
 				DAA186E81C07352600CE003B /* DSHCollectionViewController.m in Sources */,
 				DAA187031C07352600CE003B /* NSObject+DSHObjectCategory.m in Sources */,
+				DA93AE641C08A9B600E85BA5 /* UIButton+DSHButtonCategory.m in Sources */,
 				DAA186EB1C07352600CE003B /* DSHListViewController.m in Sources */,
 				DAA186451C0734DD00CE003B /* AppDelegate.m in Sources */,
 				DAA1870C1C07352600CE003B /* DSHHttpClient.m in Sources */,

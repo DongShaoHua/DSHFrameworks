@@ -11,7 +11,7 @@
 @implementation UILabel (DSHLabelCategory)
 
 - (CGSize)contentSizeWith:(CGSize)limitedSize {
-    NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
+    NSMutableParagraphStyle *style = NSMutableParagraphStyle.new;
     style.lineBreakMode = NSLineBreakByWordWrapping;
     
     NSDictionary *attrubites = @{

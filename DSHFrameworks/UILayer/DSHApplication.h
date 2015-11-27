@@ -15,7 +15,7 @@
 /**
  获取IOS版本号
  */
-+ (CGFloat)getSystemVersion;
++ (CGFloat)getIOSVersion;
 
 /**
  获取设备屏幕点大小

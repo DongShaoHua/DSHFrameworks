@@ -13,11 +13,15 @@
 #import "DSHTableViewCell.h"
 #import "DSHCollectionViewCell.h"
 
+#import "UIView+DSHViewCategory.h"
+#import "UILabel+DSHLabelCategory.h"
+
 #import "DSHHttpClient.h"
 
 
 #import "NSString+DSHStringCategory.h"
 #import "NSData+DSHDataCategory.h"
+#import "NSDictionary+DSHDictionaryCategory.h"
 
 
 
