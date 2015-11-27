@@ -13,7 +13,11 @@
 
 - (void)setCellDetail:(__kindof id)data {
     static int number = 1;
-    self.textLabel.text = stringformat(@"Label %02d %2d", number++, number);
+    if (data) {
+        self.textLabel.text = data;
+    } else {
+        self.textLabel.text = stringformat(@"Label %02d %2d", number++, number);
+    }
 }
 
 @end

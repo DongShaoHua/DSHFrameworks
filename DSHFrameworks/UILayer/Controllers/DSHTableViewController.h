@@ -7,9 +7,11 @@
 //
 
 #import "DSHListViewController.h"
+#import "DSHTableViewCell.h"
 
 @interface DSHTableViewController : DSHListViewController<UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) UITableView *tableView;
 
 @end
+

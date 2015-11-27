@@ -30,8 +30,8 @@
 }
 
 - (UICollectionViewCell *)getCellWith:(UICollectionView *)listView forIndexPath:(NSIndexPath *)indePath {
-    NSString *cellid = [self getCellIdWith: listView];
-    return [listView dequeueReusableCellWithReuseIdentifier: cellid forIndexPath: indePath];
+    DSHCellNibInfo *cellInfo = [self getCellInfoWith: listView forIndexPath: indePath];
+    return [listView dequeueReusableCellWithReuseIdentifier: cellInfo.cellId forIndexPath: indePath];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {

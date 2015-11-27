@@ -17,9 +17,6 @@
 		DA93AE701C08B59700E85BA5 /* DSHMainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA93AE6F1C08B59700E85BA5 /* DSHMainCell.m */; };
 		DA93AE711C08B59700E85BA5 /* DSHMainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA93AE6F1C08B59700E85BA5 /* DSHMainCell.m */; };
 		DA93AE721C08B59700E85BA5 /* DSHMainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA93AE6F1C08B59700E85BA5 /* DSHMainCell.m */; };
-		DA93AE741C08BAF100E85BA5 /* DSHMainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA93AE731C08BAF100E85BA5 /* DSHMainCell.xib */; };
-		DA93AE751C08BAF100E85BA5 /* DSHMainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA93AE731C08BAF100E85BA5 /* DSHMainCell.xib */; };
-		DA93AE761C08BAF100E85BA5 /* DSHMainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA93AE731C08BAF100E85BA5 /* DSHMainCell.xib */; };
 		DAA186421C0734DD00CE003B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186411C0734DD00CE003B /* main.m */; };
 		DAA186451C0734DD00CE003B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186441C0734DD00CE003B /* AppDelegate.m */; };
 		DAA1864D1C0734DD00CE003B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAA1864C1C0734DD00CE003B /* Assets.xcassets */; };
@@ -97,7 +94,6 @@
 		DA93AE671C08B20500E85BA5 /* DSHMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DSHMainViewController.xib; sourceTree = "<group>"; };
 		DA93AE6E1C08B59700E85BA5 /* DSHMainCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSHMainCell.h; sourceTree = "<group>"; };
 		DA93AE6F1C08B59700E85BA5 /* DSHMainCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSHMainCell.m; sourceTree = "<group>"; };
-		DA93AE731C08BAF100E85BA5 /* DSHMainCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DSHMainCell.xib; sourceTree = "<group>"; };
 		DAA1863D1C0734DD00CE003B /* DSHFrameworksIOSExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSHFrameworksIOSExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA186411C0734DD00CE003B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DAA186431C0734DD00CE003B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -202,7 +198,6 @@
 				DA93AE671C08B20500E85BA5 /* DSHMainViewController.xib */,
 				DA93AE6E1C08B59700E85BA5 /* DSHMainCell.h */,
 				DA93AE6F1C08B59700E85BA5 /* DSHMainCell.m */,
-				DA93AE731C08BAF100E85BA5 /* DSHMainCell.xib */,
 			);
 			path = DSHFrameworksIOSExample;
 			sourceTree = "<group>";
@@ -426,7 +421,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAA1864D1C0734DD00CE003B /* Assets.xcassets in Resources */,
-				DA93AE741C08BAF100E85BA5 /* DSHMainCell.xib in Resources */,
 				DA93AE6B1C08B20500E85BA5 /* DSHMainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,7 +429,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA93AE751C08BAF100E85BA5 /* DSHMainCell.xib in Resources */,
 				DA93AE6C1C08B20500E85BA5 /* DSHMainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,7 +437,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA93AE761C08BAF100E85BA5 /* DSHMainCell.xib in Resources */,
 				DA93AE6D1C08B20500E85BA5 /* DSHMainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

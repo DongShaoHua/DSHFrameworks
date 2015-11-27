@@ -21,6 +21,20 @@
 
 extern NSString * const DSHListDefaultCellId;
 
+@interface DSHCellNibInfo : NSObject
+
+@property (strong, nonatomic) NSString *cellId;
+@property (assign, nonatomic) BOOL hasNib;
+@property (strong, nonatomic) UITableViewCell * (^allocCellBlock)(NSString *cellId);
+
+- (instancetype)initWithCellId:(NSString *)cellId andHasNib:(BOOL)hasNib allocCellBlock:(UITableViewCell * (^)(NSString *cellId))block;
+
++ (instancetype)infoWithCellId:(NSString *)cellId;
++ (instancetype)infoWithCellId:(NSString *)cellId andHasNib:(BOOL)hasNib;
++ (instancetype)infoWithCellId:(NSString *)cellId andHasNib:(BOOL)hasNib allocCellBlock:(UITableViewCell * (^)(NSString *cellId))block;
+
+@end
+
 @interface DSHListViewController : DSHViewController
 
 @property (strong, nonatomic) NSMutableArray *data;
@@ -32,9 +46,9 @@ extern NSString * const DSHListDefaultCellId;
  */
 - (__kindof id)getListView;
 /**
- 获取Cell的id
+ 获取Cell的信息，返回值的key代表该cell的id。返回值的value代表该id是否注册了nib
  */
-- (NSString *)getCellIdWith:(UIView *)view;
+- (DSHCellNibInfo *)getCellInfoWith:(UIView *)view forIndexPath:(NSIndexPath *)indexPath;
 /**
  返回列表视图的数据个数
  */

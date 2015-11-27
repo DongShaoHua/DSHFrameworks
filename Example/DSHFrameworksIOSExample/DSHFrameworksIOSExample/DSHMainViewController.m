@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [DSHMainCell registerCellNibForTable: [self getListView]];
+    self.data = [NSMutableArray arrayWithArray: @[ @"What's your name?", @"My name is XXXX.", @"How old are you?" ]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -26,12 +26,10 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (NSInteger)getListDataCount {
-    return 10;
-}
-
-- (NSString *)getCellIdWith:(UIView *)view {
-    return [DSHMainCell getCellId];
+- (DSHCellNibInfo *)getCellInfoWith:(UIView *)view forIndexPath:(NSIndexPath *)indexPath {
+    return [DSHCellNibInfo infoWithCellId: [DSHMainCell getCellId] andHasNib: NO allocCellBlock:^UITableViewCell *(NSString *cellId) {
+        return [[DSHMainCell alloc] initWithStyle: UITableViewCellStyleDefault reuseIdentifier: cellId];
+    }];
 }
 
 @end

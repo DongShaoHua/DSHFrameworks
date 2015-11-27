@@ -18,6 +18,47 @@ NSString * const DSHListDefaultCellId = @"DSH_List_Default_Cell_Id";
 
 @end
 
+@implementation DSHCellNibInfo
+
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        _cellId = DSHListDefaultCellId;
+        _hasNib = NO;
+        _allocCellBlock = nil;
+    }
+    return self;
+}
+
+- (void)dealloc {
+    _cellId = nil;
+    _allocCellBlock = nil;
+}
+
+- (instancetype)initWithCellId:(NSString *)cellId andHasNib:(BOOL)hasNib allocCellBlock:(UITableViewCell *(^)(NSString *cellId))block {
+    self = [super init];
+    if (self) {
+        _cellId = cellId;
+        _hasNib = hasNib;
+        _allocCellBlock = block;
+    }
+    return self;
+}
+
++ (instancetype)infoWithCellId:(NSString *)cellId {
+    return [self infoWithCellId: cellId andHasNib: NO];
+}
+
++ (instancetype)infoWithCellId:(NSString *)cellId andHasNib:(BOOL)hasNib {
+    return [self infoWithCellId: cellId andHasNib: hasNib allocCellBlock: nil];
+}
+
++ (instancetype)infoWithCellId:(NSString *)cellId andHasNib:(BOOL)hasNib allocCellBlock:(UITableViewCell *(^)(NSString *cellId))block {
+    return [[DSHCellNibInfo alloc] initWithCellId: cellId andHasNib: hasNib allocCellBlock: block];
+}
+
+@end
+
 @implementation DSHListViewController
 
 - (void)viewDidLoad {
@@ -36,8 +77,8 @@ NSString * const DSHListDefaultCellId = @"DSH_List_Default_Cell_Id";
     return _listView;
 }
 
-- (NSString *)getCellIdWith:(UIView *)view {
-    return DSHListDefaultCellId;
+- (DSHCellNibInfo *)getCellInfoWith:(UIView *)view forIndexPath:(NSIndexPath *)indexPath {
+    return [DSHCellNibInfo new];
 }
 
 - (NSInteger)getListDataCount {

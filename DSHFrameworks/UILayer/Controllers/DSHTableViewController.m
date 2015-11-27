@@ -26,15 +26,15 @@
 }
 
 - (UITableViewCell *)getCellWith:(UITableView *)listView forIndexPath:(NSIndexPath *)indePath {
-    NSString *cellid = [self getCellIdWith: listView];
     UITableViewCell *cell = nil;
-    if ([cellid isEqualToString: DSHListDefaultCellId]) {
-        cell = [listView dequeueReusableCellWithIdentifier: cellid];
-        if (!cell) {
-            cell = [[UITableViewCell alloc] initWithStyle: UITableViewCellStyleDefault reuseIdentifier: cellid];
-        }
+    DSHCellNibInfo *cellInfo =  [self getCellInfoWith: listView forIndexPath: indePath];
+    if (cellInfo.hasNib) {
+        cell = cellInfo.allocCellBlock ? cellInfo.allocCellBlock(cellInfo.cellId) : [listView dequeueReusableCellWithIdentifier: cellInfo.cellId forIndexPath: indePath];
     } else {
-        cell = [listView dequeueReusableCellWithIdentifier: cellid forIndexPath: indePath];
+        cell = [listView dequeueReusableCellWithIdentifier: cellInfo.cellId];
+        if (!cell) {
+            cell = cellInfo.allocCellBlock ? cellInfo.allocCellBlock(cellInfo.cellId) : [[UITableViewCell alloc] initWithStyle: UITableViewCellStyleDefault reuseIdentifier: cellInfo.cellId];
+        }
     }
     return cell;
 }
