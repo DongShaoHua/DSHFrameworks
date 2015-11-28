@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7FE2824973A5B10A045E6FD8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D35400FBD55A93E7F17DEDD /* libPods.a */; };
 		DA649EF01C0961BA00AD2927 /* logo-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DA649EEF1C0961BA00AD2927 /* logo-icon.png */; };
+		DA925BB91C09F8540066BE2E /* UIWebView+DSHWebViewCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DA925BB81C09F8540066BE2E /* UIWebView+DSHWebViewCategory.m */; };
 		DA93AE641C08A9B600E85BA5 /* UIButton+DSHButtonCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DA93AE631C08A9B600E85BA5 /* UIButton+DSHButtonCategory.m */; };
 		DA93AE681C08B20500E85BA5 /* DSHMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA93AE661C08B20500E85BA5 /* DSHMainViewController.m */; };
 		DA93AE691C08B20500E85BA5 /* DSHMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA93AE661C08B20500E85BA5 /* DSHMainViewController.m */; };
@@ -93,6 +94,8 @@
 		9D35400FBD55A93E7F17DEDD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B95130E150CB13DDD3B7EB5B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		DA649EEF1C0961BA00AD2927 /* logo-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-icon.png"; sourceTree = "<group>"; };
+		DA925BB71C09F8540066BE2E /* UIWebView+DSHWebViewCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+DSHWebViewCategory.h"; sourceTree = "<group>"; };
+		DA925BB81C09F8540066BE2E /* UIWebView+DSHWebViewCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+DSHWebViewCategory.m"; sourceTree = "<group>"; };
 		DA93AE621C08A9B600E85BA5 /* UIButton+DSHButtonCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+DSHButtonCategory.h"; sourceTree = "<group>"; };
 		DA93AE631C08A9B600E85BA5 /* UIButton+DSHButtonCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DSHButtonCategory.m"; sourceTree = "<group>"; };
 		DA93AE651C08B20500E85BA5 /* DSHMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSHMainViewController.h; sourceTree = "<group>"; };
@@ -270,6 +273,8 @@
 				DAA187101C0735F500CE003B /* UILabel+DSHLabelCategory.m */,
 				DA93AE621C08A9B600E85BA5 /* UIButton+DSHButtonCategory.h */,
 				DA93AE631C08A9B600E85BA5 /* UIButton+DSHButtonCategory.m */,
+				DA925BB71C09F8540066BE2E /* UIWebView+DSHWebViewCategory.h */,
+				DA925BB81C09F8540066BE2E /* UIWebView+DSHWebViewCategory.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -536,6 +541,7 @@
 				DAA186EB1C07352600CE003B /* DSHListViewController.m in Sources */,
 				DAA186451C0734DD00CE003B /* AppDelegate.m in Sources */,
 				DAA1870C1C07352600CE003B /* DSHHttpClient.m in Sources */,
+				DA925BB91C09F8540066BE2E /* UIWebView+DSHWebViewCategory.m in Sources */,
 				DAA186F11C07352600CE003B /* DSHViewController.m in Sources */,
 				DAA186F41C07352600CE003B /* DSHApplication.m in Sources */,
 				DAA187061C07352600CE003B /* NSString+DSHStringCategory.m in Sources */,
