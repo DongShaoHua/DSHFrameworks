@@ -22,7 +22,6 @@ extern NSString * const DSHViewControllerResetNotification;
  */
 - (void)resetController:(NSNotification *)notification;
 
-
 #pragma mark ==== 导航栏相关 ====
 /**
  自定义导航栏左边按钮图片
@@ -86,5 +85,10 @@ extern NSString * const DSHViewControllerResetNotification;
  返回值 代表是否继续执行跳转
  */
 - (BOOL)willGoToOtherController:(DSHViewController *)controller;
+
+/**
+ 为controller的View添加点击关闭键盘的功能
+ */
+- (void)enableTapForEndEdit;
 
 @end

@@ -13,6 +13,8 @@ NSString * const DSHViewControllerResetNotification = @"DSHViewControllerResetNo
 
 @interface DSHViewController ()
 
+- (void)tapForEndEdit:(UITapGestureRecognizer *)gesture;
+
 @end
 
 @implementation DSHViewController
@@ -118,6 +120,14 @@ NSString * const DSHViewControllerResetNotification = @"DSHViewControllerResetNo
 - (BOOL)willGoToOtherController:(DSHViewController *)controller {
     controller.hidesBottomBarWhenPushed = YES;
     return YES;
+}
+
+- (void)enableTapForEndEdit {
+    [self.view addGestureRecognizer: [[UITapGestureRecognizer alloc] initWithTarget: self action: @selector(tapForEndEdit:)]];
+}
+
+- (void)tapForEndEdit:(UITapGestureRecognizer *)gesture {
+    [self.view endEditing: YES];
 }
 
 @end
