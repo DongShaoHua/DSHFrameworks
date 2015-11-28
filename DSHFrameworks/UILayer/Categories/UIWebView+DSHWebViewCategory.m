@@ -11,7 +11,6 @@
 @implementation UIWebView (DSHWebViewCategory)
 
 - (void)loadGif:(NSString *)gifFileName {
-    
     self.backgroundColor = [UIColor clearColor];
     self.opaque = NO;
     self.scrollView.bounces = NO;

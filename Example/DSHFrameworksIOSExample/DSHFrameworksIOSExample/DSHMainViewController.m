@@ -9,6 +9,7 @@
 #import "DSHMainViewController.h"
 #import "DSHMainCell.h"
 #import "UIButton+DSHButtonCategory.h"
+#import "UIView+DSHViewCategory.h"
 
 @interface DSHMainViewController ()
 
@@ -24,6 +25,7 @@
     self.data = [NSMutableArray arrayWithArray: @[ @"What's your name?", @"My name is XXXX.", @"How old are you?" ]];
     
     [DSHMainCell registerCellClassForTable: self.tableView];
+    [self.button clipToCircle];
     
     //[DSHMainCell registerCellNibForTable: self.tableView];
 }
