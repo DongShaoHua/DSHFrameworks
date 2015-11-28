@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ 按钮的内容布局风格
+ */
 typedef NS_ENUM(int, DSHButtonContentLayoutStyle) {
     /**
      文本与图片居中，并上文本下图片的方式内容
