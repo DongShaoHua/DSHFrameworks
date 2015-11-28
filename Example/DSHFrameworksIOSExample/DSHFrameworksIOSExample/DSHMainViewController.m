@@ -8,8 +8,11 @@
 
 #import "DSHMainViewController.h"
 #import "DSHMainCell.h"
+#import "UIButton+DSHButtonCategory.h"
 
 @interface DSHMainViewController ()
+
+@property (weak, nonatomic) IBOutlet UIButton *button;
 
 @end
 
@@ -28,6 +31,11 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    [_button setButtonContentLayout: DSHButtonContentLayoutStyleCenterLeftTitleRightImage];
 }
 
 - (DSHCellNibInfo *)getCellInfoWith:(UIView *)view forIndexPath:(NSIndexPath *)indexPath {

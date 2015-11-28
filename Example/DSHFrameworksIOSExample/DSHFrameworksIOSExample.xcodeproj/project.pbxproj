@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7FE2824973A5B10A045E6FD8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D35400FBD55A93E7F17DEDD /* libPods.a */; };
+		DA649EF01C0961BA00AD2927 /* logo-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DA649EEF1C0961BA00AD2927 /* logo-icon.png */; };
 		DA93AE641C08A9B600E85BA5 /* UIButton+DSHButtonCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DA93AE631C08A9B600E85BA5 /* UIButton+DSHButtonCategory.m */; };
 		DA93AE681C08B20500E85BA5 /* DSHMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA93AE661C08B20500E85BA5 /* DSHMainViewController.m */; };
 		DA93AE691C08B20500E85BA5 /* DSHMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA93AE661C08B20500E85BA5 /* DSHMainViewController.m */; };
@@ -91,6 +92,7 @@
 		8F88E798234419D80B5ACE2A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9D35400FBD55A93E7F17DEDD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B95130E150CB13DDD3B7EB5B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		DA649EEF1C0961BA00AD2927 /* logo-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-icon.png"; sourceTree = "<group>"; };
 		DA93AE621C08A9B600E85BA5 /* UIButton+DSHButtonCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+DSHButtonCategory.h"; sourceTree = "<group>"; };
 		DA93AE631C08A9B600E85BA5 /* UIButton+DSHButtonCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DSHButtonCategory.m"; sourceTree = "<group>"; };
 		DA93AE651C08B20500E85BA5 /* DSHMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSHMainViewController.h; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 		DAA1863F1C0734DD00CE003B /* DSHFrameworksIOSExample */ = {
 			isa = PBXGroup;
 			children = (
+				DA649EEF1C0961BA00AD2927 /* logo-icon.png */,
 				DAA186431C0734DD00CE003B /* AppDelegate.h */,
 				DAA186441C0734DD00CE003B /* AppDelegate.m */,
 				DAA1864C1C0734DD00CE003B /* Assets.xcassets */,
@@ -448,6 +451,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAA1864D1C0734DD00CE003B /* Assets.xcassets in Resources */,
+				DA649EF01C0961BA00AD2927 /* logo-icon.png in Resources */,
 				DA93AE6B1C08B20500E85BA5 /* DSHMainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
