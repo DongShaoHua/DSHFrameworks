@@ -30,6 +30,8 @@
     static dispatch_once_t oncetoken = 0; \
     dispatch_once(&oncetoken, block);
 
+#define half_of_number(number) number / 2.0f
+
 /**
  设备屏幕大小 --》 IPHONE 4, 4S
  */
