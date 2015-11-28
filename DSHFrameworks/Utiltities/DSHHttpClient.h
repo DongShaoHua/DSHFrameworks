@@ -21,6 +21,8 @@
 
 #if __has_include(header_file_for_af)
 
+#import header_file_for_af
+
 /**
  请求完成时，回调函数
  */

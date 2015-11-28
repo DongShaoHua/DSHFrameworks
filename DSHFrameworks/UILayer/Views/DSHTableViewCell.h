@@ -25,6 +25,8 @@
  */
 + (CGFloat)getCellHeight;
 
++ (void)registerCellClassForTable:(UITableView *)tableView;
+
 + (void)registerCellNibForTable:(UITableView *)tableView;
 
 + (void)registerCellNibForTable:(UITableView *)tableView nibName:(NSString *)nibName;

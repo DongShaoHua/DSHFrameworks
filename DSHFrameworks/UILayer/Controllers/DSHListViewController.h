@@ -16,8 +16,15 @@
 
 #define header_file_for_mjrefresh <MJRefresh.h>
 
+
 #endif
 
+
+#if __has_include(header_file_for_mjrefresh)
+
+#import header_file_for_mjrefresh
+
+#endif
 
 extern NSString * const DSHListDefaultCellId;
 

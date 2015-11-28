@@ -1,0 +1,7 @@
+platform :ios,7.0
+
+pod 'AFNetworking', '~> 2.6.0'
+pod 'SDWebImage', '~> 3.7.3'
+pod 'MJRefresh', '~> 2.4.8'
+pod 'PureLayout', '~> 3.0.1'
+pod 'DateTools', '~> 1.7.0'

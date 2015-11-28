@@ -119,8 +119,1075 @@
    <Group
       location = "group:Example"
       name = "Example">
-      <FileRef
-         location = "group:DSHFrameworksIOSExample/DSHFrameworksIOSExample.xcodeproj">
-      </FileRef>
+      <Group
+         location = "group:DSHFrameworksIOSExample"
+         name = "DSHFrameworksIOSExample">
+         <FileRef
+            location = "group:DSHFrameworksIOSExample.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:Podfile">
+         </FileRef>
+         <FileRef
+            location = "group:Podfile.lock">
+         </FileRef>
+         <Group
+            location = "group:Pods"
+            name = "Pods">
+            <Group
+               location = "group:AFNetworking"
+               name = "AFNetworking">
+               <Group
+                  location = "group:AFNetworking"
+                  name = "AFNetworking">
+                  <FileRef
+                     location = "group:AFHTTPRequestOperation.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:AFHTTPRequestOperation.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:AFHTTPRequestOperationManager.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:AFHTTPRequestOperationManager.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:AFHTTPSessionManager.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:AFHTTPSessionManager.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:AFNetworking.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:AFNetworkReachabilityManager.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:AFNetworkReachabilityManager.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:AFSecurityPolicy.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:AFSecurityPolicy.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:AFURLConnectionOperation.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:AFURLConnectionOperation.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:AFURLRequestSerialization.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:AFURLRequestSerialization.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:AFURLResponseSerialization.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:AFURLResponseSerialization.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:AFURLSessionManager.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:AFURLSessionManager.m">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:LICENSE">
+               </FileRef>
+               <FileRef
+                  location = "group:README.md">
+               </FileRef>
+               <Group
+                  location = "group:UIKit+AFNetworking"
+                  name = "UIKit+AFNetworking">
+                  <FileRef
+                     location = "group:AFNetworkActivityIndicatorManager.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:AFNetworkActivityIndicatorManager.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIActivityIndicatorView+AFNetworking.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIActivityIndicatorView+AFNetworking.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIAlertView+AFNetworking.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIAlertView+AFNetworking.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIButton+AFNetworking.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIButton+AFNetworking.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIImage+AFNetworking.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIImageView+AFNetworking.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIImageView+AFNetworking.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIKit+AFNetworking.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIProgressView+AFNetworking.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIProgressView+AFNetworking.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIRefreshControl+AFNetworking.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIRefreshControl+AFNetworking.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIWebView+AFNetworking.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIWebView+AFNetworking.m">
+                  </FileRef>
+               </Group>
+            </Group>
+            <Group
+               location = "group:DateTools"
+               name = "DateTools">
+               <Group
+                  location = "group:DateTools"
+                  name = "DateTools">
+                  <FileRef
+                     location = "group:DateTools.bundle">
+                  </FileRef>
+                  <FileRef
+                     location = "group:DateTools.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:DTConstants.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:DTConstants.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:DTError.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:DTError.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:DTTimePeriod.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:DTTimePeriod.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:DTTimePeriodChain.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:DTTimePeriodChain.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:DTTimePeriodCollection.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:DTTimePeriodCollection.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:DTTimePeriodGroup.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:DTTimePeriodGroup.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:NSDate+DateTools.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:NSDate+DateTools.m">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:LICENSE">
+               </FileRef>
+               <FileRef
+                  location = "group:README.md">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Headers"
+               name = "Headers">
+               <Group
+                  location = "group:Private"
+                  name = "Private">
+                  <Group
+                     location = "group:AFNetworking"
+                     name = "AFNetworking">
+                     <FileRef
+                        location = "group:AFHTTPRequestOperation.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:AFHTTPRequestOperationManager.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:AFHTTPSessionManager.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:AFNetworkActivityIndicatorManager.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:AFNetworking.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:AFNetworkReachabilityManager.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:AFSecurityPolicy.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:AFURLConnectionOperation.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:AFURLRequestSerialization.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:AFURLResponseSerialization.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:AFURLSessionManager.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UIActivityIndicatorView+AFNetworking.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UIAlertView+AFNetworking.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UIButton+AFNetworking.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UIImage+AFNetworking.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UIImageView+AFNetworking.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UIKit+AFNetworking.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UIProgressView+AFNetworking.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UIRefreshControl+AFNetworking.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UIWebView+AFNetworking.h">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:DateTools"
+                     name = "DateTools">
+                     <FileRef
+                        location = "group:DateTools.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:DTConstants.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:DTError.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:DTTimePeriod.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:DTTimePeriodChain.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:DTTimePeriodCollection.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:DTTimePeriodGroup.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:NSDate+DateTools.h">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:MJRefresh"
+                     name = "MJRefresh">
+                     <FileRef
+                        location = "group:MJRefresh.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:MJRefreshAutoFooter.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:MJRefreshAutoGifFooter.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:MJRefreshAutoNormalFooter.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:MJRefreshAutoStateFooter.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:MJRefreshBackFooter.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:MJRefreshBackGifFooter.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:MJRefreshBackNormalFooter.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:MJRefreshBackStateFooter.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:MJRefreshComponent.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:MJRefreshConst.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:MJRefreshFooter.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:MJRefreshGifHeader.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:MJRefreshHeader.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:MJRefreshNormalHeader.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:MJRefreshStateHeader.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UIScrollView+MJExtension.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UIScrollView+MJRefresh.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UIView+MJExtension.h">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:PureLayout"
+                     name = "PureLayout">
+                     <FileRef
+                        location = "group:ALView+PureLayout.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:NSArray+PureLayout.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:NSLayoutConstraint+PureLayout.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:PureLayout+Internal.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:PureLayout.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:PureLayoutDefines.h">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:SDWebImage"
+                     name = "SDWebImage">
+                     <FileRef
+                        location = "group:NSData+ImageContentType.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:SDImageCache.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:SDWebImageCompat.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:SDWebImageDecoder.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:SDWebImageDownloader.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:SDWebImageDownloaderOperation.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:SDWebImageManager.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:SDWebImageOperation.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:SDWebImagePrefetcher.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UIButton+WebCache.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UIImage+GIF.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UIImage+MultiFormat.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UIImageView+HighlightedWebCache.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UIImageView+WebCache.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UIView+WebCacheOperation.h">
+                     </FileRef>
+                  </Group>
+               </Group>
+               <Group
+                  location = "group:Public"
+                  name = "Public">
+                  <Group
+                     location = "group:AFNetworking"
+                     name = "AFNetworking">
+                     <FileRef
+                        location = "group:AFHTTPRequestOperation.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:AFHTTPRequestOperationManager.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:AFHTTPSessionManager.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:AFNetworkActivityIndicatorManager.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:AFNetworking.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:AFNetworkReachabilityManager.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:AFSecurityPolicy.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:AFURLConnectionOperation.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:AFURLRequestSerialization.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:AFURLResponseSerialization.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:AFURLSessionManager.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UIActivityIndicatorView+AFNetworking.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UIAlertView+AFNetworking.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UIButton+AFNetworking.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UIImage+AFNetworking.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UIImageView+AFNetworking.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UIKit+AFNetworking.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UIProgressView+AFNetworking.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UIRefreshControl+AFNetworking.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UIWebView+AFNetworking.h">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:DateTools"
+                     name = "DateTools">
+                     <FileRef
+                        location = "group:DateTools.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:DTConstants.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:DTError.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:DTTimePeriod.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:DTTimePeriodChain.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:DTTimePeriodCollection.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:DTTimePeriodGroup.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:NSDate+DateTools.h">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:MJRefresh"
+                     name = "MJRefresh">
+                     <FileRef
+                        location = "group:MJRefresh.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:MJRefreshAutoFooter.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:MJRefreshAutoGifFooter.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:MJRefreshAutoNormalFooter.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:MJRefreshAutoStateFooter.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:MJRefreshBackFooter.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:MJRefreshBackGifFooter.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:MJRefreshBackNormalFooter.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:MJRefreshBackStateFooter.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:MJRefreshComponent.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:MJRefreshConst.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:MJRefreshFooter.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:MJRefreshGifHeader.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:MJRefreshHeader.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:MJRefreshNormalHeader.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:MJRefreshStateHeader.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UIScrollView+MJExtension.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UIScrollView+MJRefresh.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UIView+MJExtension.h">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:PureLayout"
+                     name = "PureLayout">
+                     <FileRef
+                        location = "group:ALView+PureLayout.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:NSArray+PureLayout.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:NSLayoutConstraint+PureLayout.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:PureLayout+Internal.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:PureLayout.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:PureLayoutDefines.h">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:SDWebImage"
+                     name = "SDWebImage">
+                     <FileRef
+                        location = "group:NSData+ImageContentType.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:SDImageCache.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:SDWebImageCompat.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:SDWebImageDecoder.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:SDWebImageDownloader.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:SDWebImageDownloaderOperation.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:SDWebImageManager.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:SDWebImageOperation.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:SDWebImagePrefetcher.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UIButton+WebCache.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UIImage+GIF.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UIImage+MultiFormat.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UIImageView+HighlightedWebCache.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UIImageView+WebCache.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:UIView+WebCacheOperation.h">
+                     </FileRef>
+                  </Group>
+               </Group>
+            </Group>
+            <Group
+               location = "group:Local Podspecs"
+               name = "Local Podspecs">
+            </Group>
+            <FileRef
+               location = "group:Manifest.lock">
+            </FileRef>
+            <Group
+               location = "group:MJRefresh"
+               name = "MJRefresh">
+               <FileRef
+                  location = "group:LICENSE">
+               </FileRef>
+               <Group
+                  location = "group:MJRefresh"
+                  name = "MJRefresh">
+                  <Group
+                     location = "group:Base"
+                     name = "Base">
+                     <FileRef
+                        location = "group:MJRefreshAutoFooter.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:MJRefreshAutoFooter.m">
+                     </FileRef>
+                     <FileRef
+                        location = "group:MJRefreshBackFooter.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:MJRefreshBackFooter.m">
+                     </FileRef>
+                     <FileRef
+                        location = "group:MJRefreshComponent.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:MJRefreshComponent.m">
+                     </FileRef>
+                     <FileRef
+                        location = "group:MJRefreshFooter.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:MJRefreshFooter.m">
+                     </FileRef>
+                     <FileRef
+                        location = "group:MJRefreshHeader.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:MJRefreshHeader.m">
+                     </FileRef>
+                  </Group>
+                  <Group
+                     location = "group:Custom"
+                     name = "Custom">
+                     <Group
+                        location = "group:Footer"
+                        name = "Footer">
+                        <Group
+                           location = "group:Auto"
+                           name = "Auto">
+                           <FileRef
+                              location = "group:MJRefreshAutoGifFooter.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:MJRefreshAutoGifFooter.m">
+                           </FileRef>
+                           <FileRef
+                              location = "group:MJRefreshAutoNormalFooter.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:MJRefreshAutoNormalFooter.m">
+                           </FileRef>
+                           <FileRef
+                              location = "group:MJRefreshAutoStateFooter.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:MJRefreshAutoStateFooter.m">
+                           </FileRef>
+                        </Group>
+                        <Group
+                           location = "group:Back"
+                           name = "Back">
+                           <FileRef
+                              location = "group:MJRefreshBackGifFooter.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:MJRefreshBackGifFooter.m">
+                           </FileRef>
+                           <FileRef
+                              location = "group:MJRefreshBackNormalFooter.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:MJRefreshBackNormalFooter.m">
+                           </FileRef>
+                           <FileRef
+                              location = "group:MJRefreshBackStateFooter.h">
+                           </FileRef>
+                           <FileRef
+                              location = "group:MJRefreshBackStateFooter.m">
+                           </FileRef>
+                        </Group>
+                     </Group>
+                     <Group
+                        location = "group:Header"
+                        name = "Header">
+                        <FileRef
+                           location = "group:MJRefreshGifHeader.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:MJRefreshGifHeader.m">
+                        </FileRef>
+                        <FileRef
+                           location = "group:MJRefreshNormalHeader.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:MJRefreshNormalHeader.m">
+                        </FileRef>
+                        <FileRef
+                           location = "group:MJRefreshStateHeader.h">
+                        </FileRef>
+                        <FileRef
+                           location = "group:MJRefreshStateHeader.m">
+                        </FileRef>
+                     </Group>
+                  </Group>
+                  <FileRef
+                     location = "group:MJRefresh.bundle">
+                  </FileRef>
+                  <FileRef
+                     location = "group:MJRefresh.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:MJRefreshConst.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:MJRefreshConst.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIScrollView+MJExtension.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIScrollView+MJExtension.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIScrollView+MJRefresh.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIScrollView+MJRefresh.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIView+MJExtension.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIView+MJExtension.m">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:README.md">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:Pods.xcodeproj">
+            </FileRef>
+            <Group
+               location = "group:PureLayout"
+               name = "PureLayout">
+               <FileRef
+                  location = "group:LICENSE">
+               </FileRef>
+               <Group
+                  location = "group:PureLayout"
+                  name = "PureLayout">
+                  <Group
+                     location = "group:PureLayout"
+                     name = "PureLayout">
+                     <FileRef
+                        location = "group:ALView+PureLayout.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:ALView+PureLayout.m">
+                     </FileRef>
+                     <FileRef
+                        location = "group:NSArray+PureLayout.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:NSArray+PureLayout.m">
+                     </FileRef>
+                     <FileRef
+                        location = "group:NSLayoutConstraint+PureLayout.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:NSLayoutConstraint+PureLayout.m">
+                     </FileRef>
+                     <FileRef
+                        location = "group:PureLayout+Internal.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:PureLayout.h">
+                     </FileRef>
+                     <FileRef
+                        location = "group:PureLayoutDefines.h">
+                     </FileRef>
+                  </Group>
+               </Group>
+               <FileRef
+                  location = "group:README.md">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:SDWebImage"
+               name = "SDWebImage">
+               <FileRef
+                  location = "group:LICENSE">
+               </FileRef>
+               <FileRef
+                  location = "group:README.md">
+               </FileRef>
+               <Group
+                  location = "group:SDWebImage"
+                  name = "SDWebImage">
+                  <FileRef
+                     location = "group:NSData+ImageContentType.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:NSData+ImageContentType.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:SDImageCache.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:SDImageCache.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:SDWebImageCompat.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:SDWebImageCompat.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:SDWebImageDecoder.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:SDWebImageDecoder.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:SDWebImageDownloader.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:SDWebImageDownloader.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:SDWebImageDownloaderOperation.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:SDWebImageDownloaderOperation.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:SDWebImageManager.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:SDWebImageManager.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:SDWebImageOperation.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:SDWebImagePrefetcher.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:SDWebImagePrefetcher.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIButton+WebCache.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIButton+WebCache.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIImage+GIF.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIImage+GIF.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIImage+MultiFormat.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIImage+MultiFormat.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIImageView+HighlightedWebCache.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIImageView+HighlightedWebCache.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIImageView+WebCache.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIImageView+WebCache.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIView+WebCacheOperation.h">
+                  </FileRef>
+                  <FileRef
+                     location = "group:UIView+WebCacheOperation.m">
+                  </FileRef>
+               </Group>
+            </Group>
+            <Group
+               location = "group:Target Support Files"
+               name = "Target Support Files">
+               <Group
+                  location = "group:AFNetworking"
+                  name = "AFNetworking">
+                  <FileRef
+                     location = "group:AFNetworking-dummy.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:AFNetworking-prefix.pch">
+                  </FileRef>
+                  <FileRef
+                     location = "group:AFNetworking.xcconfig">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:DateTools"
+                  name = "DateTools">
+                  <FileRef
+                     location = "group:DateTools-dummy.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:DateTools-prefix.pch">
+                  </FileRef>
+                  <FileRef
+                     location = "group:DateTools.xcconfig">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:MJRefresh"
+                  name = "MJRefresh">
+                  <FileRef
+                     location = "group:MJRefresh-dummy.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:MJRefresh-prefix.pch">
+                  </FileRef>
+                  <FileRef
+                     location = "group:MJRefresh.xcconfig">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:Pods"
+                  name = "Pods">
+                  <FileRef
+                     location = "group:Pods-acknowledgements.markdown">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Pods-acknowledgements.plist">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Pods-dummy.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Pods-frameworks.sh">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Pods-resources.sh">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Pods.debug.xcconfig">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Pods.release.xcconfig">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:PureLayout"
+                  name = "PureLayout">
+                  <FileRef
+                     location = "group:PureLayout-dummy.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:PureLayout-prefix.pch">
+                  </FileRef>
+                  <FileRef
+                     location = "group:PureLayout.xcconfig">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:SDWebImage"
+                  name = "SDWebImage">
+                  <FileRef
+                     location = "group:SDWebImage-dummy.m">
+                  </FileRef>
+                  <FileRef
+                     location = "group:SDWebImage-prefix.pch">
+                  </FileRef>
+                  <FileRef
+                     location = "group:SDWebImage.xcconfig">
+                  </FileRef>
+               </Group>
+            </Group>
+         </Group>
+      </Group>
    </Group>
 </Workspace>

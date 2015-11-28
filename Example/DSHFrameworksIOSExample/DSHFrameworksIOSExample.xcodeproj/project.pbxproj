@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7FE2824973A5B10A045E6FD8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D35400FBD55A93E7F17DEDD /* libPods.a */; };
 		DA93AE641C08A9B600E85BA5 /* UIButton+DSHButtonCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DA93AE631C08A9B600E85BA5 /* UIButton+DSHButtonCategory.m */; };
 		DA93AE681C08B20500E85BA5 /* DSHMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA93AE661C08B20500E85BA5 /* DSHMainViewController.m */; };
 		DA93AE691C08B20500E85BA5 /* DSHMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA93AE661C08B20500E85BA5 /* DSHMainViewController.m */; };
@@ -87,6 +88,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F88E798234419D80B5ACE2A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		9D35400FBD55A93E7F17DEDD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B95130E150CB13DDD3B7EB5B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		DA93AE621C08A9B600E85BA5 /* UIButton+DSHButtonCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+DSHButtonCategory.h"; sourceTree = "<group>"; };
 		DA93AE631C08A9B600E85BA5 /* UIButton+DSHButtonCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DSHButtonCategory.m"; sourceTree = "<group>"; };
 		DA93AE651C08B20500E85BA5 /* DSHMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSHMainViewController.h; sourceTree = "<group>"; };
@@ -144,6 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FE2824973A5B10A045E6FD8 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +177,8 @@
 				DAA186591C0734DD00CE003B /* DSHFrameworksIOSExampleTests */,
 				DAA186641C0734DD00CE003B /* DSHFrameworksIOSExampleUITests */,
 				DAA1863E1C0734DD00CE003B /* Products */,
+				FCDAA2FDDFE1C38FD32382D1 /* Pods */,
+				F356D24B79A01CE5DA83A3A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -317,6 +324,23 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
+		F356D24B79A01CE5DA83A3A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D35400FBD55A93E7F17DEDD /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FCDAA2FDDFE1C38FD32382D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F88E798234419D80B5ACE2A /* Pods.debug.xcconfig */,
+				B95130E150CB13DDD3B7EB5B /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -324,9 +348,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAA1866A1C0734DD00CE003B /* Build configuration list for PBXNativeTarget "DSHFrameworksIOSExample" */;
 			buildPhases = (
+				FFBF2837A191C031DBB62936 /* Check Pods Manifest.lock */,
 				DAA186391C0734DD00CE003B /* Sources */,
 				DAA1863A1C0734DD00CE003B /* Frameworks */,
 				DAA1863B1C0734DD00CE003B /* Resources */,
+				0834E23BCBA2190232FCF6E3 /* Embed Pods Frameworks */,
+				944746DC795AFD7CFAABB2EA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -442,6 +469,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0834E23BCBA2190232FCF6E3 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		944746DC795AFD7CFAABB2EA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFBF2837A191C031DBB62936 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DAA186391C0734DD00CE003B /* Sources */ = {
@@ -619,6 +694,7 @@
 		};
 		DAA1866B1C0734DD00CE003B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F88E798234419D80B5ACE2A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DSHFrameworksIOSExample/Info.plist;
@@ -630,6 +706,7 @@
 		};
 		DAA1866C1C0734DD00CE003B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B95130E150CB13DDD3B7EB5B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DSHFrameworksIOSExample/Info.plist;

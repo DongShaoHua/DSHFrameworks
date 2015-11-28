@@ -74,7 +74,7 @@ static NSTimeInterval default_timeout = 15;
 }
 
 - (AFHTTPRequestOperation *)GET:(NSString *)address responseType:(RESPONSE_BODY_TYPE)responseType completed:(ResponseCompleted)completed {
-    [DSHDevelopmentHelper runInDevelopment:^{
+    [DSHDevelopmentHelper runNotInRelease: ^{
         NSLog(@"\n===============================\naddress: %@", address);
     }];
     

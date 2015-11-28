@@ -22,6 +22,9 @@
     return 44.0f;
 }
 
++ (void)registerCellClassForTable:(UITableView *)tableView {
+    [tableView registerClass: self.class forCellReuseIdentifier: [self getCellId]];
+}
 
 + (void)registerCellNibForTable:(UITableView *)tableView {
     [self registerCellNibForTable: tableView nibName: [self getCellId]];

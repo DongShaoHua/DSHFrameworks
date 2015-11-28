@@ -19,6 +19,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.data = [NSMutableArray arrayWithArray: @[ @"What's your name?", @"My name is XXXX.", @"How old are you?" ]];
+    
+    [DSHMainCell registerCellClassForTable: self.tableView];
+    
+    //[DSHMainCell registerCellNibForTable: self.tableView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -27,9 +31,7 @@
 }
 
 - (DSHCellNibInfo *)getCellInfoWith:(UIView *)view forIndexPath:(NSIndexPath *)indexPath {
-    return [DSHCellNibInfo infoWithCellId: [DSHMainCell getCellId] andHasNib: NO allocCellBlock:^UITableViewCell *(NSString *cellId) {
-        return [[DSHMainCell alloc] initWithStyle: UITableViewCellStyleDefault reuseIdentifier: cellId];
-    }];
+    return [DSHCellNibInfo infoWithCellId: [DSHMainCell getCellId] andHasNib: YES allocCellBlock: nil];
 }
 
 @end

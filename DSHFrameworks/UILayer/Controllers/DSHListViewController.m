@@ -110,10 +110,6 @@ NSString * const DSHListDefaultCellId = @"DSH_List_Default_Cell_Id";
     return nil;
 }
 
-- (void)refreshTriggeer:(UIView *)header {
-    
-}
-
 #if __has_include(header_file_for_mjrefresh)
 
 #pragma mark ====== 启动下拉和上拉 =======
