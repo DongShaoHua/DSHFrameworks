@@ -10,14 +10,6 @@
 
 @implementation DSHApplication
 
-+ (CGFloat)getIOSVersion {
-    return [[[UIDevice currentDevice] systemVersion] floatValue];
-}
-
-+ (CGSize)getDeviceScreen {
-    return [UIScreen mainScreen].bounds.size;
-}
-
 + (UIWindow *)setupWindowWithRootControoler:(UIViewController *)controller {
     UIWindow *window =  [[UIWindow alloc] initWithFrame: [UIScreen mainScreen].bounds];
     [window makeKeyAndVisible];
