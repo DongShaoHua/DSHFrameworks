@@ -55,6 +55,16 @@ extern const CGSize IPHONE_SCREEN_W_414_H_736;
 @interface DSHDevelopmentHelper : NSObject
 
 /**
+ 获取IOS版本号
+ */
++ (CGFloat)getIOSVersion;
+
+/**
+ 获取设备屏幕点大小
+ */
++ (CGSize)getDeviceScreen;
+
+/**
  在主线程中执行block
  */
 + (void)runInMainThread:(dispatch_block_t)block;

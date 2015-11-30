@@ -15,6 +15,14 @@ const CGSize IPHONE_SCREEN_W_414_H_736 = { 413.0f, 736.0f };
 
 @implementation DSHDevelopmentHelper
 
++ (CGFloat)getIOSVersion {
+    return [[[UIDevice currentDevice] systemVersion] floatValue];
+}
+
++ (CGSize)getDeviceScreen {
+    return [UIScreen mainScreen].bounds.size;
+}
+
 + (void)runInMainThread:(dispatch_block_t)block {
     if (block) {
         if ([[NSThread currentThread] isMainThread]) {
