@@ -14,6 +14,24 @@
             location = "group:Categories"
             name = "Categories">
             <FileRef
+               location = "group:UIButton+DSHButtonCategory.h">
+            </FileRef>
+            <FileRef
+               location = "group:UIButton+DSHButtonCategory.m">
+            </FileRef>
+            <FileRef
+               location = "group:UILabel+DSHLabelCategory.h">
+            </FileRef>
+            <FileRef
+               location = "group:UILabel+DSHLabelCategory.m">
+            </FileRef>
+            <FileRef
+               location = "group:UIWebView+DSHWebViewCategory.h">
+            </FileRef>
+            <FileRef
+               location = "group:UIWebView+DSHWebViewCategory.m">
+            </FileRef>
+            <FileRef
                location = "group:UIView+DSHViewCategory.h">
             </FileRef>
             <FileRef
