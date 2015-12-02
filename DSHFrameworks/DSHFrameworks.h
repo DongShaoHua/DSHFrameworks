@@ -17,6 +17,8 @@
 #import "UILabel+DSHLabelCategory.h"
 #import "UIButton+DSHButtonCategory.h"
 
+#import "UIColor+DSHColorCategory.h"
+
 #import "DSHHttpClient.h"
 
 #import "NSString+DSHStringCategory.h"

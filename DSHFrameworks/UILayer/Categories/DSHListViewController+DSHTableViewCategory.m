@@ -1,31 +1,31 @@
 //
-//  DSHTableViewController.m
-//  DSHFrameworks
+//  DSHListViewController+DSHTableViewCategory.m
+//  DSHFrameworksIOSExample
 //
-//  Created by dongsh on 15/11/26.
+//  Created by dongshaohua on 15/12/2.
 //  Copyright © 2015年 dongsh. All rights reserved.
 //
 
-#import "DSHTableViewController.h"
+#import "DSHListViewController+DSHTableViewCategory.h"
+#import "NSObject+DSHObjectCategory.h"
 
-@interface DSHTableViewController ()
+@interface DSHListViewController (Private)
+
+- (UITableViewCell *)tableCellWith:(UITableView *)listView forIndexPath:(NSIndexPath *)indePath;
 
 @end
 
-@implementation DSHTableViewController
+@implementation DSHListViewController (DSHTableViewCategory)
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    _tableView = [self getListView];
++ (void)load {
+    [self exchangeMethod: @selector(getCellWith:forIndexPath:) withNewMethod: @selector(tableCellWith:forIndexPath:)];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (UITableView *)tableView {
+    return [self getListView];
 }
 
-- (UITableViewCell *)getCellWith:(UITableView *)listView forIndexPath:(NSIndexPath *)indePath {
+- (UITableViewCell *)tableCellWith:(UITableView *)listView forIndexPath:(NSIndexPath *)indePath {
     UITableViewCell *cell = nil;
     DSHCellNibInfo *cellInfo =  [self getCellInfoWith: listView forIndexPath: indePath];
     if (cellInfo.hasNib) {
