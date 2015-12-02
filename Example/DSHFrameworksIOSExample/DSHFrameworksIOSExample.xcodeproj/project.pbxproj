@@ -70,6 +70,7 @@
 		DAA187111C0735F500CE003B /* UILabel+DSHLabelCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA187101C0735F500CE003B /* UILabel+DSHLabelCategory.m */; };
 		DAA187121C0735F500CE003B /* UILabel+DSHLabelCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA187101C0735F500CE003B /* UILabel+DSHLabelCategory.m */; };
 		DAA187131C0735F500CE003B /* UILabel+DSHLabelCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA187101C0735F500CE003B /* UILabel+DSHLabelCategory.m */; };
+		DAE7B2171C0EBF6D00186E2B /* PushHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE7B2161C0EBF6D00186E2B /* PushHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +147,8 @@
 		DAA186E41C07352600CE003B /* DSHHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSHHttpClient.m; sourceTree = "<group>"; };
 		DAA1870F1C0735F500CE003B /* UILabel+DSHLabelCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+DSHLabelCategory.h"; sourceTree = "<group>"; };
 		DAA187101C0735F500CE003B /* UILabel+DSHLabelCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+DSHLabelCategory.m"; sourceTree = "<group>"; };
+		DAE7B2151C0EBF6D00186E2B /* PushHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushHelper.h; sourceTree = "<group>"; };
+		DAE7B2161C0EBF6D00186E2B /* PushHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -313,6 +316,8 @@
 				DAA186E21C07352600CE003B /* DSHDevelopmentHelper.m */,
 				DAA186E31C07352600CE003B /* DSHHttpClient.h */,
 				DAA186E41C07352600CE003B /* DSHHttpClient.m */,
+				DAE7B2151C0EBF6D00186E2B /* PushHelper.h */,
+				DAE7B2161C0EBF6D00186E2B /* PushHelper.m */,
 			);
 			path = Utiltities;
 			sourceTree = "<group>";
@@ -553,6 +558,7 @@
 				DAA187111C0735F500CE003B /* UILabel+DSHLabelCategory.m in Sources */,
 				DAA186E51C07352600CE003B /* UIView+DSHViewCategory.m in Sources */,
 				DAA187001C07352600CE003B /* NSDictionary+DSHDictionaryCategory.m in Sources */,
+				DAE7B2171C0EBF6D00186E2B /* PushHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
