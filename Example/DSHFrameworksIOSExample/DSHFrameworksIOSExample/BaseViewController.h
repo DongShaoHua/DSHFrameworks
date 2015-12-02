@@ -1,5 +1,5 @@
 //
-//  DSHButtonCategoryExampleController.h
+//  BaseViewController.h
 //  DSHFrameworksIOSExample
 //
 //  Created by dongsh on 15/12/2.
@@ -8,6 +8,8 @@
 
 #import "DSHViewController.h"
 
-@interface DSHButtonCategoryExampleController : DSHViewController
+@interface BaseViewController : DSHViewController
+
++ (UITabBarController *)shareRootController;
 
 @end

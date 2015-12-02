@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "DSHApplication.h"
-#import "DSHMainViewController.h"
+#import "BaseViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,9 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    UINavigationController *root = [[UINavigationController alloc] initWithRootViewController: [DSHMainViewController new]];
-    root.navigationBar.translucent = NO;
-    _window = [DSHApplication setupWindowWithRootControoler: root];
+    _window = [DSHApplication setupWindowWithRootControoler: [BaseViewController shareRootController]];
     return YES;
 }
 

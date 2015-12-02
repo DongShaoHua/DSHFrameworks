@@ -11,12 +11,6 @@
 		DA649EF01C0961BA00AD2927 /* logo-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DA649EEF1C0961BA00AD2927 /* logo-icon.png */; };
 		DA925BB91C09F8540066BE2E /* UIWebView+DSHWebViewCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DA925BB81C09F8540066BE2E /* UIWebView+DSHWebViewCategory.m */; };
 		DA93AE641C08A9B600E85BA5 /* UIButton+DSHButtonCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DA93AE631C08A9B600E85BA5 /* UIButton+DSHButtonCategory.m */; };
-		DA93AE681C08B20500E85BA5 /* DSHMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA93AE661C08B20500E85BA5 /* DSHMainViewController.m */; };
-		DA93AE691C08B20500E85BA5 /* DSHMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA93AE661C08B20500E85BA5 /* DSHMainViewController.m */; };
-		DA93AE6A1C08B20500E85BA5 /* DSHMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA93AE661C08B20500E85BA5 /* DSHMainViewController.m */; };
-		DA93AE6B1C08B20500E85BA5 /* DSHMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA93AE671C08B20500E85BA5 /* DSHMainViewController.xib */; };
-		DA93AE6C1C08B20500E85BA5 /* DSHMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA93AE671C08B20500E85BA5 /* DSHMainViewController.xib */; };
-		DA93AE6D1C08B20500E85BA5 /* DSHMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA93AE671C08B20500E85BA5 /* DSHMainViewController.xib */; };
 		DA93AE701C08B59700E85BA5 /* DSHMainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA93AE6F1C08B59700E85BA5 /* DSHMainCell.m */; };
 		DA93AE711C08B59700E85BA5 /* DSHMainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA93AE6F1C08B59700E85BA5 /* DSHMainCell.m */; };
 		DA93AE721C08B59700E85BA5 /* DSHMainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA93AE6F1C08B59700E85BA5 /* DSHMainCell.m */; };
@@ -71,8 +65,17 @@
 		DAA187121C0735F500CE003B /* UILabel+DSHLabelCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA187101C0735F500CE003B /* UILabel+DSHLabelCategory.m */; };
 		DAA187131C0735F500CE003B /* UILabel+DSHLabelCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA187101C0735F500CE003B /* UILabel+DSHLabelCategory.m */; };
 		DAE7B2171C0EBF6D00186E2B /* PushHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE7B2161C0EBF6D00186E2B /* PushHelper.m */; };
-		DAE7B21E1C0EDB8100186E2B /* DSHButtonCategoryExampleController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE7B21C1C0EDB8100186E2B /* DSHButtonCategoryExampleController.m */; };
-		DAE7B21F1C0EDB8100186E2B /* DSHButtonCategoryExampleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAE7B21D1C0EDB8100186E2B /* DSHButtonCategoryExampleController.xib */; };
+		DAE7B2221C0F002400186E2B /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE7B2211C0F002400186E2B /* BaseViewController.m */; };
+		DAE7B2291C0F029800186E2B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE7B2241C0F029800186E2B /* Default-568h@2x.png */; };
+		DAE7B22A1C0F029800186E2B /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE7B2251C0F029800186E2B /* Default-667h@2x.png */; };
+		DAE7B22B1C0F029800186E2B /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE7B2261C0F029800186E2B /* Default-736h@3x.png */; };
+		DAE7B22D1C0F029800186E2B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE7B2281C0F029800186E2B /* Default@2x.png */; };
+		DAE7B2381C0F03F400186E2B /* AppIcon29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE7B22F1C0F03F400186E2B /* AppIcon29x29@2x.png */; };
+		DAE7B2391C0F03F400186E2B /* AppIcon29x29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE7B2301C0F03F400186E2B /* AppIcon29x29@3x.png */; };
+		DAE7B23A1C0F03F400186E2B /* AppIcon40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE7B2311C0F03F400186E2B /* AppIcon40x40@2x.png */; };
+		DAE7B23B1C0F03F400186E2B /* AppIcon40x40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE7B2321C0F03F400186E2B /* AppIcon40x40@3x.png */; };
+		DAE7B23E1C0F03F400186E2B /* AppIcon60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE7B2351C0F03F400186E2B /* AppIcon60x60@2x.png */; };
+		DAE7B23F1C0F03F400186E2B /* AppIcon60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE7B2361C0F03F400186E2B /* AppIcon60x60@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,9 +104,6 @@
 		DA925BB81C09F8540066BE2E /* UIWebView+DSHWebViewCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+DSHWebViewCategory.m"; sourceTree = "<group>"; };
 		DA93AE621C08A9B600E85BA5 /* UIButton+DSHButtonCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+DSHButtonCategory.h"; sourceTree = "<group>"; };
 		DA93AE631C08A9B600E85BA5 /* UIButton+DSHButtonCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DSHButtonCategory.m"; sourceTree = "<group>"; };
-		DA93AE651C08B20500E85BA5 /* DSHMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSHMainViewController.h; sourceTree = "<group>"; };
-		DA93AE661C08B20500E85BA5 /* DSHMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSHMainViewController.m; sourceTree = "<group>"; };
-		DA93AE671C08B20500E85BA5 /* DSHMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DSHMainViewController.xib; sourceTree = "<group>"; };
 		DA93AE6E1C08B59700E85BA5 /* DSHMainCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSHMainCell.h; sourceTree = "<group>"; };
 		DA93AE6F1C08B59700E85BA5 /* DSHMainCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSHMainCell.m; sourceTree = "<group>"; };
 		DAA1863D1C0734DD00CE003B /* DSHFrameworksIOSExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSHFrameworksIOSExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,9 +151,18 @@
 		DAA187101C0735F500CE003B /* UILabel+DSHLabelCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+DSHLabelCategory.m"; sourceTree = "<group>"; };
 		DAE7B2151C0EBF6D00186E2B /* PushHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushHelper.h; sourceTree = "<group>"; };
 		DAE7B2161C0EBF6D00186E2B /* PushHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushHelper.m; sourceTree = "<group>"; };
-		DAE7B21B1C0EDB8100186E2B /* DSHButtonCategoryExampleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSHButtonCategoryExampleController.h; sourceTree = "<group>"; };
-		DAE7B21C1C0EDB8100186E2B /* DSHButtonCategoryExampleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSHButtonCategoryExampleController.m; sourceTree = "<group>"; };
-		DAE7B21D1C0EDB8100186E2B /* DSHButtonCategoryExampleController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DSHButtonCategoryExampleController.xib; sourceTree = "<group>"; };
+		DAE7B2201C0F002400186E2B /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		DAE7B2211C0F002400186E2B /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		DAE7B2241C0F029800186E2B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		DAE7B2251C0F029800186E2B /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
+		DAE7B2261C0F029800186E2B /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
+		DAE7B2281C0F029800186E2B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		DAE7B22F1C0F03F400186E2B /* AppIcon29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon29x29@2x.png"; sourceTree = "<group>"; };
+		DAE7B2301C0F03F400186E2B /* AppIcon29x29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon29x29@3x.png"; sourceTree = "<group>"; };
+		DAE7B2311C0F03F400186E2B /* AppIcon40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon40x40@2x.png"; sourceTree = "<group>"; };
+		DAE7B2321C0F03F400186E2B /* AppIcon40x40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon40x40@3x.png"; sourceTree = "<group>"; };
+		DAE7B2351C0F03F400186E2B /* AppIcon60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon60x60@2x.png"; sourceTree = "<group>"; };
+		DAE7B2361C0F03F400186E2B /* AppIcon60x60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon60x60@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,20 +217,17 @@
 		DAA1863F1C0734DD00CE003B /* DSHFrameworksIOSExample */ = {
 			isa = PBXGroup;
 			children = (
-				DAE7B21B1C0EDB8100186E2B /* DSHButtonCategoryExampleController.h */,
-				DAE7B21C1C0EDB8100186E2B /* DSHButtonCategoryExampleController.m */,
-				DAE7B21D1C0EDB8100186E2B /* DSHButtonCategoryExampleController.xib */,
+				DAE7B2231C0F023E00186E2B /* Res */,
 				DA649EEF1C0961BA00AD2927 /* logo-icon.png */,
 				DAA186431C0734DD00CE003B /* AppDelegate.h */,
 				DAA186441C0734DD00CE003B /* AppDelegate.m */,
 				DAA1864C1C0734DD00CE003B /* Assets.xcassets */,
 				DAA186511C0734DD00CE003B /* Info.plist */,
 				DAA186401C0734DD00CE003B /* Supporting Files */,
-				DA93AE651C08B20500E85BA5 /* DSHMainViewController.h */,
-				DA93AE661C08B20500E85BA5 /* DSHMainViewController.m */,
-				DA93AE671C08B20500E85BA5 /* DSHMainViewController.xib */,
 				DA93AE6E1C08B59700E85BA5 /* DSHMainCell.h */,
 				DA93AE6F1C08B59700E85BA5 /* DSHMainCell.m */,
+				DAE7B2201C0F002400186E2B /* BaseViewController.h */,
+				DAE7B2211C0F002400186E2B /* BaseViewController.m */,
 			);
 			path = DSHFrameworksIOSExample;
 			sourceTree = "<group>";
@@ -343,6 +349,23 @@
 				DAA186E01C07352600CE003B /* NSString+DSHStringCategory.m */,
 			);
 			path = Categories;
+			sourceTree = "<group>";
+		};
+		DAE7B2231C0F023E00186E2B /* Res */ = {
+			isa = PBXGroup;
+			children = (
+				DAE7B22F1C0F03F400186E2B /* AppIcon29x29@2x.png */,
+				DAE7B2301C0F03F400186E2B /* AppIcon29x29@3x.png */,
+				DAE7B2311C0F03F400186E2B /* AppIcon40x40@2x.png */,
+				DAE7B2321C0F03F400186E2B /* AppIcon40x40@3x.png */,
+				DAE7B2351C0F03F400186E2B /* AppIcon60x60@2x.png */,
+				DAE7B2361C0F03F400186E2B /* AppIcon60x60@3x.png */,
+				DAE7B2241C0F029800186E2B /* Default-568h@2x.png */,
+				DAE7B2251C0F029800186E2B /* Default-667h@2x.png */,
+				DAE7B2261C0F029800186E2B /* Default-736h@3x.png */,
+				DAE7B2281C0F029800186E2B /* Default@2x.png */,
+			);
+			path = Res;
 			sourceTree = "<group>";
 		};
 		F356D24B79A01CE5DA83A3A5 /* Frameworks */ = {
@@ -468,10 +491,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAE7B21F1C0EDB8100186E2B /* DSHButtonCategoryExampleController.xib in Resources */,
+				DAE7B2381C0F03F400186E2B /* AppIcon29x29@2x.png in Resources */,
+				DAE7B2391C0F03F400186E2B /* AppIcon29x29@3x.png in Resources */,
 				DAA1864D1C0734DD00CE003B /* Assets.xcassets in Resources */,
+				DAE7B23B1C0F03F400186E2B /* AppIcon40x40@3x.png in Resources */,
+				DAE7B22A1C0F029800186E2B /* Default-667h@2x.png in Resources */,
+				DAE7B22B1C0F029800186E2B /* Default-736h@3x.png in Resources */,
 				DA649EF01C0961BA00AD2927 /* logo-icon.png in Resources */,
-				DA93AE6B1C08B20500E85BA5 /* DSHMainViewController.xib in Resources */,
+				DAE7B23A1C0F03F400186E2B /* AppIcon40x40@2x.png in Resources */,
+				DAE7B23E1C0F03F400186E2B /* AppIcon60x60@2x.png in Resources */,
+				DAE7B22D1C0F029800186E2B /* Default@2x.png in Resources */,
+				DAE7B23F1C0F03F400186E2B /* AppIcon60x60@3x.png in Resources */,
+				DAE7B2291C0F029800186E2B /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,7 +510,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA93AE6C1C08B20500E85BA5 /* DSHMainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,7 +517,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA93AE6D1C08B20500E85BA5 /* DSHMainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,7 +581,6 @@
 				DAA186E81C07352600CE003B /* DSHCollectionViewController.m in Sources */,
 				DAA187031C07352600CE003B /* NSObject+DSHObjectCategory.m in Sources */,
 				DA93AE641C08A9B600E85BA5 /* UIButton+DSHButtonCategory.m in Sources */,
-				DAE7B21E1C0EDB8100186E2B /* DSHButtonCategoryExampleController.m in Sources */,
 				DAA186EB1C07352600CE003B /* DSHListViewController.m in Sources */,
 				DAA186451C0734DD00CE003B /* AppDelegate.m in Sources */,
 				DAA1870C1C07352600CE003B /* DSHHttpClient.m in Sources */,
@@ -560,7 +588,7 @@
 				DAA186F11C07352600CE003B /* DSHViewController.m in Sources */,
 				DAA186F41C07352600CE003B /* DSHApplication.m in Sources */,
 				DAA187061C07352600CE003B /* NSString+DSHStringCategory.m in Sources */,
-				DA93AE681C08B20500E85BA5 /* DSHMainViewController.m in Sources */,
+				DAE7B2221C0F002400186E2B /* BaseViewController.m in Sources */,
 				DAA186EE1C07352600CE003B /* DSHTableViewController.m in Sources */,
 				DAA186421C0734DD00CE003B /* main.m in Sources */,
 				DAA186FA1C07352600CE003B /* DSHTableViewCell.m in Sources */,
@@ -581,7 +609,6 @@
 				DAA187041C07352600CE003B /* NSObject+DSHObjectCategory.m in Sources */,
 				DAA186EF1C07352600CE003B /* DSHTableViewController.m in Sources */,
 				DAA186FB1C07352600CE003B /* DSHTableViewCell.m in Sources */,
-				DA93AE691C08B20500E85BA5 /* DSHMainViewController.m in Sources */,
 				DA93AE711C08B59700E85BA5 /* DSHMainCell.m in Sources */,
 				DAA186FE1C07352600CE003B /* NSData+DSHDataCategory.m in Sources */,
 				DAA1870D1C07352600CE003B /* DSHHttpClient.m in Sources */,
@@ -606,7 +633,6 @@
 				DAA187051C07352600CE003B /* NSObject+DSHObjectCategory.m in Sources */,
 				DAA186F01C07352600CE003B /* DSHTableViewController.m in Sources */,
 				DAA186FC1C07352600CE003B /* DSHTableViewCell.m in Sources */,
-				DA93AE6A1C08B20500E85BA5 /* DSHMainViewController.m in Sources */,
 				DA93AE721C08B59700E85BA5 /* DSHMainCell.m in Sources */,
 				DAA186FF1C07352600CE003B /* NSData+DSHDataCategory.m in Sources */,
 				DAA1870E1C07352600CE003B /* DSHHttpClient.m in Sources */,
@@ -723,6 +749,7 @@
 			baseConfigurationReference = 8F88E798234419D80B5ACE2A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DSHFrameworksIOSExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -736,6 +763,7 @@
 			baseConfigurationReference = B95130E150CB13DDD3B7EB5B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DSHFrameworksIOSExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
