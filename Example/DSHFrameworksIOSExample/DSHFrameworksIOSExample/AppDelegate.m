@@ -19,7 +19,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    _window = [DSHApplication setupWindowWithRootControoler: [DSHMainViewController new]];
+    UINavigationController *root = [[UINavigationController alloc] initWithRootViewController: [DSHMainViewController new]];
+    root.navigationBar.translucent = NO;
+    _window = [DSHApplication setupWindowWithRootControoler: root];
     return YES;
 }
 

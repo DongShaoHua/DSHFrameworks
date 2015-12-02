@@ -11,9 +11,9 @@
 #import "UIButton+DSHButtonCategory.h"
 #import "UIView+DSHViewCategory.h"
 
-@interface DSHMainViewController ()
+#import "DSHButtonCategoryExampleController.h"
 
-@property (weak, nonatomic) IBOutlet UIButton *button;
+@interface DSHMainViewController ()
 
 @end
 
@@ -22,12 +22,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.data = [NSMutableArray arrayWithArray: @[ @"What's your name?", @"My name is XXXX.", @"How old are you?" ]];
+    self.title = @"案列演示";
+    
+    [self.data addObjectsFromArray: @[ @"DSHButtonCategory 扩展演示"]];
     
     [DSHMainCell registerCellClassForTable: self.tableView];
-    [self.button clipToCircle];
-    
-    //[DSHMainCell registerCellNibForTable: self.tableView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,13 +34,29 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear: animated];
+}
+
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
-    [_button setButtonContentLayout: DSHButtonContentLayoutStyleCenterLeftTitleRightImage];
 }
 
 - (DSHCellNibInfo *)getCellInfoWith:(UIView *)view forIndexPath:(NSIndexPath *)indexPath {
     return [DSHCellNibInfo infoWithCellId: [DSHMainCell getCellId] andHasNib: YES allocCellBlock: nil];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    switch (indexPath.row) {
+        case 0: {
+            DSHButtonCategoryExampleController *controller = [DSHButtonCategoryExampleController new];
+            controller.title = self.data[indexPath.row];
+            [self showViewController: controller];
+            break;
+        }
+        default:
+            break;
+    }
 }
 
 @end

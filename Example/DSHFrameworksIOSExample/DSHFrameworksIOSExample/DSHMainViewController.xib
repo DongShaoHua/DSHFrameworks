@@ -7,7 +7,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DSHMainViewController">
             <connections>
-                <outlet property="button" destination="RRz-Ng-pXY" id="qu0-mB-zef"/>
                 <outlet property="listView" destination="ZXw-9D-JCP" id="7Zp-Hw-Ra4"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -26,17 +25,6 @@
                         <outlet property="delegate" destination="-1" id="OCI-PJ-NMZ"/>
                     </connections>
                 </tableView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRz-Ng-pXY">
-                    <rect key="frame" x="20" y="100" width="280" height="80"/>
-                    <animations/>
-                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="80" id="bf3-p8-wcf"/>
-                    </constraints>
-                    <state key="normal" title="有道云笔记" image="logo-icon.png">
-                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    </state>
-                </button>
             </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -45,14 +33,8 @@
                 <constraint firstAttribute="bottom" secondItem="ZXw-9D-JCP" secondAttribute="bottom" id="HRS-rs-JPO"/>
                 <constraint firstItem="ZXw-9D-JCP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="K0L-Yf-2Ug"/>
                 <constraint firstItem="ZXw-9D-JCP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NK8-zr-Elt"/>
-                <constraint firstItem="RRz-Ng-pXY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="TRa-G7-vsy"/>
-                <constraint firstItem="RRz-Ng-pXY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="lRz-Ux-Rig"/>
-                <constraint firstAttribute="trailing" secondItem="RRz-Ng-pXY" secondAttribute="trailing" constant="20" id="sHQ-Ej-cQZ"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>
-    <resources>
-        <image name="logo-icon.png" width="30" height="30"/>
-    </resources>
 </document>

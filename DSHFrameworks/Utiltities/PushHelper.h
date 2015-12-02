@@ -10,6 +10,6 @@
 
 @interface PushHelper : NSObject
 
-+ (void)registerPush:(UIApplication *)application launchOption:(NSDictionary *)dictionary;
++ (void)registerPush:(UIApplication *)application;
 
 @end

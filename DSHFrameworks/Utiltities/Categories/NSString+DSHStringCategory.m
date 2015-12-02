@@ -34,7 +34,7 @@
 - (NSString *)toMD5 {
     const char *cStr = [self UTF8String];
     unsigned char result[16];
-    CC_MD5( cStr, (unsigned int)strlen(cStr), result );
+    CC_MD5(cStr, (unsigned int)strlen(cStr), result );
     NSMutableString *md5String = [NSMutableString string];
     for (int i = 0; i < 16; ++i) {
         [md5String appendFormat: @"%02X", result[i]];

@@ -11,7 +11,7 @@
 
 @implementation PushHelper
 
-+ (void)registerPush:(UIApplication *)application launchOption:(NSDictionary *)dictionary {
++ (void)registerPush:(UIApplication *)application {
     if (8.0 <= [DSHDevelopmentHelper getIOSVersion]) {
         UIUserNotificationSettings *setting = [UIUserNotificationSettings settingsForTypes: UIUserNotificationTypeAlert | UIUserNotificationTypeBadge | UIUserNotificationTypeSound categories: nil];
         [application registerUserNotificationSettings: setting];
