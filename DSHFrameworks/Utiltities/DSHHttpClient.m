@@ -74,10 +74,6 @@ static NSTimeInterval default_timeout = 15;
 }
 
 - (AFHTTPRequestOperation *)GET:(NSString *)address responseType:(RESPONSE_BODY_TYPE)responseType completed:(ResponseCompleted)completed {
-    [DSHDevelopmentHelper runNotInRelease: ^{
-        NSLog(@"\n===============================\naddress: %@", address);
-    }];
-    
     if (completed) {
         AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
         manager.requestSerializer.timeoutInterval = self.timeout;
@@ -108,11 +104,6 @@ static NSTimeInterval default_timeout = 15;
 }
 
 - (AFHTTPRequestOperation *)POST:(NSString *)address parameters:(NSDictionary *)parameters responseType:(RESPONSE_BODY_TYPE)responseType completed:(ResponseCompleted)completed {
-    
-    [DSHDevelopmentHelper runNotInRelease:^{
-        NSLog(@"\n===============================\naddress: %@\n======================\nparameter: %@", address, parameters);
-    }];
-    
     if (completed) {
         AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
         manager.requestSerializer.timeoutInterval = self.timeout;

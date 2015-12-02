@@ -9,8 +9,36 @@
 #import "NSObject+DSHObjectCategory.h"
 #import <objc/runtime.h>
 #import "NSString+DSHStringCategory.h"
+#import "DSHDevelopmentHelper.h"
+#import "NSDictionary+DSHDictionaryCategory.h"
 
 @implementation NSObject (DSHObjectCategory)
+
+- (void)saveAllPropertyValueAtLocal:(NSString *)key {
+    NSArray<NSString *> *properties = [NSObject getAllProperty];
+    if (properties && properties.count > 0) {
+        NSMutableDictionary *info = [NSMutableDictionary dictionary];
+        for (NSString *property in properties) {
+            id val = [self valueForKey: property];
+            if (val && !_kind_of_(val, NSNull)) {
+                [info setValue: val forKey: property];
+            }
+        }
+        
+        if (info.count > 0) {
+            NSString *jsonString = safe_turn_dictionary_to_jsonstring(info);
+            if (jsonString) {
+                NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+                [defaults setValue: jsonString forKey: key];
+            }
+        }
+    }
+}
+
++ (void)clearAllPropertyValueAtLocal:(NSString *)key {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults removeObjectForKey: key];
+}
 
 + (NSArray<NSString *> *)getAllProperty {
     objc_property_t *properties = NULL;

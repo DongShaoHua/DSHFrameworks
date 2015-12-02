@@ -75,6 +75,12 @@ extern const CGSize IPHONE_SCREEN_W_414_H_736;
 + (void)runInBackgroundThread:(dispatch_block_t)block;
 
 /**
+ 以特定级别在后台现成中执行block
+ protity -> DISPATCH_QUEUE_PRIORITY_DEFAULT | DISPATCH_QUEUE_PRIORITY_HIGH ...
+ */
++ (void)runInBackgroundThread:(dispatch_block_t)block priority:(int)protity;
+
+/**
  仅在真机的情况下，才执行该代码
  */
 + (void)runNotInSimulator:(dispatch_block_t)block;
@@ -83,11 +89,5 @@ extern const CGSize IPHONE_SCREEN_W_414_H_736;
  仅在debug模式下运行，release模式下不会执行
  */
 + (void)runNotInRelease:(dispatch_block_t)block;
-
-/**
- 以特定级别在后台现成中执行block
- protity -> DISPATCH_QUEUE_PRIORITY_DEFAULT | DISPATCH_QUEUE_PRIORITY_HIGH ...
- */
-+ (void)runInBackgroundThread:(dispatch_block_t)block priority:(int)protity;
 
 @end

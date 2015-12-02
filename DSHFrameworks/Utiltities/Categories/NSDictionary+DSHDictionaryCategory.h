@@ -21,6 +21,9 @@
 #define safe_turn_dictionary_to_data_with_error(parameter, error) \
     _kind_of_dictionary(parameter) ? [parameter toData: error] : nil
 
+#define safe_turn_dictionary_to_jsonstring(parameter) \
+    _kind_of_dictionary(parameter) ? [parameter toJSONString] : nil
+
 @interface NSDictionary (DSHDictionaryCategory)
 
 /**
@@ -42,6 +45,11 @@
  将当前对象转换为NSData类型，如果转换失败，错误信息包含在参数error中
  */
 - (NSData *)toData:(NSError **)error;
+
+/**
+ 将当前字典转化为JSON字符串
+ */
+- (NSString *)toJSONString;
 
 /**
  ============= Just for debug ============

@@ -10,6 +10,9 @@
 
 @interface NSObject (DSHObjectCategory)
 
+- (void)saveAllPropertyValueAtLocal:(NSString *)key;
+
++ (void)clearAllPropertyValueAtLocal:(NSString *)key;
 + (NSArray<NSString *> *)getAllProperty;
 
 @end

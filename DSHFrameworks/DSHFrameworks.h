@@ -15,6 +15,7 @@
 
 #import "UIView+DSHViewCategory.h"
 #import "UILabel+DSHLabelCategory.h"
+#import "UIButton+DSHButtonCategory.h"
 
 #import "DSHHttpClient.h"
 

@@ -29,6 +29,15 @@
     return [NSJSONSerialization dataWithJSONObject: self options:NSJSONWritingPrettyPrinted error: error];
 }
 
+- (NSString *)toJSONString {
+    NSData *data = [self toData];
+    if (data && data.length > 0) {
+        return [[NSString alloc] initWithData: data encoding: NSUTF8StringEncoding];
+    } else {
+        return nil;
+    }
+}
+
 - (id)toModel:(Class)cls {
     id _model = [cls new];
     NSArray *modelProperties = [cls getAllProperty];

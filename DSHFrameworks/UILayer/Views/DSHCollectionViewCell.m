@@ -18,6 +18,10 @@
     return [[self class] description];
 }
 
++ (void)registerCellClassForCollectionView:(UICollectionView *)collectionView {
+    [collectionView registerClass: self.class forCellWithReuseIdentifier: [self getCellId]];
+}
+
 + (void)registerCellNibForCollectionView:(UICollectionView *)collectionView {
     [self registerCellNibForCollectionView: collectionView nibName: [self getCellId]];
 }
