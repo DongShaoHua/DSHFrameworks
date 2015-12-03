@@ -30,8 +30,17 @@ extern NSString * const DSHListDefaultCellId;
 
 @interface DSHCellNibInfo : NSObject
 
+/**
+ 该cell的重用Id
+ */
 @property (strong, nonatomic) NSString *cellId;
+/**
+ 该cell是否注册了nib
+ */
 @property (assign, nonatomic) BOOL hasNib;
+/**
+ 该cell的构造代码快
+ */
 @property (strong, nonatomic) UITableViewCell * (^allocCellBlock)(NSString *cellId);
 
 - (instancetype)initWithCellId:(NSString *)cellId andHasNib:(BOOL)hasNib allocCellBlock:(UITableViewCell * (^)(NSString *cellId))block;
@@ -42,20 +51,32 @@ extern NSString * const DSHListDefaultCellId;
 
 @end
 
-@interface DSHListViewController : DSHViewController
+@interface DSHListViewController : DSHViewController<UICollectionViewDataSource, UICollectionViewDelegate, UITableViewDelegate, UITableViewDataSource>
 
+/**
+ 列表的数据
+ */
 @property (strong, nonatomic) NSMutableArray *data;
+
+/**
+ 列表的页码信息
+ */
 @property (assign, nonatomic) int page;
 
-#pragma mark ====== 列表配置 =======
+#pragma mark ====== 列表信息配置 =======
 /**
  获取列表视图
  */
-- (__kindof id)getListView;
+- (__kindof UIView *)getListView;
 /**
- 获取Cell的信息，返回值的key代表该cell的id。返回值的value代表该id是否注册了nib
+ 获取Cell的信息，
+ 设置该Cell是否为list注册了Nib文件，
+ 设置该cell重用id，
+ 设置该cell的自定义构造代码快
  */
 - (DSHCellNibInfo *)getCellInfoWith:(UIView *)view forIndexPath:(NSIndexPath *)indexPath;
+
+#pragma mark ========= 列表相关方法 ==========
 /**
  返回列表视图的数据个数
  */
@@ -63,7 +84,11 @@ extern NSString * const DSHListDefaultCellId;
 /**
  返回列表指定index处的cell
  */
-- (__kindof UIView *)getCellWith:(__kindof  UIView *)listView forIndexPath:(NSIndexPath *)indePath;
+- (__kindof UIView *)listCell:(__kindof UIView *)listView forIndexPath:(NSIndexPath *)indePath;
+/**
+ 获取指定list特定列的信息
+ */
+- (__kindof id)listData:(__kindof UIView *)listView forIndexPath:(NSIndexPath *)indexPath;
 /**
  配置列表指定index处的cell信息
  */

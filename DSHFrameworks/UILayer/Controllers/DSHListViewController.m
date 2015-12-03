@@ -16,6 +16,10 @@ NSString * const DSHListDefaultCellId = @"DSH_List_Default_Cell_Id";
 
 @property (weak, nonatomic) IBOutlet UIScrollView *listView;
 
+- (UITableViewCell *)tableCellWith:(__kindof UITableView *)listView forIndexPath:(NSIndexPath *)indePath;
+
+- (UICollectionViewCell *)collectionViewCellWith:(__kindof UICollectionView *)listView forIndexPath:(NSIndexPath *)indePath;
+
 @end
 
 @implementation DSHCellNibInfo
@@ -73,7 +77,13 @@ NSString * const DSHListDefaultCellId = @"DSH_List_Default_Cell_Id";
     // Dispose of any resources that can be recreated.
 }
 
-- (__kindof id)getListView {
+- (void)dealloc {
+    [_data removeAllObjects];
+    _data = nil;
+}
+
+#pragma mark ====== 列表信息配置 ======
+- (__kindof UIView *)getListView {
     return _listView;
 }
 
@@ -81,29 +91,88 @@ NSString * const DSHListDefaultCellId = @"DSH_List_Default_Cell_Id";
     return [DSHCellNibInfo new];
 }
 
+#pragma mark ========= 列表相关方法 ==========
 - (NSInteger)getListDataCount:(UIView *)view forSection:(NSInteger)section {
-    return self.data.count;
+    return _data.count;
 }
 
-- (UIView *)getCellWith:(UIView *)listView forIndexPath:(NSIndexPath *)indePath {
-    return nil;
+- (__kindof UIView *)listCell:(__kindof UIView *)listView forIndexPath:(NSIndexPath *)indePath {
+    if (_kind_of_(listView, UITableView)) {
+        return [self tableCellWith: listView forIndexPath: indePath];
+    } else {
+        if (_kind_of_(listView, UICollectionView)) {
+            return [self collectionViewCellWith: listView forIndexPath: indePath];
+        } else {
+            return nil;
+        }
+    }
+}
+
+- (__kindof id)listData:(__kindof UIView *)listView forIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row < _data.count) {
+        return _data[indexPath.row];
+    } else {
+        return nil;
+    }
 }
 
 - (void)configRowDetail:(UIView *)listView cell:(UIView *)cell forIndexPath:(NSIndexPath *)indexPath {
-    if ([listView isEqual: _listView]) {
-        id data = nil;
-        if (_data.count > indexPath.row) {
-            data = _data[indexPath.row];
-        }
-        
-        if (_kind_of_(cell, DSHTableViewCell)) {
-            [((DSHTableViewCell *)cell) setCellDetail: data];
-        } else {
-            if (_kind_of_(cell, DSHCollectionViewCell)) {
-                [((DSHCollectionViewCell *)cell) setCellDetail: data];
-            }
+    id data = [self listData: listView forIndexPath: indexPath];
+    if (_kind_of_(cell, DSHTableViewCell)) {
+        [((DSHTableViewCell *)cell) setCellDetail: data forIndexPath: indexPath];
+    } else {
+        if (_kind_of_(cell, DSHCollectionViewCell)) {
+            [((DSHCollectionViewCell *)cell) setCellDetail: data forIndexPath: indexPath];
         }
     }
+}
+
+#pragma mark ======== table delegate =========
+
+- (UITableViewCell *)tableCellWith:(__kindof UITableView *)listView forIndexPath:(NSIndexPath *)indePath {
+    UITableViewCell *cell = nil;
+    DSHCellNibInfo *cellInfo =  [self getCellInfoWith: listView forIndexPath: indePath];
+    if (cellInfo.hasNib) {
+        cell = cellInfo.allocCellBlock ? cellInfo.allocCellBlock(cellInfo.cellId) : [listView dequeueReusableCellWithIdentifier: cellInfo.cellId forIndexPath: indePath];
+    } else {
+        cell = [listView dequeueReusableCellWithIdentifier: cellInfo.cellId];
+        if (!cell) {
+            cell = cellInfo.allocCellBlock ? cellInfo.allocCellBlock(cellInfo.cellId) : [[UITableViewCell alloc] initWithStyle: UITableViewCellStyleDefault reuseIdentifier: cellInfo.cellId];
+        }
+    }
+    return cell;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [self getListDataCount: tableView forSection: section];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [self listCell: tableView forIndexPath: indexPath];
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self configRowDetail: tableView cell: cell forIndexPath: indexPath];
+}
+
+#pragma mark ======== collection delegate =========
+- (UICollectionViewCell *)collectionViewCellWith:(__kindof UICollectionView *)listView forIndexPath:(NSIndexPath *)indePath {
+    DSHCellNibInfo *cellInfo = [self getCellInfoWith: listView forIndexPath: indePath];
+    return [listView dequeueReusableCellWithReuseIdentifier: cellInfo.cellId forIndexPath: indePath];
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return [self getListDataCount: collectionView forSection: section];
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    UICollectionViewCell *cell = [self listCell: collectionView forIndexPath: indexPath];
+    return cell;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath {
+    [self configRowDetail: collectionView cell: cell forIndexPath: indexPath];
 }
 
 - (__kindof id)loadListData {

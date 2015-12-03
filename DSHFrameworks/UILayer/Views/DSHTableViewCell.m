@@ -10,7 +10,7 @@
 
 @implementation DSHTableViewCell
 
-- (void)setCellDetail:(__kindof id)data {
+- (void)setCellDetail:(__kindof id)data forIndexPath:(NSIndexPath *)indexPath {
     
 }
 

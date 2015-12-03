@@ -12,6 +12,7 @@
 #import "UIImage+DSHImageCategory.h"
 
 #import "HomeController.h"
+#import "TestViewController.h"
 
 @interface BaseViewController ()
 
@@ -46,7 +47,7 @@
     NSMutableArray *controllers = [NSMutableArray arrayWithCapacity: 5];
     
     addTabItemBlock(controllers, [HomeController new], @"首页", @"tabBar_home_normal.png", @"tabBar_home_press.png");
-    addTabItemBlock(controllers, [BaseViewController new], @"分类", @"tabBar_category_normal.png", @"tabBar_category_press.png");
+    addTabItemBlock(controllers, [TestViewController new], @"分类", @"tabBar_category_normal.png", @"tabBar_category_press.png");
     addTabItemBlock(controllers, [BaseViewController new], @"发现", @"tabBar_find_normal.png", @"tabBar_find_press.png");
     addTabItemBlock(controllers, [BaseViewController new], @"购物车", @"tabBar_cart_normal.png", @"tabBar_cart_press.png");
     addTabItemBlock(controllers, [BaseViewController new], @"我的", @"tabBar_myJD_normal.png", @"tabBar_myJD_press.png");

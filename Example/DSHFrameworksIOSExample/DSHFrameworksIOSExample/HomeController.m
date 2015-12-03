@@ -7,7 +7,6 @@
 //
 
 #import "HomeController.h"
-#import "DSHListViewController+DSHTableViewCategory.h"
 #import "DSHMainCell.h"
 
 @interface HomeController ()
@@ -20,7 +19,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.navigationController.navigationBarHidden = YES;
-    [DSHMainCell registerCellClassForTable: self.tableView];
+    [DSHMainCell registerCellClassForTable: [self getListView]];
     [self.data addObjectsFromArray: @[@"1", @"2", @"3"]];
 }
 

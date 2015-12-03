@@ -13,7 +13,7 @@
 /**
  设置Cell的详细信息
  */
-- (void)setCellDetail:(__kindof id)data;
+- (void)setCellDetail:(__kindof id)data forIndexPath:(NSIndexPath *)indexPath;
 
 /**
  获取该Cell的Id，默认情况下以类名称做id

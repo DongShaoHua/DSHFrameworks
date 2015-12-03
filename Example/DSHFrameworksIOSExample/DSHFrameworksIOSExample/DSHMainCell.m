@@ -11,12 +11,11 @@
 
 @implementation DSHMainCell
 
-- (void)setCellDetail:(__kindof id)data {
-    static int number = 1;
+- (void)setCellDetail:(__kindof id)data forIndexPath:(NSIndexPath *)indexPath {
     if (data) {
         self.textLabel.text = data;
     } else {
-        self.textLabel.text = stringformat(@"Label %02d %2d", number++, number);
+        self.textLabel.text = stringformat(@"Label %02ld %2ld", indexPath.row, indexPath.row);
     }
 }
 

@@ -74,9 +74,10 @@
 		DAA8A5D91C0F34870023F934 /* HomeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAA8A5D71C0F34870023F934 /* HomeController.xib */; };
 		DAA8A5DD1C0F3C5F0023F934 /* HomeMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA8A5DB1C0F3C5F0023F934 /* HomeMenuCell.m */; };
 		DAA8A5DE1C0F3C5F0023F934 /* HomeMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAA8A5DC1C0F3C5F0023F934 /* HomeMenuCell.xib */; };
-		DAA8A5E51C0F3DAC0023F934 /* DSHListViewController+DSHCollectionViewCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA8A5E41C0F3DAC0023F934 /* DSHListViewController+DSHCollectionViewCategory.m */; };
-		DAA8A5E81C0F3E550023F934 /* DSHListViewController+DSHTableViewCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA8A5E71C0F3E550023F934 /* DSHListViewController+DSHTableViewCategory.m */; };
-		DADADD3D1C0FD91500753758 /* DSHListViewController+DSHTableAndCollectionCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DADADD3C1C0FD91500753758 /* DSHListViewController+DSHTableAndCollectionCategory.m */; };
+		DADADD421C0FDF6900753758 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DADADD401C0FDF6900753758 /* TestViewController.m */; };
+		DADADD431C0FDF6900753758 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DADADD411C0FDF6900753758 /* TestViewController.xib */; };
+		DADADD471C0FDFB600753758 /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DADADD451C0FDFB600753758 /* MyCollectionViewCell.m */; };
+		DADADD481C0FDFB600753758 /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DADADD461C0FDFB600753758 /* MyCollectionViewCell.xib */; };
 		DAE7B2171C0EBF6D00186E2B /* PushHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE7B2161C0EBF6D00186E2B /* PushHelper.m */; };
 		DAE7B2221C0F002400186E2B /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE7B2211C0F002400186E2B /* BaseViewController.m */; };
 		DAE7B2291C0F029800186E2B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE7B2241C0F029800186E2B /* Default-568h@2x.png */; };
@@ -178,12 +179,12 @@
 		DAA8A5DA1C0F3C5F0023F934 /* HomeMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeMenuCell.h; sourceTree = "<group>"; };
 		DAA8A5DB1C0F3C5F0023F934 /* HomeMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeMenuCell.m; sourceTree = "<group>"; };
 		DAA8A5DC1C0F3C5F0023F934 /* HomeMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeMenuCell.xib; sourceTree = "<group>"; };
-		DAA8A5E31C0F3DAC0023F934 /* DSHListViewController+DSHCollectionViewCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DSHListViewController+DSHCollectionViewCategory.h"; sourceTree = "<group>"; };
-		DAA8A5E41C0F3DAC0023F934 /* DSHListViewController+DSHCollectionViewCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DSHListViewController+DSHCollectionViewCategory.m"; sourceTree = "<group>"; };
-		DAA8A5E61C0F3E550023F934 /* DSHListViewController+DSHTableViewCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DSHListViewController+DSHTableViewCategory.h"; sourceTree = "<group>"; };
-		DAA8A5E71C0F3E550023F934 /* DSHListViewController+DSHTableViewCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DSHListViewController+DSHTableViewCategory.m"; sourceTree = "<group>"; };
-		DADADD3B1C0FD91500753758 /* DSHListViewController+DSHTableAndCollectionCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DSHListViewController+DSHTableAndCollectionCategory.h"; sourceTree = "<group>"; };
-		DADADD3C1C0FD91500753758 /* DSHListViewController+DSHTableAndCollectionCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DSHListViewController+DSHTableAndCollectionCategory.m"; sourceTree = "<group>"; };
+		DADADD3F1C0FDF6900753758 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		DADADD401C0FDF6900753758 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		DADADD411C0FDF6900753758 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		DADADD441C0FDFB600753758 /* MyCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewCell.h; sourceTree = "<group>"; };
+		DADADD451C0FDFB600753758 /* MyCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewCell.m; sourceTree = "<group>"; };
+		DADADD461C0FDFB600753758 /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
 		DAE7B2151C0EBF6D00186E2B /* PushHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushHelper.h; sourceTree = "<group>"; };
 		DAE7B2161C0EBF6D00186E2B /* PushHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushHelper.m; sourceTree = "<group>"; };
 		DAE7B2201C0F002400186E2B /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -269,6 +270,12 @@
 				DAA8A5DA1C0F3C5F0023F934 /* HomeMenuCell.h */,
 				DAA8A5DB1C0F3C5F0023F934 /* HomeMenuCell.m */,
 				DAA8A5DC1C0F3C5F0023F934 /* HomeMenuCell.xib */,
+				DADADD3F1C0FDF6900753758 /* TestViewController.h */,
+				DADADD401C0FDF6900753758 /* TestViewController.m */,
+				DADADD411C0FDF6900753758 /* TestViewController.xib */,
+				DADADD441C0FDFB600753758 /* MyCollectionViewCell.h */,
+				DADADD451C0FDFB600753758 /* MyCollectionViewCell.m */,
+				DADADD461C0FDFB600753758 /* MyCollectionViewCell.xib */,
 			);
 			path = DSHFrameworksIOSExample;
 			sourceTree = "<group>";
@@ -453,12 +460,6 @@
 		DADADD3E1C0FD91A00753758 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				DAA8A5E31C0F3DAC0023F934 /* DSHListViewController+DSHCollectionViewCategory.h */,
-				DAA8A5E41C0F3DAC0023F934 /* DSHListViewController+DSHCollectionViewCategory.m */,
-				DAA8A5E61C0F3E550023F934 /* DSHListViewController+DSHTableViewCategory.h */,
-				DAA8A5E71C0F3E550023F934 /* DSHListViewController+DSHTableViewCategory.m */,
-				DADADD3B1C0FD91500753758 /* DSHListViewController+DSHTableAndCollectionCategory.h */,
-				DADADD3C1C0FD91500753758 /* DSHListViewController+DSHTableAndCollectionCategory.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -602,6 +603,8 @@
 				DAA1864D1C0734DD00CE003B /* Assets.xcassets in Resources */,
 				DAE7B23B1C0F03F400186E2B /* AppIcon40x40@3x.png in Resources */,
 				DAA8A5C61C0F31D90023F934 /* tabBar_cart_normal@2x.png in Resources */,
+				DADADD481C0FDFB600753758 /* MyCollectionViewCell.xib in Resources */,
+				DADADD431C0FDF6900753758 /* TestViewController.xib in Resources */,
 				DAE7B22A1C0F029800186E2B /* Default-667h@2x.png in Resources */,
 				DAA8A5D91C0F34870023F934 /* HomeController.xib in Resources */,
 				DAA8A5CA1C0F31D90023F934 /* tabBar_find_normal@2x.png in Resources */,
@@ -694,14 +697,15 @@
 			files = (
 				DAA186FD1C07352600CE003B /* NSData+DSHDataCategory.m in Sources */,
 				DAA186F71C07352600CE003B /* DSHCollectionViewCell.m in Sources */,
+				DADADD421C0FDF6900753758 /* TestViewController.m in Sources */,
 				DAA187091C07352600CE003B /* DSHDevelopmentHelper.m in Sources */,
 				DAA187031C07352600CE003B /* NSObject+DSHObjectCategory.m in Sources */,
 				DA93AE641C08A9B600E85BA5 /* UIButton+DSHButtonCategory.m in Sources */,
 				DAA186EB1C07352600CE003B /* DSHListViewController.m in Sources */,
-				DADADD3D1C0FD91500753758 /* DSHListViewController+DSHTableAndCollectionCategory.m in Sources */,
 				DAA8A5DD1C0F3C5F0023F934 /* HomeMenuCell.m in Sources */,
 				DAA186451C0734DD00CE003B /* AppDelegate.m in Sources */,
 				DAA1870C1C07352600CE003B /* DSHHttpClient.m in Sources */,
+				DADADD471C0FDFB600753758 /* MyCollectionViewCell.m in Sources */,
 				DAA8A5BD1C0F2BAF0023F934 /* UIImage+DSHImageCategory.m in Sources */,
 				DA925BB91C09F8540066BE2E /* UIWebView+DSHWebViewCategory.m in Sources */,
 				DAA186F11C07352600CE003B /* DSHViewController.m in Sources */,
@@ -711,8 +715,6 @@
 				DAE7B2221C0F002400186E2B /* BaseViewController.m in Sources */,
 				DAA186421C0734DD00CE003B /* main.m in Sources */,
 				DAA186FA1C07352600CE003B /* DSHTableViewCell.m in Sources */,
-				DAA8A5E51C0F3DAC0023F934 /* DSHListViewController+DSHCollectionViewCategory.m in Sources */,
-				DAA8A5E81C0F3E550023F934 /* DSHListViewController+DSHTableViewCategory.m in Sources */,
 				DA93AE701C08B59700E85BA5 /* DSHMainCell.m in Sources */,
 				DAA187111C0735F500CE003B /* UILabel+DSHLabelCategory.m in Sources */,
 				DAA186E51C07352600CE003B /* UIView+DSHViewCategory.m in Sources */,
