@@ -35,6 +35,33 @@
     }
 }
 
++ (void)exchangeMethod:(SEL)originalSel withNewMethod:(SEL)newSel {
+    if (originalSel && newSel) {
+        Class class = self.class;
+        Method originalMethod = class_getInstanceMethod(class, originalSel);
+        if (!originalMethod) {
+            originalMethod = class_getClassMethod(class, originalSel);
+        }
+        
+        if (!originalMethod) {
+            @throw [NSException exceptionWithName: @"Original method not found" reason: nil userInfo: nil];
+        }
+        
+        Method newMethod = class_getInstanceMethod(class, newSel);
+        if (!newMethod){
+            newMethod = class_getClassMethod(class, newSel);
+        }
+        if (!newMethod) {
+            @throw [NSException exceptionWithName:@"New method not found" reason: nil userInfo: nil];
+        }
+        if (originalMethod == newMethod) {
+            @throw [NSException exceptionWithName:@"Methods are the same" reason:nil userInfo:nil];
+        }
+        
+        method_exchangeImplementations(originalMethod, newMethod);
+    }
+}
+
 + (void)clearAllPropertyValueAtLocal:(NSString *)key {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults removeObjectForKey: key];

@@ -12,6 +12,8 @@
 
 - (void)saveAllPropertyValueAtLocal:(NSString *)key;
 
++ (void)exchangeMethod:(SEL)originalSel withNewMethod:(SEL)newSel;
+
 + (void)clearAllPropertyValueAtLocal:(NSString *)key;
 + (NSArray<NSString *> *)getAllProperty;
 

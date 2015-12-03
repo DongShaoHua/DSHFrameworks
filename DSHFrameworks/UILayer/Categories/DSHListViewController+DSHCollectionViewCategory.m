@@ -1,35 +1,36 @@
 //
-//  DSHCollectionViewController.m
-//  DSHFrameworks
+//  DSHListViewController+DSHCollectionViewCategory.m
+//  DSHFrameworksIOSExample
 //
-//  Created by dongsh on 15/11/26.
+//  Created by dongshaohua on 15/12/2.
 //  Copyright © 2015年 dongsh. All rights reserved.
 //
 
-#import "DSHCollectionViewController.h"
+#import "DSHListViewController+DSHCollectionViewCategory.h"
+#import "NSObject+DSHObjectCategory.h"
 
-@interface DSHCollectionViewController ()
+@interface DSHListViewController (Private)
+
+- (UICollectionViewCell *)collectionViewCellWith:(UICollectionView *)listView forIndexPath:(NSIndexPath *)indePath;
 
 @end
 
-@implementation DSHCollectionViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    _collectionView = [self getListView];
+@implementation DSHListViewController (DSHCollectionViewCategory)
+
++ (void)load {
+    [self exchangeMethod: @selector(getCellWith:forIndexPath:) withNewMethod: @selector(collectionViewCellWith:forIndexPath:)];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (UICollectionView *)collectionView {
+    return [self getListView];
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return [self getListDataCount];
 }
 
-- (UICollectionViewCell *)getCellWith:(UICollectionView *)listView forIndexPath:(NSIndexPath *)indePath {
+- (UICollectionViewCell *)collectionViewCellWith:(UICollectionView *)listView forIndexPath:(NSIndexPath *)indePath {
     DSHCellNibInfo *cellInfo = [self getCellInfoWith: listView forIndexPath: indePath];
     return [listView dequeueReusableCellWithReuseIdentifier: cellInfo.cellId forIndexPath: indePath];
 }

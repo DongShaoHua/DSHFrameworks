@@ -22,15 +22,9 @@
 		DAA186E51C07352600CE003B /* UIView+DSHViewCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186C61C07352600CE003B /* UIView+DSHViewCategory.m */; };
 		DAA186E61C07352600CE003B /* UIView+DSHViewCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186C61C07352600CE003B /* UIView+DSHViewCategory.m */; };
 		DAA186E71C07352600CE003B /* UIView+DSHViewCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186C61C07352600CE003B /* UIView+DSHViewCategory.m */; };
-		DAA186E81C07352600CE003B /* DSHCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186C91C07352600CE003B /* DSHCollectionViewController.m */; };
-		DAA186E91C07352600CE003B /* DSHCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186C91C07352600CE003B /* DSHCollectionViewController.m */; };
-		DAA186EA1C07352600CE003B /* DSHCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186C91C07352600CE003B /* DSHCollectionViewController.m */; };
 		DAA186EB1C07352600CE003B /* DSHListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186CB1C07352600CE003B /* DSHListViewController.m */; };
 		DAA186EC1C07352600CE003B /* DSHListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186CB1C07352600CE003B /* DSHListViewController.m */; };
 		DAA186ED1C07352600CE003B /* DSHListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186CB1C07352600CE003B /* DSHListViewController.m */; };
-		DAA186EE1C07352600CE003B /* DSHTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186CD1C07352600CE003B /* DSHTableViewController.m */; };
-		DAA186EF1C07352600CE003B /* DSHTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186CD1C07352600CE003B /* DSHTableViewController.m */; };
-		DAA186F01C07352600CE003B /* DSHTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186CD1C07352600CE003B /* DSHTableViewController.m */; };
 		DAA186F11C07352600CE003B /* DSHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186CF1C07352600CE003B /* DSHViewController.m */; };
 		DAA186F21C07352600CE003B /* DSHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186CF1C07352600CE003B /* DSHViewController.m */; };
 		DAA186F31C07352600CE003B /* DSHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA186CF1C07352600CE003B /* DSHViewController.m */; };
@@ -64,6 +58,24 @@
 		DAA187111C0735F500CE003B /* UILabel+DSHLabelCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA187101C0735F500CE003B /* UILabel+DSHLabelCategory.m */; };
 		DAA187121C0735F500CE003B /* UILabel+DSHLabelCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA187101C0735F500CE003B /* UILabel+DSHLabelCategory.m */; };
 		DAA187131C0735F500CE003B /* UILabel+DSHLabelCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA187101C0735F500CE003B /* UILabel+DSHLabelCategory.m */; };
+		DAA8A5BA1C0F27D90023F934 /* UIColor+DSHColorCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA8A5B91C0F27D90023F934 /* UIColor+DSHColorCategory.m */; };
+		DAA8A5BD1C0F2BAF0023F934 /* UIImage+DSHImageCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA8A5BC1C0F2BAF0023F934 /* UIImage+DSHImageCategory.m */; };
+		DAA8A5C61C0F31D90023F934 /* tabBar_cart_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA8A5BE1C0F31D90023F934 /* tabBar_cart_normal@2x.png */; };
+		DAA8A5C71C0F31D90023F934 /* tabBar_cart_press@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA8A5BF1C0F31D90023F934 /* tabBar_cart_press@2x.png */; };
+		DAA8A5C81C0F31D90023F934 /* tabBar_category_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA8A5C01C0F31D90023F934 /* tabBar_category_normal@2x.png */; };
+		DAA8A5C91C0F31D90023F934 /* tabBar_category_press@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA8A5C11C0F31D90023F934 /* tabBar_category_press@2x.png */; };
+		DAA8A5CA1C0F31D90023F934 /* tabBar_find_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA8A5C21C0F31D90023F934 /* tabBar_find_normal@2x.png */; };
+		DAA8A5CB1C0F31D90023F934 /* tabBar_find_press@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA8A5C31C0F31D90023F934 /* tabBar_find_press@2x.png */; };
+		DAA8A5CC1C0F31D90023F934 /* tabBar_home_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA8A5C41C0F31D90023F934 /* tabBar_home_normal@2x.png */; };
+		DAA8A5CD1C0F31D90023F934 /* tabBar_home_press@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA8A5C51C0F31D90023F934 /* tabBar_home_press@2x.png */; };
+		DAA8A5D01C0F32760023F934 /* tabBar_myJD_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA8A5CE1C0F32760023F934 /* tabBar_myJD_normal@2x.png */; };
+		DAA8A5D11C0F32760023F934 /* tabBar_myJD_press@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA8A5CF1C0F32760023F934 /* tabBar_myJD_press@2x.png */; };
+		DAA8A5D81C0F34870023F934 /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA8A5D61C0F34870023F934 /* HomeController.m */; };
+		DAA8A5D91C0F34870023F934 /* HomeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAA8A5D71C0F34870023F934 /* HomeController.xib */; };
+		DAA8A5DD1C0F3C5F0023F934 /* HomeMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA8A5DB1C0F3C5F0023F934 /* HomeMenuCell.m */; };
+		DAA8A5DE1C0F3C5F0023F934 /* HomeMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAA8A5DC1C0F3C5F0023F934 /* HomeMenuCell.xib */; };
+		DAA8A5E51C0F3DAC0023F934 /* DSHListViewController+DSHCollectionViewCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA8A5E41C0F3DAC0023F934 /* DSHListViewController+DSHCollectionViewCategory.m */; };
+		DAA8A5E81C0F3E550023F934 /* DSHListViewController+DSHTableViewCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA8A5E71C0F3E550023F934 /* DSHListViewController+DSHTableViewCategory.m */; };
 		DAE7B2171C0EBF6D00186E2B /* PushHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE7B2161C0EBF6D00186E2B /* PushHelper.m */; };
 		DAE7B2221C0F002400186E2B /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE7B2211C0F002400186E2B /* BaseViewController.m */; };
 		DAE7B2291C0F029800186E2B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE7B2241C0F029800186E2B /* Default-568h@2x.png */; };
@@ -121,12 +133,8 @@
 		DAA186C21C07352600CE003B /* DSHFrameworks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSHFrameworks.h; sourceTree = "<group>"; };
 		DAA186C51C07352600CE003B /* UIView+DSHViewCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DSHViewCategory.h"; sourceTree = "<group>"; };
 		DAA186C61C07352600CE003B /* UIView+DSHViewCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DSHViewCategory.m"; sourceTree = "<group>"; };
-		DAA186C81C07352600CE003B /* DSHCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSHCollectionViewController.h; sourceTree = "<group>"; };
-		DAA186C91C07352600CE003B /* DSHCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSHCollectionViewController.m; sourceTree = "<group>"; };
 		DAA186CA1C07352600CE003B /* DSHListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSHListViewController.h; sourceTree = "<group>"; };
 		DAA186CB1C07352600CE003B /* DSHListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSHListViewController.m; sourceTree = "<group>"; };
-		DAA186CC1C07352600CE003B /* DSHTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSHTableViewController.h; sourceTree = "<group>"; };
-		DAA186CD1C07352600CE003B /* DSHTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSHTableViewController.m; sourceTree = "<group>"; };
 		DAA186CE1C07352600CE003B /* DSHViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSHViewController.h; sourceTree = "<group>"; };
 		DAA186CF1C07352600CE003B /* DSHViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSHViewController.m; sourceTree = "<group>"; };
 		DAA186D01C07352600CE003B /* DSHApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSHApplication.h; sourceTree = "<group>"; };
@@ -149,6 +157,30 @@
 		DAA186E41C07352600CE003B /* DSHHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSHHttpClient.m; sourceTree = "<group>"; };
 		DAA1870F1C0735F500CE003B /* UILabel+DSHLabelCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+DSHLabelCategory.h"; sourceTree = "<group>"; };
 		DAA187101C0735F500CE003B /* UILabel+DSHLabelCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+DSHLabelCategory.m"; sourceTree = "<group>"; };
+		DAA8A5B81C0F27D90023F934 /* UIColor+DSHColorCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+DSHColorCategory.h"; sourceTree = "<group>"; };
+		DAA8A5B91C0F27D90023F934 /* UIColor+DSHColorCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+DSHColorCategory.m"; sourceTree = "<group>"; };
+		DAA8A5BB1C0F2BAF0023F934 /* UIImage+DSHImageCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+DSHImageCategory.h"; sourceTree = "<group>"; };
+		DAA8A5BC1C0F2BAF0023F934 /* UIImage+DSHImageCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+DSHImageCategory.m"; sourceTree = "<group>"; };
+		DAA8A5BE1C0F31D90023F934 /* tabBar_cart_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBar_cart_normal@2x.png"; sourceTree = "<group>"; };
+		DAA8A5BF1C0F31D90023F934 /* tabBar_cart_press@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBar_cart_press@2x.png"; sourceTree = "<group>"; };
+		DAA8A5C01C0F31D90023F934 /* tabBar_category_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBar_category_normal@2x.png"; sourceTree = "<group>"; };
+		DAA8A5C11C0F31D90023F934 /* tabBar_category_press@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBar_category_press@2x.png"; sourceTree = "<group>"; };
+		DAA8A5C21C0F31D90023F934 /* tabBar_find_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBar_find_normal@2x.png"; sourceTree = "<group>"; };
+		DAA8A5C31C0F31D90023F934 /* tabBar_find_press@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBar_find_press@2x.png"; sourceTree = "<group>"; };
+		DAA8A5C41C0F31D90023F934 /* tabBar_home_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBar_home_normal@2x.png"; sourceTree = "<group>"; };
+		DAA8A5C51C0F31D90023F934 /* tabBar_home_press@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBar_home_press@2x.png"; sourceTree = "<group>"; };
+		DAA8A5CE1C0F32760023F934 /* tabBar_myJD_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBar_myJD_normal@2x.png"; sourceTree = "<group>"; };
+		DAA8A5CF1C0F32760023F934 /* tabBar_myJD_press@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabBar_myJD_press@2x.png"; sourceTree = "<group>"; };
+		DAA8A5D51C0F34870023F934 /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
+		DAA8A5D61C0F34870023F934 /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
+		DAA8A5D71C0F34870023F934 /* HomeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeController.xib; sourceTree = "<group>"; };
+		DAA8A5DA1C0F3C5F0023F934 /* HomeMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeMenuCell.h; sourceTree = "<group>"; };
+		DAA8A5DB1C0F3C5F0023F934 /* HomeMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeMenuCell.m; sourceTree = "<group>"; };
+		DAA8A5DC1C0F3C5F0023F934 /* HomeMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeMenuCell.xib; sourceTree = "<group>"; };
+		DAA8A5E31C0F3DAC0023F934 /* DSHListViewController+DSHCollectionViewCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DSHListViewController+DSHCollectionViewCategory.h"; sourceTree = "<group>"; };
+		DAA8A5E41C0F3DAC0023F934 /* DSHListViewController+DSHCollectionViewCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DSHListViewController+DSHCollectionViewCategory.m"; sourceTree = "<group>"; };
+		DAA8A5E61C0F3E550023F934 /* DSHListViewController+DSHTableViewCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DSHListViewController+DSHTableViewCategory.h"; sourceTree = "<group>"; };
+		DAA8A5E71C0F3E550023F934 /* DSHListViewController+DSHTableViewCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DSHListViewController+DSHTableViewCategory.m"; sourceTree = "<group>"; };
 		DAE7B2151C0EBF6D00186E2B /* PushHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushHelper.h; sourceTree = "<group>"; };
 		DAE7B2161C0EBF6D00186E2B /* PushHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushHelper.m; sourceTree = "<group>"; };
 		DAE7B2201C0F002400186E2B /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -228,6 +260,12 @@
 				DA93AE6F1C08B59700E85BA5 /* DSHMainCell.m */,
 				DAE7B2201C0F002400186E2B /* BaseViewController.h */,
 				DAE7B2211C0F002400186E2B /* BaseViewController.m */,
+				DAA8A5D51C0F34870023F934 /* HomeController.h */,
+				DAA8A5D61C0F34870023F934 /* HomeController.m */,
+				DAA8A5D71C0F34870023F934 /* HomeController.xib */,
+				DAA8A5DA1C0F3C5F0023F934 /* HomeMenuCell.h */,
+				DAA8A5DB1C0F3C5F0023F934 /* HomeMenuCell.m */,
+				DAA8A5DC1C0F3C5F0023F934 /* HomeMenuCell.xib */,
 			);
 			path = DSHFrameworksIOSExample;
 			sourceTree = "<group>";
@@ -284,14 +322,12 @@
 		DAA186C41C07352600CE003B /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				DAA186C51C07352600CE003B /* UIView+DSHViewCategory.h */,
-				DAA186C61C07352600CE003B /* UIView+DSHViewCategory.m */,
-				DAA1870F1C0735F500CE003B /* UILabel+DSHLabelCategory.h */,
-				DAA187101C0735F500CE003B /* UILabel+DSHLabelCategory.m */,
-				DA93AE621C08A9B600E85BA5 /* UIButton+DSHButtonCategory.h */,
-				DA93AE631C08A9B600E85BA5 /* UIButton+DSHButtonCategory.m */,
-				DA925BB71C09F8540066BE2E /* UIWebView+DSHWebViewCategory.h */,
-				DA925BB81C09F8540066BE2E /* UIWebView+DSHWebViewCategory.m */,
+				DAA8A5B71C0F27BD0023F934 /* Views */,
+				DAA8A5DF1C0F3CB90023F934 /* Graphics */,
+				DAA8A5E31C0F3DAC0023F934 /* DSHListViewController+DSHCollectionViewCategory.h */,
+				DAA8A5E41C0F3DAC0023F934 /* DSHListViewController+DSHCollectionViewCategory.m */,
+				DAA8A5E61C0F3E550023F934 /* DSHListViewController+DSHTableViewCategory.h */,
+				DAA8A5E71C0F3E550023F934 /* DSHListViewController+DSHTableViewCategory.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -299,12 +335,8 @@
 		DAA186C71C07352600CE003B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				DAA186C81C07352600CE003B /* DSHCollectionViewController.h */,
-				DAA186C91C07352600CE003B /* DSHCollectionViewController.m */,
 				DAA186CA1C07352600CE003B /* DSHListViewController.h */,
 				DAA186CB1C07352600CE003B /* DSHListViewController.m */,
-				DAA186CC1C07352600CE003B /* DSHTableViewController.h */,
-				DAA186CD1C07352600CE003B /* DSHTableViewController.m */,
 				DAA186CE1C07352600CE003B /* DSHViewController.h */,
 				DAA186CF1C07352600CE003B /* DSHViewController.m */,
 			);
@@ -351,7 +383,33 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
-		DAE7B2231C0F023E00186E2B /* Res */ = {
+		DAA8A5B71C0F27BD0023F934 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DAA186C51C07352600CE003B /* UIView+DSHViewCategory.h */,
+				DAA186C61C07352600CE003B /* UIView+DSHViewCategory.m */,
+				DAA1870F1C0735F500CE003B /* UILabel+DSHLabelCategory.h */,
+				DAA187101C0735F500CE003B /* UILabel+DSHLabelCategory.m */,
+				DA93AE621C08A9B600E85BA5 /* UIButton+DSHButtonCategory.h */,
+				DA93AE631C08A9B600E85BA5 /* UIButton+DSHButtonCategory.m */,
+				DA925BB71C09F8540066BE2E /* UIWebView+DSHWebViewCategory.h */,
+				DA925BB81C09F8540066BE2E /* UIWebView+DSHWebViewCategory.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		DAA8A5D21C0F333F0023F934 /* LaunchImages */ = {
+			isa = PBXGroup;
+			children = (
+				DAE7B2241C0F029800186E2B /* Default-568h@2x.png */,
+				DAE7B2251C0F029800186E2B /* Default-667h@2x.png */,
+				DAE7B2261C0F029800186E2B /* Default-736h@3x.png */,
+				DAE7B2281C0F029800186E2B /* Default@2x.png */,
+			);
+			name = LaunchImages;
+			sourceTree = "<group>";
+		};
+		DAA8A5D31C0F334F0023F934 /* AppIcons */ = {
 			isa = PBXGroup;
 			children = (
 				DAE7B22F1C0F03F400186E2B /* AppIcon29x29@2x.png */,
@@ -360,10 +418,44 @@
 				DAE7B2321C0F03F400186E2B /* AppIcon40x40@3x.png */,
 				DAE7B2351C0F03F400186E2B /* AppIcon60x60@2x.png */,
 				DAE7B2361C0F03F400186E2B /* AppIcon60x60@3x.png */,
-				DAE7B2241C0F029800186E2B /* Default-568h@2x.png */,
-				DAE7B2251C0F029800186E2B /* Default-667h@2x.png */,
-				DAE7B2261C0F029800186E2B /* Default-736h@3x.png */,
-				DAE7B2281C0F029800186E2B /* Default@2x.png */,
+			);
+			name = AppIcons;
+			sourceTree = "<group>";
+		};
+		DAA8A5D41C0F33580023F934 /* TabBarItems */ = {
+			isa = PBXGroup;
+			children = (
+				DAA8A5CE1C0F32760023F934 /* tabBar_myJD_normal@2x.png */,
+				DAA8A5CF1C0F32760023F934 /* tabBar_myJD_press@2x.png */,
+				DAA8A5BE1C0F31D90023F934 /* tabBar_cart_normal@2x.png */,
+				DAA8A5BF1C0F31D90023F934 /* tabBar_cart_press@2x.png */,
+				DAA8A5C01C0F31D90023F934 /* tabBar_category_normal@2x.png */,
+				DAA8A5C11C0F31D90023F934 /* tabBar_category_press@2x.png */,
+				DAA8A5C21C0F31D90023F934 /* tabBar_find_normal@2x.png */,
+				DAA8A5C31C0F31D90023F934 /* tabBar_find_press@2x.png */,
+				DAA8A5C41C0F31D90023F934 /* tabBar_home_normal@2x.png */,
+				DAA8A5C51C0F31D90023F934 /* tabBar_home_press@2x.png */,
+			);
+			name = TabBarItems;
+			sourceTree = "<group>";
+		};
+		DAA8A5DF1C0F3CB90023F934 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				DAA8A5B81C0F27D90023F934 /* UIColor+DSHColorCategory.h */,
+				DAA8A5B91C0F27D90023F934 /* UIColor+DSHColorCategory.m */,
+				DAA8A5BB1C0F2BAF0023F934 /* UIImage+DSHImageCategory.h */,
+				DAA8A5BC1C0F2BAF0023F934 /* UIImage+DSHImageCategory.m */,
+			);
+			name = Graphics;
+			sourceTree = "<group>";
+		};
+		DAE7B2231C0F023E00186E2B /* Res */ = {
+			isa = PBXGroup;
+			children = (
+				DAA8A5D41C0F33580023F934 /* TabBarItems */,
+				DAA8A5D31C0F334F0023F934 /* AppIcons */,
+				DAA8A5D21C0F333F0023F934 /* LaunchImages */,
 			);
 			path = Res;
 			sourceTree = "<group>";
@@ -493,16 +585,28 @@
 			files = (
 				DAE7B2381C0F03F400186E2B /* AppIcon29x29@2x.png in Resources */,
 				DAE7B2391C0F03F400186E2B /* AppIcon29x29@3x.png in Resources */,
+				DAA8A5D01C0F32760023F934 /* tabBar_myJD_normal@2x.png in Resources */,
 				DAA1864D1C0734DD00CE003B /* Assets.xcassets in Resources */,
 				DAE7B23B1C0F03F400186E2B /* AppIcon40x40@3x.png in Resources */,
+				DAA8A5C61C0F31D90023F934 /* tabBar_cart_normal@2x.png in Resources */,
 				DAE7B22A1C0F029800186E2B /* Default-667h@2x.png in Resources */,
+				DAA8A5D91C0F34870023F934 /* HomeController.xib in Resources */,
+				DAA8A5CA1C0F31D90023F934 /* tabBar_find_normal@2x.png in Resources */,
 				DAE7B22B1C0F029800186E2B /* Default-736h@3x.png in Resources */,
 				DA649EF01C0961BA00AD2927 /* logo-icon.png in Resources */,
 				DAE7B23A1C0F03F400186E2B /* AppIcon40x40@2x.png in Resources */,
 				DAE7B23E1C0F03F400186E2B /* AppIcon60x60@2x.png in Resources */,
+				DAA8A5C71C0F31D90023F934 /* tabBar_cart_press@2x.png in Resources */,
+				DAA8A5C81C0F31D90023F934 /* tabBar_category_normal@2x.png in Resources */,
+				DAA8A5CC1C0F31D90023F934 /* tabBar_home_normal@2x.png in Resources */,
 				DAE7B22D1C0F029800186E2B /* Default@2x.png in Resources */,
 				DAE7B23F1C0F03F400186E2B /* AppIcon60x60@3x.png in Resources */,
+				DAA8A5CB1C0F31D90023F934 /* tabBar_find_press@2x.png in Resources */,
+				DAA8A5CD1C0F31D90023F934 /* tabBar_home_press@2x.png in Resources */,
+				DAA8A5C91C0F31D90023F934 /* tabBar_category_press@2x.png in Resources */,
+				DAA8A5D11C0F32760023F934 /* tabBar_myJD_press@2x.png in Resources */,
 				DAE7B2291C0F029800186E2B /* Default-568h@2x.png in Resources */,
+				DAA8A5DE1C0F3C5F0023F934 /* HomeMenuCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,25 +682,29 @@
 				DAA186FD1C07352600CE003B /* NSData+DSHDataCategory.m in Sources */,
 				DAA186F71C07352600CE003B /* DSHCollectionViewCell.m in Sources */,
 				DAA187091C07352600CE003B /* DSHDevelopmentHelper.m in Sources */,
-				DAA186E81C07352600CE003B /* DSHCollectionViewController.m in Sources */,
 				DAA187031C07352600CE003B /* NSObject+DSHObjectCategory.m in Sources */,
 				DA93AE641C08A9B600E85BA5 /* UIButton+DSHButtonCategory.m in Sources */,
 				DAA186EB1C07352600CE003B /* DSHListViewController.m in Sources */,
+				DAA8A5DD1C0F3C5F0023F934 /* HomeMenuCell.m in Sources */,
 				DAA186451C0734DD00CE003B /* AppDelegate.m in Sources */,
 				DAA1870C1C07352600CE003B /* DSHHttpClient.m in Sources */,
+				DAA8A5BD1C0F2BAF0023F934 /* UIImage+DSHImageCategory.m in Sources */,
 				DA925BB91C09F8540066BE2E /* UIWebView+DSHWebViewCategory.m in Sources */,
 				DAA186F11C07352600CE003B /* DSHViewController.m in Sources */,
 				DAA186F41C07352600CE003B /* DSHApplication.m in Sources */,
+				DAA8A5D81C0F34870023F934 /* HomeController.m in Sources */,
 				DAA187061C07352600CE003B /* NSString+DSHStringCategory.m in Sources */,
 				DAE7B2221C0F002400186E2B /* BaseViewController.m in Sources */,
-				DAA186EE1C07352600CE003B /* DSHTableViewController.m in Sources */,
 				DAA186421C0734DD00CE003B /* main.m in Sources */,
 				DAA186FA1C07352600CE003B /* DSHTableViewCell.m in Sources */,
+				DAA8A5E51C0F3DAC0023F934 /* DSHListViewController+DSHCollectionViewCategory.m in Sources */,
+				DAA8A5E81C0F3E550023F934 /* DSHListViewController+DSHTableViewCategory.m in Sources */,
 				DA93AE701C08B59700E85BA5 /* DSHMainCell.m in Sources */,
 				DAA187111C0735F500CE003B /* UILabel+DSHLabelCategory.m in Sources */,
 				DAA186E51C07352600CE003B /* UIView+DSHViewCategory.m in Sources */,
 				DAA187001C07352600CE003B /* NSDictionary+DSHDictionaryCategory.m in Sources */,
 				DAE7B2171C0EBF6D00186E2B /* PushHelper.m in Sources */,
+				DAA8A5BA1C0F27D90023F934 /* UIColor+DSHColorCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,7 +715,6 @@
 				DAA186F81C07352600CE003B /* DSHCollectionViewCell.m in Sources */,
 				DAA186EC1C07352600CE003B /* DSHListViewController.m in Sources */,
 				DAA187041C07352600CE003B /* NSObject+DSHObjectCategory.m in Sources */,
-				DAA186EF1C07352600CE003B /* DSHTableViewController.m in Sources */,
 				DAA186FB1C07352600CE003B /* DSHTableViewCell.m in Sources */,
 				DA93AE711C08B59700E85BA5 /* DSHMainCell.m in Sources */,
 				DAA186FE1C07352600CE003B /* NSData+DSHDataCategory.m in Sources */,
@@ -617,7 +724,6 @@
 				DAA187011C07352600CE003B /* NSDictionary+DSHDictionaryCategory.m in Sources */,
 				DAA1870A1C07352600CE003B /* DSHDevelopmentHelper.m in Sources */,
 				DAA187121C0735F500CE003B /* UILabel+DSHLabelCategory.m in Sources */,
-				DAA186E91C07352600CE003B /* DSHCollectionViewController.m in Sources */,
 				DAA187071C07352600CE003B /* NSString+DSHStringCategory.m in Sources */,
 				DAA1865B1C0734DD00CE003B /* DSHFrameworksIOSExampleTests.m in Sources */,
 				DAA186E61C07352600CE003B /* UIView+DSHViewCategory.m in Sources */,
@@ -631,7 +737,6 @@
 				DAA186F91C07352600CE003B /* DSHCollectionViewCell.m in Sources */,
 				DAA186ED1C07352600CE003B /* DSHListViewController.m in Sources */,
 				DAA187051C07352600CE003B /* NSObject+DSHObjectCategory.m in Sources */,
-				DAA186F01C07352600CE003B /* DSHTableViewController.m in Sources */,
 				DAA186FC1C07352600CE003B /* DSHTableViewCell.m in Sources */,
 				DA93AE721C08B59700E85BA5 /* DSHMainCell.m in Sources */,
 				DAA186FF1C07352600CE003B /* NSData+DSHDataCategory.m in Sources */,
@@ -641,7 +746,6 @@
 				DAA187021C07352600CE003B /* NSDictionary+DSHDictionaryCategory.m in Sources */,
 				DAA1870B1C07352600CE003B /* DSHDevelopmentHelper.m in Sources */,
 				DAA187131C0735F500CE003B /* UILabel+DSHLabelCategory.m in Sources */,
-				DAA186EA1C07352600CE003B /* DSHCollectionViewController.m in Sources */,
 				DAA187081C07352600CE003B /* NSString+DSHStringCategory.m in Sources */,
 				DAA186661C0734DD00CE003B /* DSHFrameworksIOSExampleUITests.m in Sources */,
 				DAA186E71C07352600CE003B /* UIView+DSHViewCategory.m in Sources */,

@@ -6,9 +6,9 @@
 //  Copyright © 2015年 dongsh. All rights reserved.
 //
 
-#import "DSHViewController.h"
+#import "DSHListViewController.h"
 
-@interface BaseViewController : DSHViewController
+@interface BaseViewController : DSHListViewController
 
 + (UITabBarController *)shareRootController;
 
