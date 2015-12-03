@@ -59,7 +59,7 @@ extern NSString * const DSHListDefaultCellId;
 /**
  返回列表视图的数据个数
  */
-- (NSInteger)getListDataCount;
+- (NSInteger)getListDataCount:(UIView *)view forSection:(NSInteger)section;
 /**
  返回列表指定index处的cell
  */

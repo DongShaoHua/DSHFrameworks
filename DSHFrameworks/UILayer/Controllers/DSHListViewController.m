@@ -30,11 +30,6 @@ NSString * const DSHListDefaultCellId = @"DSH_List_Default_Cell_Id";
     return self;
 }
 
-- (void)dealloc {
-    _cellId = nil;
-    _allocCellBlock = nil;
-}
-
 - (instancetype)initWithCellId:(NSString *)cellId andHasNib:(BOOL)hasNib allocCellBlock:(UITableViewCell *(^)(NSString *cellId))block {
     self = [super init];
     if (self) {
@@ -43,6 +38,11 @@ NSString * const DSHListDefaultCellId = @"DSH_List_Default_Cell_Id";
         _allocCellBlock = block;
     }
     return self;
+}
+
+- (void)dealloc {
+    _cellId = nil;
+    _allocCellBlock = nil;
 }
 
 + (instancetype)infoWithCellId:(NSString *)cellId {
@@ -81,7 +81,7 @@ NSString * const DSHListDefaultCellId = @"DSH_List_Default_Cell_Id";
     return [DSHCellNibInfo new];
 }
 
-- (NSInteger)getListDataCount {
+- (NSInteger)getListDataCount:(UIView *)view forSection:(NSInteger)section {
     return self.data.count;
 }
 

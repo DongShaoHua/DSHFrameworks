@@ -27,7 +27,7 @@
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return [self getListDataCount];
+    return [self getListDataCount: collectionView forSection: section];
 }
 
 - (UICollectionViewCell *)collectionViewCellWith:(UICollectionView *)listView forIndexPath:(NSIndexPath *)indePath {

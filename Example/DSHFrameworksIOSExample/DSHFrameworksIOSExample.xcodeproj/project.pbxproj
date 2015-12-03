@@ -76,6 +76,7 @@
 		DAA8A5DE1C0F3C5F0023F934 /* HomeMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAA8A5DC1C0F3C5F0023F934 /* HomeMenuCell.xib */; };
 		DAA8A5E51C0F3DAC0023F934 /* DSHListViewController+DSHCollectionViewCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA8A5E41C0F3DAC0023F934 /* DSHListViewController+DSHCollectionViewCategory.m */; };
 		DAA8A5E81C0F3E550023F934 /* DSHListViewController+DSHTableViewCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA8A5E71C0F3E550023F934 /* DSHListViewController+DSHTableViewCategory.m */; };
+		DADADD3D1C0FD91500753758 /* DSHListViewController+DSHTableAndCollectionCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DADADD3C1C0FD91500753758 /* DSHListViewController+DSHTableAndCollectionCategory.m */; };
 		DAE7B2171C0EBF6D00186E2B /* PushHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE7B2161C0EBF6D00186E2B /* PushHelper.m */; };
 		DAE7B2221C0F002400186E2B /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE7B2211C0F002400186E2B /* BaseViewController.m */; };
 		DAE7B2291C0F029800186E2B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE7B2241C0F029800186E2B /* Default-568h@2x.png */; };
@@ -181,6 +182,8 @@
 		DAA8A5E41C0F3DAC0023F934 /* DSHListViewController+DSHCollectionViewCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DSHListViewController+DSHCollectionViewCategory.m"; sourceTree = "<group>"; };
 		DAA8A5E61C0F3E550023F934 /* DSHListViewController+DSHTableViewCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DSHListViewController+DSHTableViewCategory.h"; sourceTree = "<group>"; };
 		DAA8A5E71C0F3E550023F934 /* DSHListViewController+DSHTableViewCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DSHListViewController+DSHTableViewCategory.m"; sourceTree = "<group>"; };
+		DADADD3B1C0FD91500753758 /* DSHListViewController+DSHTableAndCollectionCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DSHListViewController+DSHTableAndCollectionCategory.h"; sourceTree = "<group>"; };
+		DADADD3C1C0FD91500753758 /* DSHListViewController+DSHTableAndCollectionCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DSHListViewController+DSHTableAndCollectionCategory.m"; sourceTree = "<group>"; };
 		DAE7B2151C0EBF6D00186E2B /* PushHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushHelper.h; sourceTree = "<group>"; };
 		DAE7B2161C0EBF6D00186E2B /* PushHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushHelper.m; sourceTree = "<group>"; };
 		DAE7B2201C0F002400186E2B /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -324,10 +327,7 @@
 			children = (
 				DAA8A5B71C0F27BD0023F934 /* Views */,
 				DAA8A5DF1C0F3CB90023F934 /* Graphics */,
-				DAA8A5E31C0F3DAC0023F934 /* DSHListViewController+DSHCollectionViewCategory.h */,
-				DAA8A5E41C0F3DAC0023F934 /* DSHListViewController+DSHCollectionViewCategory.m */,
-				DAA8A5E61C0F3E550023F934 /* DSHListViewController+DSHTableViewCategory.h */,
-				DAA8A5E71C0F3E550023F934 /* DSHListViewController+DSHTableViewCategory.m */,
+				DADADD3E1C0FD91A00753758 /* Controllers */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -448,6 +448,19 @@
 				DAA8A5BC1C0F2BAF0023F934 /* UIImage+DSHImageCategory.m */,
 			);
 			name = Graphics;
+			sourceTree = "<group>";
+		};
+		DADADD3E1C0FD91A00753758 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DAA8A5E31C0F3DAC0023F934 /* DSHListViewController+DSHCollectionViewCategory.h */,
+				DAA8A5E41C0F3DAC0023F934 /* DSHListViewController+DSHCollectionViewCategory.m */,
+				DAA8A5E61C0F3E550023F934 /* DSHListViewController+DSHTableViewCategory.h */,
+				DAA8A5E71C0F3E550023F934 /* DSHListViewController+DSHTableViewCategory.m */,
+				DADADD3B1C0FD91500753758 /* DSHListViewController+DSHTableAndCollectionCategory.h */,
+				DADADD3C1C0FD91500753758 /* DSHListViewController+DSHTableAndCollectionCategory.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		DAE7B2231C0F023E00186E2B /* Res */ = {
@@ -685,6 +698,7 @@
 				DAA187031C07352600CE003B /* NSObject+DSHObjectCategory.m in Sources */,
 				DA93AE641C08A9B600E85BA5 /* UIButton+DSHButtonCategory.m in Sources */,
 				DAA186EB1C07352600CE003B /* DSHListViewController.m in Sources */,
+				DADADD3D1C0FD91500753758 /* DSHListViewController+DSHTableAndCollectionCategory.m in Sources */,
 				DAA8A5DD1C0F3C5F0023F934 /* HomeMenuCell.m in Sources */,
 				DAA186451C0734DD00CE003B /* AppDelegate.m in Sources */,
 				DAA1870C1C07352600CE003B /* DSHHttpClient.m in Sources */,
