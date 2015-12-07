@@ -14,18 +14,6 @@
             location = "group:Categories"
             name = "Categories">
             <FileRef
-               location = "group:DSHListViewController+DSHCollectionViewCategory.h">
-            </FileRef>
-            <FileRef
-               location = "group:DSHListViewController+DSHCollectionViewCategory.m">
-            </FileRef>
-            <FileRef
-               location = "group:DSHListViewController+DSHTableViewCategory.h">
-            </FileRef>
-            <FileRef
-               location = "group:DSHListViewController+DSHTableViewCategory.m">
-            </FileRef>
-            <FileRef
                location = "group:UIButton+DSHButtonCategory.h">
             </FileRef>
             <FileRef

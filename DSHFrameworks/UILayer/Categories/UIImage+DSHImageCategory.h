@@ -10,6 +10,14 @@
 
 @interface UIImage (DSHImageCategory)
 
+/**
+ 用指定颜色来创建图像
+ */
 + (instancetype)imageFromColor:(UIColor *)color;
+
+/**
+ 用指定颜色与大小来创建图像
+ */
++ (instancetype)imageFromColor:(UIColor *)color rect:(CGRect)rect;
 
 @end
