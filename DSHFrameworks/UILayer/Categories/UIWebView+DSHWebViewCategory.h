@@ -10,6 +10,9 @@
 
 @interface UIWebView (DSHWebViewCategory)
 
+/**
+ 显示gif图片
+ */
 - (void)loadGif:(NSString *)gifFileName;
 
 @end

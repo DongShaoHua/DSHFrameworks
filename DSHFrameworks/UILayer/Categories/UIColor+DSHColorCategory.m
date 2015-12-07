@@ -54,11 +54,11 @@
     }
 }
 
-+ (instancetype)colorWithHex:(Byte)r green:(Byte)g blue:(Byte)b {
-    return [self colorWithHex: 255.0f red: r green: g blue: b];
++ (instancetype)colorWith:(Byte)r green:(Byte)g blue:(Byte)b {
+    return [self colorWith: 255 red: r green: g blue: b];
 }
 
-+ (instancetype)colorWithHex:(Byte)a red:(Byte)r green:(Byte)g blue:(Byte)b {
++ (instancetype)colorWith:(Byte)a red:(Byte)r green:(Byte)g blue:(Byte)b {
     return [UIColor colorWithRed: r / 255.0f green: g / 255.0f blue: b / 255.0f alpha: a / 255.0f];
 }
 
