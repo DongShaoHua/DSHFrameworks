@@ -49,6 +49,12 @@
             <FileRef
                location = "group:UIView+DSHViewCategory.m">
             </FileRef>
+            <FileRef
+               location = "group:UITextField+DSHTextFieldCategory.h">
+            </FileRef>
+            <FileRef
+               location = "group:UITextField+DSHTextFieldCategory.m">
+            </FileRef>
          </Group>
          <Group
             location = "group:Controllers"

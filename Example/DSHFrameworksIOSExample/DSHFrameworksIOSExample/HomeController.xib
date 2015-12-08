@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeController">
             <connections>
                 <outlet property="listView" destination="zLE-3O-tyw" id="DOj-TE-Ivs"/>
+                <outlet property="textfield" destination="AS7-Tz-eri" id="Cq3-V2-IoR"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -25,11 +26,20 @@
                         <outlet property="delegate" destination="-1" id="hjQ-Fz-Bzr"/>
                     </connections>
                 </tableView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AS7-Tz-eri">
+                    <rect key="frame" x="24" y="24" width="366" height="30"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
             </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="AS7-Tz-eri" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="24" id="3X6-hG-Lt8"/>
                 <constraint firstAttribute="bottom" secondItem="zLE-3O-tyw" secondAttribute="bottom" id="8gV-5e-Zsg"/>
+                <constraint firstAttribute="trailing" secondItem="AS7-Tz-eri" secondAttribute="trailing" constant="24" id="9hv-va-vjA"/>
+                <constraint firstItem="AS7-Tz-eri" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="24" id="Dnc-fy-DR8"/>
                 <constraint firstItem="zLE-3O-tyw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bRT-Qy-CxT"/>
                 <constraint firstAttribute="trailing" secondItem="zLE-3O-tyw" secondAttribute="trailing" id="nZG-YB-hkF"/>
                 <constraint firstItem="zLE-3O-tyw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="pz6-Pu-vNV"/>

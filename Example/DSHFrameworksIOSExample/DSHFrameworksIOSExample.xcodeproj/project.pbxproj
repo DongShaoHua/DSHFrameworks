@@ -78,6 +78,8 @@
 		DADADD431C0FDF6900753758 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DADADD411C0FDF6900753758 /* TestViewController.xib */; };
 		DADADD471C0FDFB600753758 /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DADADD451C0FDFB600753758 /* MyCollectionViewCell.m */; };
 		DADADD481C0FDFB600753758 /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DADADD461C0FDFB600753758 /* MyCollectionViewCell.xib */; };
+		DAE4FDA91C166DFE00864B6B /* UITextField+DSHTextFieldCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE4FDA81C166DFE00864B6B /* UITextField+DSHTextFieldCategory.m */; };
+		DAE4FDAC1C167AC300864B6B /* UITextView+DSHTextViewCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE4FDAB1C167AC300864B6B /* UITextView+DSHTextViewCategory.m */; };
 		DAE7B2171C0EBF6D00186E2B /* PushHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE7B2161C0EBF6D00186E2B /* PushHelper.m */; };
 		DAE7B2221C0F002400186E2B /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE7B2211C0F002400186E2B /* BaseViewController.m */; };
 		DAE7B2291C0F029800186E2B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE7B2241C0F029800186E2B /* Default-568h@2x.png */; };
@@ -185,6 +187,10 @@
 		DADADD441C0FDFB600753758 /* MyCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCollectionViewCell.h; sourceTree = "<group>"; };
 		DADADD451C0FDFB600753758 /* MyCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCollectionViewCell.m; sourceTree = "<group>"; };
 		DADADD461C0FDFB600753758 /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
+		DAE4FDA71C166DFE00864B6B /* UITextField+DSHTextFieldCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+DSHTextFieldCategory.h"; sourceTree = "<group>"; };
+		DAE4FDA81C166DFE00864B6B /* UITextField+DSHTextFieldCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+DSHTextFieldCategory.m"; sourceTree = "<group>"; };
+		DAE4FDAA1C167AC300864B6B /* UITextView+DSHTextViewCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+DSHTextViewCategory.h"; sourceTree = "<group>"; };
+		DAE4FDAB1C167AC300864B6B /* UITextView+DSHTextViewCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+DSHTextViewCategory.m"; sourceTree = "<group>"; };
 		DAE7B2151C0EBF6D00186E2B /* PushHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushHelper.h; sourceTree = "<group>"; };
 		DAE7B2161C0EBF6D00186E2B /* PushHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushHelper.m; sourceTree = "<group>"; };
 		DAE7B2201C0F002400186E2B /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -393,6 +399,8 @@
 		DAA8A5B71C0F27BD0023F934 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DAE4FDA71C166DFE00864B6B /* UITextField+DSHTextFieldCategory.h */,
+				DAE4FDA81C166DFE00864B6B /* UITextField+DSHTextFieldCategory.m */,
 				DAA186C51C07352600CE003B /* UIView+DSHViewCategory.h */,
 				DAA186C61C07352600CE003B /* UIView+DSHViewCategory.m */,
 				DAA1870F1C0735F500CE003B /* UILabel+DSHLabelCategory.h */,
@@ -401,6 +409,8 @@
 				DA93AE631C08A9B600E85BA5 /* UIButton+DSHButtonCategory.m */,
 				DA925BB71C09F8540066BE2E /* UIWebView+DSHWebViewCategory.h */,
 				DA925BB81C09F8540066BE2E /* UIWebView+DSHWebViewCategory.m */,
+				DAE4FDAA1C167AC300864B6B /* UITextView+DSHTextViewCategory.h */,
+				DAE4FDAB1C167AC300864B6B /* UITextView+DSHTextViewCategory.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -712,6 +722,7 @@
 				DAA186F41C07352600CE003B /* DSHApplication.m in Sources */,
 				DAA8A5D81C0F34870023F934 /* HomeController.m in Sources */,
 				DAA187061C07352600CE003B /* NSString+DSHStringCategory.m in Sources */,
+				DAE4FDA91C166DFE00864B6B /* UITextField+DSHTextFieldCategory.m in Sources */,
 				DAE7B2221C0F002400186E2B /* BaseViewController.m in Sources */,
 				DAA186421C0734DD00CE003B /* main.m in Sources */,
 				DAA186FA1C07352600CE003B /* DSHTableViewCell.m in Sources */,
@@ -720,6 +731,7 @@
 				DAA186E51C07352600CE003B /* UIView+DSHViewCategory.m in Sources */,
 				DAA187001C07352600CE003B /* NSDictionary+DSHDictionaryCategory.m in Sources */,
 				DAE7B2171C0EBF6D00186E2B /* PushHelper.m in Sources */,
+				DAE4FDAC1C167AC300864B6B /* UITextView+DSHTextViewCategory.m in Sources */,
 				DAA8A5BA1C0F27D90023F934 /* UIColor+DSHColorCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,8 +8,11 @@
 
 #import "HomeController.h"
 #import "DSHMainCell.h"
+#import "UITextField+DSHTextFieldCategory.h"
 
 @interface HomeController ()
+
+@property (weak, nonatomic) IBOutlet UITextField *textfield;
 
 @end
 
@@ -21,6 +24,12 @@
     self.navigationController.navigationBarHidden = YES;
     [DSHMainCell registerCellClassForTable: [self getListView]];
     [self.data addObjectsFromArray: @[@"1", @"2", @"3"]];
+    
+    [_textfield registerTextValid: ^(UITextField *textfield) {
+        if (textfield.text.length > 6) {
+            [textfield deleteBackward];
+        }
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
