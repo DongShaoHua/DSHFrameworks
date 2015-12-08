@@ -10,7 +10,13 @@
 
 @interface UITextView (DSHTextViewCategory)
 
+/**
+ 注册文本改变时，执行的block
+ */
 - (void)registerTextValid:(void (^)(UITextView *))block;
+/**
+ 移除文本改变时，执行的block
+ */
 - (void)removeTextValid;
 
 @end
