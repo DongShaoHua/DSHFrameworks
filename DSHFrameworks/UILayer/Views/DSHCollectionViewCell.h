@@ -26,5 +26,4 @@
 
 + (void)registerCellNibForCollectionView:(UICollectionView *)collectionView nibName:(NSString *)nibName;
 
-
 @end

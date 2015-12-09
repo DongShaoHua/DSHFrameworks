@@ -74,6 +74,8 @@
 		DAA8A5D91C0F34870023F934 /* HomeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAA8A5D71C0F34870023F934 /* HomeController.xib */; };
 		DAA8A5DD1C0F3C5F0023F934 /* HomeMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA8A5DB1C0F3C5F0023F934 /* HomeMenuCell.m */; };
 		DAA8A5DE1C0F3C5F0023F934 /* HomeMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAA8A5DC1C0F3C5F0023F934 /* HomeMenuCell.xib */; };
+		DAB388561C17BC9000F7C68C /* DSHViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB388551C17BC9000F7C68C /* DSHViewManager.m */; };
+		DAB388581C17BE9F00F7C68C /* views.json in Resources */ = {isa = PBXBuildFile; fileRef = DAB388571C17BE9F00F7C68C /* views.json */; };
 		DADADD421C0FDF6900753758 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DADADD401C0FDF6900753758 /* TestViewController.m */; };
 		DADADD431C0FDF6900753758 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DADADD411C0FDF6900753758 /* TestViewController.xib */; };
 		DADADD471C0FDFB600753758 /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DADADD451C0FDFB600753758 /* MyCollectionViewCell.m */; };
@@ -181,6 +183,9 @@
 		DAA8A5DA1C0F3C5F0023F934 /* HomeMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeMenuCell.h; sourceTree = "<group>"; };
 		DAA8A5DB1C0F3C5F0023F934 /* HomeMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeMenuCell.m; sourceTree = "<group>"; };
 		DAA8A5DC1C0F3C5F0023F934 /* HomeMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeMenuCell.xib; sourceTree = "<group>"; };
+		DAB388541C17BC9000F7C68C /* DSHViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSHViewManager.h; sourceTree = "<group>"; };
+		DAB388551C17BC9000F7C68C /* DSHViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSHViewManager.m; sourceTree = "<group>"; };
+		DAB388571C17BE9F00F7C68C /* views.json */ = {isa = PBXFileReference; explicitFileType = text.json; fileEncoding = 4; path = views.json; sourceTree = "<group>"; };
 		DADADD3F1C0FDF6900753758 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		DADADD401C0FDF6900753758 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		DADADD411C0FDF6900753758 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
@@ -282,6 +287,7 @@
 				DADADD441C0FDFB600753758 /* MyCollectionViewCell.h */,
 				DADADD451C0FDFB600753758 /* MyCollectionViewCell.m */,
 				DADADD461C0FDFB600753758 /* MyCollectionViewCell.xib */,
+				DAB388571C17BE9F00F7C68C /* views.json */,
 			);
 			path = DSHFrameworksIOSExample;
 			sourceTree = "<group>";
@@ -363,6 +369,8 @@
 				DAA186D41C07352600CE003B /* DSHCollectionViewCell.m */,
 				DAA186D51C07352600CE003B /* DSHTableViewCell.h */,
 				DAA186D61C07352600CE003B /* DSHTableViewCell.m */,
+				DAB388541C17BC9000F7C68C /* DSHViewManager.h */,
+				DAB388551C17BC9000F7C68C /* DSHViewManager.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -630,6 +638,7 @@
 				DAA8A5CB1C0F31D90023F934 /* tabBar_find_press@2x.png in Resources */,
 				DAA8A5CD1C0F31D90023F934 /* tabBar_home_press@2x.png in Resources */,
 				DAA8A5C91C0F31D90023F934 /* tabBar_category_press@2x.png in Resources */,
+				DAB388581C17BE9F00F7C68C /* views.json in Resources */,
 				DAA8A5D11C0F32760023F934 /* tabBar_myJD_press@2x.png in Resources */,
 				DAE7B2291C0F029800186E2B /* Default-568h@2x.png in Resources */,
 				DAA8A5DE1C0F3C5F0023F934 /* HomeMenuCell.xib in Resources */,
@@ -731,6 +740,7 @@
 				DAA186E51C07352600CE003B /* UIView+DSHViewCategory.m in Sources */,
 				DAA187001C07352600CE003B /* NSDictionary+DSHDictionaryCategory.m in Sources */,
 				DAE7B2171C0EBF6D00186E2B /* PushHelper.m in Sources */,
+				DAB388561C17BC9000F7C68C /* DSHViewManager.m in Sources */,
 				DAE4FDAC1C167AC300864B6B /* UITextView+DSHTextViewCategory.m in Sources */,
 				DAA8A5BA1C0F27D90023F934 /* UIColor+DSHColorCategory.m in Sources */,
 			);

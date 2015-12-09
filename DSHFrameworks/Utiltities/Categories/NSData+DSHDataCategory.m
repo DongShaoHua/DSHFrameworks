@@ -19,7 +19,7 @@
     return [NSJSONSerialization JSONObjectWithData: self options: NSJSONReadingMutableContainers error: error];
 }
 
-- (id)toModel:(Class)cls {
+- (__kindof id)toModel:(Class)cls {
     NSDictionary *dictionary = [self toDictionary];
     if (dictionary) {
         return [dictionary toModel: cls];

@@ -1,0 +1,15 @@
+{
+    "key": "",
+    "type": "UIView",
+    "parent": "",
+    "subviews:": [],
+    "properties": [
+    {
+        "key": "frame",
+        "value": "0,a1,s,s"
+    },
+    {
+        "key": "backgroundColor",
+        "value": "#ffdd33cc"
+    }]
+}

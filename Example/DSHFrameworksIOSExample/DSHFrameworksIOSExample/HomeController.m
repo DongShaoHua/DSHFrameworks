@@ -9,6 +9,7 @@
 #import "HomeController.h"
 #import "DSHMainCell.h"
 #import "UITextField+DSHTextFieldCategory.h"
+#import "DSHViewManager.h"
 
 @interface HomeController ()
 
@@ -24,6 +25,11 @@
     self.navigationController.navigationBarHidden = YES;
     [DSHMainCell registerCellClassForTable: [self getListView]];
     [self.data addObjectsFromArray: @[@"1", @"2", @"3"]];
+    
+    NSString *layoutFile = [[NSBundle mainBundle] pathForResource: @"views.json" ofType: nil];
+    UIView *view = [DSHViewManager viewWithFile: layoutFile parentView: nil];
+    
+    [self.view addSubview: view];
     
     [_textfield registerTextValid: ^(UITextField *textfield) {
         if (textfield.text.length > 6) {
