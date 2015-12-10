@@ -27,9 +27,9 @@
     [self.data addObjectsFromArray: @[@"1", @"2", @"3"]];
     
     NSString *layoutFile = [[NSBundle mainBundle] pathForResource: @"views.json" ofType: nil];
-    UIView *view = [DSHViewManager viewWithFile: layoutFile parentView: nil];
+    DSHViewManager *manager = [DSHViewManager new];
     
-    [self.view addSubview: view];
+    [manager viewWithFile: layoutFile parentView: self.view];
     
     [_textfield registerTextValid: ^(UITextField *textfield) {
         if (textfield.text.length > 6) {

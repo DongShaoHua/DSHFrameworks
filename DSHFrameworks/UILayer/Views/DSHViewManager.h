@@ -8,9 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@class DSHLayoutEntity;
+@class DSHLayoutEntityProperty;
+
 @interface DSHViewManager : NSObject
 
-+ (__kindof UIView *)viewWithFile:(NSString *)filePath parentView:(UIView *)parentView;
+@property (strong, nonatomic) NSString *entityFileName;
+
+- (__kindof UIView *)viewWithFile:(NSString *)entityFileName parentView:(UIView *)parentView;
+- (__kindof UIView *)viewWithEntity:(DSHLayoutEntity *)entity  parentView:(UIView *)parentView;
 
 @end
 
@@ -19,7 +25,7 @@
 @property (strong, nonatomic) NSString *key;
 @property (strong, nonatomic) id value;
 
-+ (DSHLayoutEntityProperty *)propertyWithJson:(NSDictionary *)json;
++ (DSHLayoutEntityProperty *)propertyWithJson:(NSDictionary *)json parentView:(UIView *)parentView;
 
 @end
 
@@ -27,9 +33,10 @@
 
 @property (strong, nonatomic) NSString *key;
 @property (strong, nonatomic) NSString *type;
+@property (strong, nonatomic) NSMutableArray<NSDictionary *> *subviews;
 @property (strong, nonatomic) NSMutableArray<NSDictionary *> *properties;
 @property (strong, nonatomic) NSArray<DSHLayoutEntityProperty *> *entityProperties;
 
-- (__kindof UIView *)createViewWithEntity;
+- (__kindof UIView *)createViewWithEntity:(UIView *)parentView;
 
 @end

@@ -16,18 +16,38 @@
 
 @implementation DSHViewManager
 
-+ (__kindof UIView *)viewWithFile:(NSString *)filePath parentView:(UIView *)parentView {
+- (__kindof UIView *)viewWithFile:(NSString *)filePath parentView:(UIView *)parentView {
+    _entityFileName = filePath;
     UIView *view = nil;
-    NSString *layoutStr = [NSString stringWithContentsOfFile: filePath encoding: NSUTF8StringEncoding error: nil];
-    
-    if (![NSString isNilOrEmpty: layoutStr]) {
-        NSDictionary *layoutJson = [layoutStr toJSON];
-        if (_kind_of_dictionary(layoutJson)) {
-            DSHLayoutEntity *entity = [layoutJson toModel: DSHLayoutEntity.class];
-            view = [entity createViewWithEntity];
+    if (![NSString isNilOrEmpty: _entityFileName]) {
+        NSString *layoutStr = [NSString stringWithContentsOfFile: filePath encoding: NSUTF8StringEncoding error: nil];
+        if (![NSString isNilOrEmpty: layoutStr]) {
+            NSDictionary *layoutJson = [layoutStr toJSON];
+            if (_kind_of_dictionary(layoutJson)) {
+                DSHLayoutEntity *entity = [layoutJson toModel: DSHLayoutEntity.class];
+                [self viewWithEntity: entity parentView: parentView];
+            }
         }
     }
-    
+    return view;
+}
+
+- (UIView *)viewWithEntity:(DSHLayoutEntity *)entity parentView:(UIView *)parentView {
+    UIView *view = nil;
+    if (_kind_of_(entity, DSHLayoutEntity)) {
+        view = [entity createViewWithEntity: parentView];
+        if (view) {
+            [parentView addSubview: view];
+            if (entity.subviews && _kind_of_array(entity.subviews) && entity.subviews.count > 0) {
+                for (NSDictionary *json in entity.subviews) {
+                    if (_kind_of_dictionary(json)) {
+                        DSHLayoutEntity *subentity = [json toModel: DSHLayoutEntity.class];
+                        [self viewWithEntity: subentity parentView: view];
+                    }
+                }
+            }
+        }
+    }
     return view;
 }
 
@@ -35,7 +55,7 @@
 
 @implementation DSHLayoutEntityProperty
 
-+ (DSHLayoutEntityProperty *)propertyWithJson:(NSDictionary *)json {
++ (DSHLayoutEntityProperty *)propertyWithJson:(NSDictionary *)json parentView:(UIView *)parentView {
     DSHLayoutEntityProperty *property = nil;
     if (_kind_of_dictionary(json)) {
         property = [json toModel: DSHLayoutEntityProperty.class];
@@ -49,13 +69,21 @@
                     CGFloat y = [values[1] floatValue];
                     CGFloat width = [values[2] floatValue];
                     CGFloat height = [values[3] floatValue];
-                    
-                    if ([@"s" isEqualToString: values[2]]) {
-                        width = [DSHDevelopmentHelper getDeviceScreen].width;
+                
+                    if ([@"pw" isEqualToString: values[2]]) {
+                        width = parentView.frame.size.width;
+                    } else {
+                        if ([@"sw" isEqualToString: values[2]]) {
+                            width = [DSHDevelopmentHelper getDeviceScreen].width;
+                        }
                     }
                     
-                    if ([@"s" isEqualToString: values[3]]) {
-                        height = [DSHDevelopmentHelper getDeviceScreen].height;
+                    if ([@"ph" isEqualToString: values[3]]) {
+                        height = parentView.frame.size.height;
+                    } else {
+                        if ([@"sh" isEqualToString: values[3]]) {
+                            height = [DSHDevelopmentHelper getDeviceScreen].height;
+                        }
                     }
                     
                     CGRect frame = CGRectMake(x, y, width, height);
@@ -68,7 +96,6 @@
                 property.value = backgroundColor;
             }
         }
-        
     }
     
     return property;
@@ -78,7 +105,7 @@
 
 @implementation DSHLayoutEntity
 
-- (__kindof UIView *)createViewWithEntity {
+- (__kindof UIView *)createViewWithEntity:(UIView *)parentView {
     UIView *view = nil;
     
     if (![NSString isNilOrEmpty: _type]) {
@@ -88,7 +115,7 @@
             if (_properties) {
                 NSMutableArray *entityProperties = [NSMutableArray array];
                 for (NSDictionary *prop in _properties) {
-                    DSHLayoutEntityProperty *p = [DSHLayoutEntityProperty propertyWithJson: prop];
+                    DSHLayoutEntityProperty *p = [DSHLayoutEntityProperty propertyWithJson: prop parentView: parentView];
                     
                     if (p) {
                         [view setValue: p.value forKey: p.key];
