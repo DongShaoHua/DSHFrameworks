@@ -76,6 +76,7 @@
 		DAA8A5DE1C0F3C5F0023F934 /* HomeMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAA8A5DC1C0F3C5F0023F934 /* HomeMenuCell.xib */; };
 		DAB388561C17BC9000F7C68C /* DSHViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB388551C17BC9000F7C68C /* DSHViewManager.m */; };
 		DAB388581C17BE9F00F7C68C /* views.json in Resources */ = {isa = PBXBuildFile; fileRef = DAB388571C17BE9F00F7C68C /* views.json */; };
+		DAD354061C1965E600CCBA74 /* ScriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD354051C1965E600CCBA74 /* ScriptManager.m */; };
 		DADADD421C0FDF6900753758 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DADADD401C0FDF6900753758 /* TestViewController.m */; };
 		DADADD431C0FDF6900753758 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DADADD411C0FDF6900753758 /* TestViewController.xib */; };
 		DADADD471C0FDFB600753758 /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DADADD451C0FDFB600753758 /* MyCollectionViewCell.m */; };
@@ -186,6 +187,8 @@
 		DAB388541C17BC9000F7C68C /* DSHViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSHViewManager.h; sourceTree = "<group>"; };
 		DAB388551C17BC9000F7C68C /* DSHViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSHViewManager.m; sourceTree = "<group>"; };
 		DAB388571C17BE9F00F7C68C /* views.json */ = {isa = PBXFileReference; explicitFileType = text.json; fileEncoding = 4; path = views.json; sourceTree = "<group>"; };
+		DAD354041C1965E600CCBA74 /* ScriptManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScriptManager.h; sourceTree = "<group>"; };
+		DAD354051C1965E600CCBA74 /* ScriptManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScriptManager.m; sourceTree = "<group>"; };
 		DADADD3F1C0FDF6900753758 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		DADADD401C0FDF6900753758 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		DADADD411C0FDF6900753758 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
@@ -337,6 +340,8 @@
 				DAA186D01C07352600CE003B /* DSHApplication.h */,
 				DAA186D11C07352600CE003B /* DSHApplication.m */,
 				DAA186D21C07352600CE003B /* Views */,
+				DAD354041C1965E600CCBA74 /* ScriptManager.h */,
+				DAD354051C1965E600CCBA74 /* ScriptManager.m */,
 			);
 			path = UILayer;
 			sourceTree = "<group>";
@@ -740,6 +745,7 @@
 				DAA186E51C07352600CE003B /* UIView+DSHViewCategory.m in Sources */,
 				DAA187001C07352600CE003B /* NSDictionary+DSHDictionaryCategory.m in Sources */,
 				DAE7B2171C0EBF6D00186E2B /* PushHelper.m in Sources */,
+				DAD354061C1965E600CCBA74 /* ScriptManager.m in Sources */,
 				DAB388561C17BC9000F7C68C /* DSHViewManager.m in Sources */,
 				DAE4FDAC1C167AC300864B6B /* UITextView+DSHTextViewCategory.m in Sources */,
 				DAA8A5BA1C0F27D90023F934 /* UIColor+DSHColorCategory.m in Sources */,

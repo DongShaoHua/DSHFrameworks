@@ -10,7 +10,7 @@
         [
          {
             "key": "",
-            "type": "UILabel",
+            "type": "UIButton",
             "subviews": [],
             "properties":
             [
@@ -21,10 +21,6 @@
              {
                 "key": "backgroundColor",
                 "value": "#ffffff"
-             },
-             {
-                "key": "text",
-                "value": "What's the matter?"
              }
             ]
          }

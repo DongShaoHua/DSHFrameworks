@@ -25,11 +25,12 @@
     self.navigationController.navigationBarHidden = YES;
     [DSHMainCell registerCellClassForTable: [self getListView]];
     [self.data addObjectsFromArray: @[@"1", @"2", @"3"]];
-    
     NSString *layoutFile = [[NSBundle mainBundle] pathForResource: @"views.json" ofType: nil];
     DSHViewManager *manager = [DSHViewManager new];
     
     [manager viewWithFile: layoutFile parentView: self.view];
+
+    [manager.manager.window.exception toString];
     
     [_textfield registerTextValid: ^(UITextField *textfield) {
         if (textfield.text.length > 6) {

@@ -7,12 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ScriptManager.h"
 
 @class DSHLayoutEntity;
 @class DSHLayoutEntityProperty;
 
 @interface DSHViewManager : NSObject
 
+@property (strong, nonatomic) ScriptManager *manager;
 @property (strong, nonatomic) NSString *entityFileName;
 
 - (__kindof UIView *)viewWithFile:(NSString *)entityFileName parentView:(UIView *)parentView;
@@ -22,6 +24,7 @@
 
 @interface DSHLayoutEntityProperty : NSObject
 
+@property (weak, nonatomic) ScriptManager *manager;
 @property (strong, nonatomic) NSString *key;
 @property (strong, nonatomic) id value;
 
@@ -31,6 +34,7 @@
 
 @interface DSHLayoutEntity : NSObject
 
+@property (weak, nonatomic) ScriptManager *manager;
 @property (strong, nonatomic) NSString *key;
 @property (strong, nonatomic) NSString *type;
 @property (strong, nonatomic) NSMutableArray<NSDictionary *> *subviews;

@@ -16,6 +16,14 @@
 
 @implementation DSHViewManager
 
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        _manager = [ScriptManager new];
+    }
+    return self;
+}
+
 - (__kindof UIView *)viewWithFile:(NSString *)filePath parentView:(UIView *)parentView {
     _entityFileName = filePath;
     UIView *view = nil;
@@ -35,6 +43,7 @@
 - (UIView *)viewWithEntity:(DSHLayoutEntity *)entity parentView:(UIView *)parentView {
     UIView *view = nil;
     if (_kind_of_(entity, DSHLayoutEntity)) {
+        entity.manager = _manager;
         view = [entity createViewWithEntity: parentView];
         if (view) {
             [parentView addSubview: view];
@@ -111,6 +120,7 @@
     if (![NSString isNilOrEmpty: _type]) {
         view = (UIView *)[NSClassFromString(_type) new];
         if (_kind_of_(view, UIView)) {
+            _manager.window[@"view_label"] = view;
             objc_setAssociatedObject(view, @"layoutKey", _key, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
             if (_properties) {
                 NSMutableArray *entityProperties = [NSMutableArray array];
@@ -118,7 +128,13 @@
                     DSHLayoutEntityProperty *p = [DSHLayoutEntityProperty propertyWithJson: prop parentView: parentView];
                     
                     if (p) {
-                        [view setValue: p.value forKey: p.key];
+                        @try {
+                            [view setValue: p.value forKey: p.key];
+                        } @catch(NSException *exception) {
+                            NSLog(@"%@", exception);
+                        } @finally {
+                            
+                        }
                         [entityProperties addObject: p];
                     }
                 }
@@ -129,6 +145,7 @@
             view = nil;
         }
     }
+    
     return view;
 }
 
