@@ -16,7 +16,6 @@
 
 #define header_file_for_mjrefresh <MJRefresh.h>
 
-
 #endif
 
 

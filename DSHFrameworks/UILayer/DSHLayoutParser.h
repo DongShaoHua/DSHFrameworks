@@ -10,6 +10,8 @@
 
 @interface DSHLayoutParser : NSObject
 
-- (__kindof UIView *)loadViewWithUrl:(NSURL *)url;
+@property (strong, nonatomic) NSMutableDictionary<NSString *, NSString *> *functions;
+
+- (__kindof UIView *)loadViewWithUrl:(NSString *)filePath parentView:(__kindof UIView *)parentView;
 
 @end

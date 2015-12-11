@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		7FE2824973A5B10A045E6FD8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D35400FBD55A93E7F17DEDD /* libPods.a */; };
 		DA649EF01C0961BA00AD2927 /* logo-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DA649EEF1C0961BA00AD2927 /* logo-icon.png */; };
+		DA71A00C1C1A9AD9000510D9 /* DSHLayoutViewProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = DA71A00B1C1A9AD9000510D9 /* DSHLayoutViewProperty.m */; };
+		DA71A0101C1AB3CF000510D9 /* UIButton+DSHButtonJSExportCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DA71A00F1C1AB3CF000510D9 /* UIButton+DSHButtonJSExportCategory.m */; };
+		DA71A0161C1ABC0A000510D9 /* UIView+DSHViewJSExportCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DA71A0151C1ABC0A000510D9 /* UIView+DSHViewJSExportCategory.m */; };
 		DA925BB91C09F8540066BE2E /* UIWebView+DSHWebViewCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DA925BB81C09F8540066BE2E /* UIWebView+DSHWebViewCategory.m */; };
 		DA93AE641C08A9B600E85BA5 /* UIButton+DSHButtonCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DA93AE631C08A9B600E85BA5 /* UIButton+DSHButtonCategory.m */; };
 		DA93AE701C08B59700E85BA5 /* DSHMainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA93AE6F1C08B59700E85BA5 /* DSHMainCell.m */; };
@@ -75,7 +78,6 @@
 		DAA8A5DD1C0F3C5F0023F934 /* HomeMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA8A5DB1C0F3C5F0023F934 /* HomeMenuCell.m */; };
 		DAA8A5DE1C0F3C5F0023F934 /* HomeMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAA8A5DC1C0F3C5F0023F934 /* HomeMenuCell.xib */; };
 		DAB388561C17BC9000F7C68C /* DSHViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB388551C17BC9000F7C68C /* DSHViewManager.m */; };
-		DAB388581C17BE9F00F7C68C /* views.json in Resources */ = {isa = PBXBuildFile; fileRef = DAB388571C17BE9F00F7C68C /* views.json */; };
 		DAD354061C1965E600CCBA74 /* ScriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD354051C1965E600CCBA74 /* ScriptManager.m */; };
 		DADADD421C0FDF6900753758 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DADADD401C0FDF6900753758 /* TestViewController.m */; };
 		DADADD431C0FDF6900753758 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DADADD411C0FDF6900753758 /* TestViewController.xib */; };
@@ -121,6 +123,12 @@
 		9D35400FBD55A93E7F17DEDD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B95130E150CB13DDD3B7EB5B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		DA649EEF1C0961BA00AD2927 /* logo-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-icon.png"; sourceTree = "<group>"; };
+		DA71A00A1C1A9AD9000510D9 /* DSHLayoutViewProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSHLayoutViewProperty.h; sourceTree = "<group>"; };
+		DA71A00B1C1A9AD9000510D9 /* DSHLayoutViewProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSHLayoutViewProperty.m; sourceTree = "<group>"; };
+		DA71A00E1C1AB3CF000510D9 /* UIButton+DSHButtonJSExportCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+DSHButtonJSExportCategory.h"; sourceTree = "<group>"; };
+		DA71A00F1C1AB3CF000510D9 /* UIButton+DSHButtonJSExportCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DSHButtonJSExportCategory.m"; sourceTree = "<group>"; };
+		DA71A0141C1ABC0A000510D9 /* UIView+DSHViewJSExportCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DSHViewJSExportCategory.h"; sourceTree = "<group>"; };
+		DA71A0151C1ABC0A000510D9 /* UIView+DSHViewJSExportCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DSHViewJSExportCategory.m"; sourceTree = "<group>"; };
 		DA925BB71C09F8540066BE2E /* UIWebView+DSHWebViewCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+DSHWebViewCategory.h"; sourceTree = "<group>"; };
 		DA925BB81C09F8540066BE2E /* UIWebView+DSHWebViewCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+DSHWebViewCategory.m"; sourceTree = "<group>"; };
 		DA93AE621C08A9B600E85BA5 /* UIButton+DSHButtonCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+DSHButtonCategory.h"; sourceTree = "<group>"; };
@@ -188,7 +196,6 @@
 		DAA8A5DC1C0F3C5F0023F934 /* HomeMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeMenuCell.xib; sourceTree = "<group>"; };
 		DAB388541C17BC9000F7C68C /* DSHViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSHViewManager.h; path = Views/DSHViewManager.h; sourceTree = "<group>"; };
 		DAB388551C17BC9000F7C68C /* DSHViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSHViewManager.m; path = Views/DSHViewManager.m; sourceTree = "<group>"; };
-		DAB388571C17BE9F00F7C68C /* views.json */ = {isa = PBXFileReference; explicitFileType = text.json; fileEncoding = 4; path = views.json; sourceTree = "<group>"; };
 		DAD354041C1965E600CCBA74 /* ScriptManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScriptManager.h; sourceTree = "<group>"; };
 		DAD354051C1965E600CCBA74 /* ScriptManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScriptManager.m; sourceTree = "<group>"; };
 		DADADD3F1C0FDF6900753758 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
@@ -246,6 +253,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA71A00D1C1AB382000510D9 /* JSExport */ = {
+			isa = PBXGroup;
+			children = (
+				DA71A00E1C1AB3CF000510D9 /* UIButton+DSHButtonJSExportCategory.h */,
+				DA71A00F1C1AB3CF000510D9 /* UIButton+DSHButtonJSExportCategory.m */,
+				DA71A0141C1ABC0A000510D9 /* UIView+DSHViewJSExportCategory.h */,
+				DA71A0151C1ABC0A000510D9 /* UIView+DSHViewJSExportCategory.m */,
+			);
+			name = JSExport;
+			sourceTree = "<group>";
+		};
 		DAA186341C0734DD00CE003B = {
 			isa = PBXGroup;
 			children = (
@@ -296,7 +314,6 @@
 				DADADD441C0FDFB600753758 /* MyCollectionViewCell.h */,
 				DADADD451C0FDFB600753758 /* MyCollectionViewCell.m */,
 				DADADD461C0FDFB600753758 /* MyCollectionViewCell.xib */,
-				DAB388571C17BE9F00F7C68C /* views.json */,
 			);
 			path = DSHFrameworksIOSExample;
 			sourceTree = "<group>";
@@ -505,10 +522,13 @@
 		DAEC6AFA1C1A7B16005C9150 /* LayoutHelper */ = {
 			isa = PBXGroup;
 			children = (
+				DA71A00D1C1AB382000510D9 /* JSExport */,
 				DAB388541C17BC9000F7C68C /* DSHViewManager.h */,
 				DAB388551C17BC9000F7C68C /* DSHViewManager.m */,
 				DAEC6AFB1C1A7B6C005C9150 /* DSHLayoutParser.h */,
 				DAEC6AFC1C1A7B6C005C9150 /* DSHLayoutParser.m */,
+				DA71A00A1C1A9AD9000510D9 /* DSHLayoutViewProperty.h */,
+				DA71A00B1C1A9AD9000510D9 /* DSHLayoutViewProperty.m */,
 			);
 			name = LayoutHelper;
 			sourceTree = "<group>";
@@ -660,7 +680,6 @@
 				DAA8A5CB1C0F31D90023F934 /* tabBar_find_press@2x.png in Resources */,
 				DAA8A5CD1C0F31D90023F934 /* tabBar_home_press@2x.png in Resources */,
 				DAA8A5C91C0F31D90023F934 /* tabBar_category_press@2x.png in Resources */,
-				DAB388581C17BE9F00F7C68C /* views.json in Resources */,
 				DAA8A5D11C0F32760023F934 /* tabBar_myJD_press@2x.png in Resources */,
 				DAE7B2291C0F029800186E2B /* Default-568h@2x.png in Resources */,
 				DAA8A5DE1C0F3C5F0023F934 /* HomeMenuCell.xib in Resources */,
@@ -751,6 +770,8 @@
 				DA925BB91C09F8540066BE2E /* UIWebView+DSHWebViewCategory.m in Sources */,
 				DAA186F11C07352600CE003B /* DSHViewController.m in Sources */,
 				DAA186F41C07352600CE003B /* DSHApplication.m in Sources */,
+				DA71A00C1C1A9AD9000510D9 /* DSHLayoutViewProperty.m in Sources */,
+				DA71A0161C1ABC0A000510D9 /* UIView+DSHViewJSExportCategory.m in Sources */,
 				DAA8A5D81C0F34870023F934 /* HomeController.m in Sources */,
 				DAA187061C07352600CE003B /* NSString+DSHStringCategory.m in Sources */,
 				DAE4FDA91C166DFE00864B6B /* UITextField+DSHTextFieldCategory.m in Sources */,
@@ -758,6 +779,7 @@
 				DAA186421C0734DD00CE003B /* main.m in Sources */,
 				DAA186FA1C07352600CE003B /* DSHTableViewCell.m in Sources */,
 				DA93AE701C08B59700E85BA5 /* DSHMainCell.m in Sources */,
+				DA71A0101C1AB3CF000510D9 /* UIButton+DSHButtonJSExportCategory.m in Sources */,
 				DAA187111C0735F500CE003B /* UILabel+DSHLabelCategory.m in Sources */,
 				DAA186E51C07352600CE003B /* UIView+DSHViewCategory.m in Sources */,
 				DAA187001C07352600CE003B /* NSDictionary+DSHDictionaryCategory.m in Sources */,

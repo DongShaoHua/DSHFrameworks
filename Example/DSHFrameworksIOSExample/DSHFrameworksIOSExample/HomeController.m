@@ -31,14 +31,6 @@
     [manager viewWithFile: layoutFile parentView: self.view];
     
     
-    
-    
-    [manager.manager.window evaluateScript: @"view_label.setButtonTitleName('232131', 0);"];
-    
-    //[manager.manager.window evaluateScript: @"view_label.settitleState('1231', 1);"];
-    
-    NSString *error = [manager.manager.window.exception toString];
-    
     [_textfield registerTextValid: ^(UITextField *textfield) {
         if (textfield.text.length > 6) {
             [textfield deleteBackward];

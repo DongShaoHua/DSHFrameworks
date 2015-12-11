@@ -21,29 +21,6 @@
 @property (strong, nonatomic) ScriptManager *manager;
 
 - (__kindof UIView *)viewWithFile:(NSString *)entityFileName parentView:(UIView *)parentView;
-- (__kindof UIView *)viewWithEntity:(DSHLayoutEntity *)entity  parentView:(UIView *)parentView;
 
 @end
 
-@interface DSHLayoutEntityProperty : NSObject
-
-@property (weak, nonatomic) ScriptManager *manager;
-@property (strong, nonatomic) NSString *key;
-@property (strong, nonatomic) id value;
-
-+ (DSHLayoutEntityProperty *)propertyWithJson:(NSDictionary *)json parentView:(UIView *)parentView;
-
-@end
-
-@interface DSHLayoutEntity : NSObject
-
-@property (weak, nonatomic) ScriptManager *manager;
-@property (strong, nonatomic) NSString *key;
-@property (strong, nonatomic) NSString *type;
-@property (strong, nonatomic) NSMutableArray<NSDictionary *> *subviews;
-@property (strong, nonatomic) NSMutableArray<NSDictionary *> *properties;
-@property (strong, nonatomic) NSArray<DSHLayoutEntityProperty *> *entityProperties;
-
-- (__kindof UIView *)createViewWithEntity:(UIView *)parentView;
-
-@end

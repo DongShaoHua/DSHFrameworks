@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
 <DSHLayout>
-    <Layout>
+    <Layouts>
         <UIView key="" frame="0,0,sw,sh" backgroundColor="#ffdd33cc" >
-            <UIView key="" frame="30,30,400,400" backgroundColor="#ff0033cc" >
-                <UIButton  frame="0,0,sw,sh" backgroundColor="#ffffff" />
+            <UIView key="" frame="30,30,250,200" backgroundColor="#ff0033cc" >
+                <UIButton key="btnTest" frame="0,0,50,50" backgroundColor="#ffffff" init="init" />
             </UIView>
         </UIView>
-    </Layout>
+    </Layouts>
+    <Funcs>
+        <init>
+            <![CDATA[
+                btnTest.setTitleForState("I'm title for button.", 0);
+                btnTest.frame = { x: 30, y: 30, width: 200, height: 64 };
+                btnTest.setCornerRadius(8.0);
+                btnTest.setViewBackgroundColor('#aacc881d');
+            ]]>
+        </init>
+    </Funcs>
 </DSHLayout>
