@@ -10,6 +10,8 @@
 #import <JavaScriptCore/JavaScriptCore.h>
 #import "UIView+DSHViewCategory.h"
 
+#import <PureLayout.h>
+
 @protocol DSHViewJSExportProtocol <JSExport>
 
 @property(assign, nonatomic) CGRect frame;
@@ -30,8 +32,15 @@
 
 - (void)setViewBackgroundColor:(NSString *)colorString;
 
+#pragma mark ==== PureLayout AutoLayout ======
+
+- (NSArray<NSLayoutConstraint *> *)autoCenterInSuperview;
+- (NSLayoutConstraint *)autoSetDimension:(ALDimension)dimension toSize:(CGFloat)size;
+- (NSArray<NSLayoutConstraint *> *)autoPinEdgesToSuperviewEdges;
+
 @end
 
 @interface UIView (DSHViewJSExportCategory) <DSHViewJSExportProtocol>
+
 
 @end

@@ -49,6 +49,10 @@ static NSMutableDictionary<NSString *, PropertyValueHandleBlock> *handleblock = 
     [self addPropertyHandleBlock: @"backgroundColor" block: ^id(NSString *propertyValue, __kindof UIView *parentView) {
         return [UIColor colorWithHexString: propertyValue];
     }];
+    
+    [self addPropertyHandleBlock: @"image" block:^id(NSString *propertyValue, __kindof UIView *parentView) {
+        return [UIImage imageNamed: propertyValue];
+    }];
 }
 
 - (void)bindView:(UIView *)view {

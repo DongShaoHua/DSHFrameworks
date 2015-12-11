@@ -12,6 +12,6 @@
 
 @property (strong, nonatomic) NSMutableDictionary<NSString *, NSString *> *functions;
 
-- (__kindof UIView *)loadViewWithUrl:(NSString *)filePath parentView:(__kindof UIView *)parentView;
+- (NSArray<__kindof UIView *> *)loadViewWithUrl:(NSString *)filePath parentView:(__kindof UIView *)parentView;
 
 @end

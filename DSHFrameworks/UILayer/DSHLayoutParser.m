@@ -64,7 +64,6 @@
             }
             
             if (element.attributes) {
-                
                 for (GDataXMLNode *attribute in element.attributes) {
                     NSString *name = attribute.name;
                     NSString *value = attribute.stringValue;
@@ -72,18 +71,9 @@
                         objc_setAssociatedObject(view, LayoutKeyForView, value, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
                         _window[value] = view;
                     } else {
-                        if ([@"init" isEqualToString: name] && !_is_string_nil_or_empty(value)) {
-                            NSString *initScript = _functions[value];
-                            [((UIButton *)view)setTitleColor: [UIColor redColor] forState: UIControlStateNormal];
-                            if (!_is_string_nil_or_empty(initScript)) {
-                                JSValue *value = [_window evaluateScript: initScript];
-                                NSLog(@"%@", [_window.exception toString]);
-                            }
-                        } else {
-                            DSHLayoutViewProperty *property = [DSHLayoutViewProperty propertyWith: name andValue: value parentView: parentView];
-                            if (property) {
-                                [property bindView: view];
-                            }
+                        DSHLayoutViewProperty *property = [DSHLayoutViewProperty propertyWith: name andValue: value parentView: parentView];
+                        if (property) {
+                            [property bindView: view];
                         }
                     }
                 }
@@ -100,8 +90,8 @@
 }
 #endif
 
-- (__kindof UIView *)loadViewWithUrl:(NSString *)filePath parentView:(__kindof UIView *)parentView {
-    UIView *view = nil;
+- (NSArray<__kindof UIView *> *)loadViewWithUrl:(NSString *)filePath parentView:(__kindof UIView *)parentView {
+    NSMutableArray<__kindof UIView *> *views = nil;
     [_functions removeAllObjects];
 #if __has_include(header_file_for_gddataxmlnode)
     if ([[NSFileManager defaultManager] fileExistsAtPath: filePath]) {
@@ -111,7 +101,6 @@
             if (xmldocument) {
                 GDataXMLElement *root = [xmldocument rootElement];
                 GDataXMLElement *vars = [[root elementsForName: @"Vars"] firstObject];
-                
                 GDataXMLElement *funcs = [[root elementsForName: @"Funcs"] firstObject];
                 if (funcs && funcs.children) {
                     for (GDataXMLElement *funcElement in funcs.children) {
@@ -124,16 +113,26 @@
                 }
                 
                 GDataXMLElement *layouts = [[root elementsForName: @"Layouts"] firstObject];
-                if (layouts && layouts.children) {
+                if (layouts && layouts.children && layouts.childCount > 0) {
+                    views = [NSMutableArray array];
                     for (GDataXMLElement *viewElement in layouts.children) {
-                        [self viewWithElement: viewElement parentView: parentView];
+                        UIView *view = [self viewWithElement: viewElement parentView: parentView];
+                        if (view) {
+                            [views addObject: view];
+                        }
                     }
+                }
+                
+                NSString *initScript = _functions[@"init"];
+                if (!_is_string_nil_or_empty(initScript)) {
+                    [_window evaluateScript: initScript];
+                    NSLog(@"%@", [_window.exception toString]);
                 }
             }
         }
     }
 #endif
-    return view;
+    return views;
 }
 
 @end

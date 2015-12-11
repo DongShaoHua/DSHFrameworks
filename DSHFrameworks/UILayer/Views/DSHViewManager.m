@@ -30,7 +30,7 @@
     _layoutFileName = filePath;
     UIView *view = nil;
     DSHLayoutParser *parser = [DSHLayoutParser new];
-    view = [parser loadViewWithUrl: _layoutFileName parentView: parentView];
+    [parser loadViewWithUrl: _layoutFileName parentView: parentView];
     return view;
 }
 

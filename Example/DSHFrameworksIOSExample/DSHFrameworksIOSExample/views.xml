@@ -2,19 +2,31 @@
 
 <DSHLayout>
     <Layouts>
-        <UIView key="" frame="0,0,sw,sh" backgroundColor="#ffdd33cc" >
-            <UIView key="" frame="30,30,250,200" backgroundColor="#ff0033cc" >
-                <UIButton key="btnTest" frame="0,0,50,50" backgroundColor="#ffffff" init="init" />
+        <UIView frame="0,0,sw,sh" backgroundColor="#ffdd33cc" >
+            <UIView key="view1" frame="30,30,250,200" backgroundColor="#ff0033cc" >
+                <UIButton key="btnTest" frame="0,0,50,50" backgroundColor="#ffffff" />
+                <UIView key="view2" backgroundColor="#CCCCCCCC" />
+                <UIImageView frame="50,50,50,50" image="logo-icon.png" alpha="0.8" />
             </UIView>
         </UIView>
     </Layouts>
     <Funcs>
         <init>
             <![CDATA[
+                function CGRectMake(x, y, width, height) {
+                    return { x: x, y: y, width: width, height: height };
+                }
+                
                 btnTest.setTitleForState("I'm title for button.", 0);
-                btnTest.frame = { x: 30, y: 30, width: 200, height: 64 };
+                btnTest.frame = CGRectMake(30, 30, 240, 124);
                 btnTest.setCornerRadius(8.0);
                 btnTest.setViewBackgroundColor('#aacc881d');
+                
+                view1.autoCenterInSuperview();
+                view1.autoSetDimensionToSize(7, 300);
+                view1.autoSetDimensionToSize(8, 200);
+                
+                view2.autoPinEdgesToSuperviewEdges();
             ]]>
         </init>
     </Funcs>
