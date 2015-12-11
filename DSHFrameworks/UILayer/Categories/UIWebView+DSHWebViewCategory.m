@@ -21,4 +21,8 @@
     [self loadHTMLString: html baseURL: baseURL];
 }
 
+- (JSContext *)getRelativeContext {
+    return [self valueForKeyPath: @"documentView.webView.mainFrame.javaScriptContext"];
+}
+
 @end

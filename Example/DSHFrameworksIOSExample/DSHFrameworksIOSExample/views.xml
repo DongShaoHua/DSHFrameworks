@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<DSHLayout>
+    <Layout>
+        <UIView key="" frame="0,0,sw,sh" backgroundColor="#ffdd33cc" >
+            <UIView key="" frame="30,30,400,400" backgroundColor="#ff0033cc" >
+                <UIButton  frame="0,0,sw,sh" backgroundColor="#ffffff" />
+            </UIView>
+        </UIView>
+    </Layout>
+</DSHLayout>

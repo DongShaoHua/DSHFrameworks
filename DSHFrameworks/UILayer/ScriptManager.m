@@ -7,10 +7,14 @@
 //
 
 #import "ScriptManager.h"
+#import <objc/runtime.h>
 
-// documentView.webView.mainFrame.javaScriptContext
 
 @implementation ScriptManager
+
++ (void)load {
+    class_addProtocol([UIButton class], @protocol(JSExportProtocol));
+}
 
 - (instancetype)init {
     self = [super init];
@@ -26,6 +30,18 @@
         _window = window;
     }
     return self;
+}
+
+@end
+
+@implementation UIButton (ScriptCategory)
+
+- (void)settitle:(NSString *)Title State:(int)State {
+    [self setTitle: Title forState: UIControlStateNormal];
+}
+
+- (void)setButtonTitle:(NSString *)title Name:(NSString *)Name {
+    [self setTitle: title forState: UIControlStateNormal];
 }
 
 @end

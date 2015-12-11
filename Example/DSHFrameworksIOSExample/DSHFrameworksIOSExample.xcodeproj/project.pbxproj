@@ -95,6 +95,8 @@
 		DAE7B23B1C0F03F400186E2B /* AppIcon40x40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE7B2321C0F03F400186E2B /* AppIcon40x40@3x.png */; };
 		DAE7B23E1C0F03F400186E2B /* AppIcon60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE7B2351C0F03F400186E2B /* AppIcon60x60@2x.png */; };
 		DAE7B23F1C0F03F400186E2B /* AppIcon60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DAE7B2361C0F03F400186E2B /* AppIcon60x60@3x.png */; };
+		DAEC6AFD1C1A7B6C005C9150 /* DSHLayoutParser.m in Sources */ = {isa = PBXBuildFile; fileRef = DAEC6AFC1C1A7B6C005C9150 /* DSHLayoutParser.m */; };
+		DAEC6AFF1C1A7E69005C9150 /* views.xml in Resources */ = {isa = PBXBuildFile; fileRef = DAEC6AFE1C1A7E69005C9150 /* views.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -184,8 +186,8 @@
 		DAA8A5DA1C0F3C5F0023F934 /* HomeMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeMenuCell.h; sourceTree = "<group>"; };
 		DAA8A5DB1C0F3C5F0023F934 /* HomeMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeMenuCell.m; sourceTree = "<group>"; };
 		DAA8A5DC1C0F3C5F0023F934 /* HomeMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeMenuCell.xib; sourceTree = "<group>"; };
-		DAB388541C17BC9000F7C68C /* DSHViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSHViewManager.h; sourceTree = "<group>"; };
-		DAB388551C17BC9000F7C68C /* DSHViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSHViewManager.m; sourceTree = "<group>"; };
+		DAB388541C17BC9000F7C68C /* DSHViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSHViewManager.h; path = Views/DSHViewManager.h; sourceTree = "<group>"; };
+		DAB388551C17BC9000F7C68C /* DSHViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSHViewManager.m; path = Views/DSHViewManager.m; sourceTree = "<group>"; };
 		DAB388571C17BE9F00F7C68C /* views.json */ = {isa = PBXFileReference; explicitFileType = text.json; fileEncoding = 4; path = views.json; sourceTree = "<group>"; };
 		DAD354041C1965E600CCBA74 /* ScriptManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScriptManager.h; sourceTree = "<group>"; };
 		DAD354051C1965E600CCBA74 /* ScriptManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScriptManager.m; sourceTree = "<group>"; };
@@ -213,6 +215,9 @@
 		DAE7B2321C0F03F400186E2B /* AppIcon40x40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon40x40@3x.png"; sourceTree = "<group>"; };
 		DAE7B2351C0F03F400186E2B /* AppIcon60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon60x60@2x.png"; sourceTree = "<group>"; };
 		DAE7B2361C0F03F400186E2B /* AppIcon60x60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon60x60@3x.png"; sourceTree = "<group>"; };
+		DAEC6AFB1C1A7B6C005C9150 /* DSHLayoutParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSHLayoutParser.h; sourceTree = "<group>"; };
+		DAEC6AFC1C1A7B6C005C9150 /* DSHLayoutParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSHLayoutParser.m; sourceTree = "<group>"; };
+		DAEC6AFE1C1A7E69005C9150 /* views.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = views.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,6 +272,7 @@
 		DAA1863F1C0734DD00CE003B /* DSHFrameworksIOSExample */ = {
 			isa = PBXGroup;
 			children = (
+				DAEC6AFE1C1A7E69005C9150 /* views.xml */,
 				DAE7B2231C0F023E00186E2B /* Res */,
 				DA649EEF1C0961BA00AD2927 /* logo-icon.png */,
 				DAA186431C0734DD00CE003B /* AppDelegate.h */,
@@ -335,6 +341,7 @@
 		DAA186C31C07352600CE003B /* UILayer */ = {
 			isa = PBXGroup;
 			children = (
+				DAEC6AFA1C1A7B16005C9150 /* LayoutHelper */,
 				DAA186C41C07352600CE003B /* Categories */,
 				DAA186C71C07352600CE003B /* Controllers */,
 				DAA186D01C07352600CE003B /* DSHApplication.h */,
@@ -374,8 +381,6 @@
 				DAA186D41C07352600CE003B /* DSHCollectionViewCell.m */,
 				DAA186D51C07352600CE003B /* DSHTableViewCell.h */,
 				DAA186D61C07352600CE003B /* DSHTableViewCell.m */,
-				DAB388541C17BC9000F7C68C /* DSHViewManager.h */,
-				DAB388551C17BC9000F7C68C /* DSHViewManager.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -495,6 +500,17 @@
 				DAA8A5D21C0F333F0023F934 /* LaunchImages */,
 			);
 			path = Res;
+			sourceTree = "<group>";
+		};
+		DAEC6AFA1C1A7B16005C9150 /* LayoutHelper */ = {
+			isa = PBXGroup;
+			children = (
+				DAB388541C17BC9000F7C68C /* DSHViewManager.h */,
+				DAB388551C17BC9000F7C68C /* DSHViewManager.m */,
+				DAEC6AFB1C1A7B6C005C9150 /* DSHLayoutParser.h */,
+				DAEC6AFC1C1A7B6C005C9150 /* DSHLayoutParser.m */,
+			);
+			name = LayoutHelper;
 			sourceTree = "<group>";
 		};
 		F356D24B79A01CE5DA83A3A5 /* Frameworks */ = {
@@ -628,6 +644,7 @@
 				DAA8A5C61C0F31D90023F934 /* tabBar_cart_normal@2x.png in Resources */,
 				DADADD481C0FDFB600753758 /* MyCollectionViewCell.xib in Resources */,
 				DADADD431C0FDF6900753758 /* TestViewController.xib in Resources */,
+				DAEC6AFF1C1A7E69005C9150 /* views.xml in Resources */,
 				DAE7B22A1C0F029800186E2B /* Default-667h@2x.png in Resources */,
 				DAA8A5D91C0F34870023F934 /* HomeController.xib in Resources */,
 				DAA8A5CA1C0F31D90023F934 /* tabBar_find_normal@2x.png in Resources */,
@@ -747,6 +764,7 @@
 				DAE7B2171C0EBF6D00186E2B /* PushHelper.m in Sources */,
 				DAD354061C1965E600CCBA74 /* ScriptManager.m in Sources */,
 				DAB388561C17BC9000F7C68C /* DSHViewManager.m in Sources */,
+				DAEC6AFD1C1A7B6C005C9150 /* DSHLayoutParser.m in Sources */,
 				DAE4FDAC1C167AC300864B6B /* UITextView+DSHTextViewCategory.m in Sources */,
 				DAA8A5BA1C0F27D90023F934 /* UIColor+DSHColorCategory.m in Sources */,
 			);

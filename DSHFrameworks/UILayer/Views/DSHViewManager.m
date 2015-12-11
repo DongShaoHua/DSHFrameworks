@@ -14,6 +14,8 @@
 #import "NSString+DSHStringCategory.h"
 #import "NSDictionary+DSHDictionaryCategory.h"
 
+#import "DSHLayoutParser.h"
+
 @implementation DSHViewManager
 
 - (instancetype)init {
@@ -25,18 +27,27 @@
 }
 
 - (__kindof UIView *)viewWithFile:(NSString *)filePath parentView:(UIView *)parentView {
-    _entityFileName = filePath;
+    _layoutFileName = filePath;
     UIView *view = nil;
-    if (![NSString isNilOrEmpty: _entityFileName]) {
-        NSString *layoutStr = [NSString stringWithContentsOfFile: filePath encoding: NSUTF8StringEncoding error: nil];
-        if (![NSString isNilOrEmpty: layoutStr]) {
-            NSDictionary *layoutJson = [layoutStr toJSON];
-            if (_kind_of_dictionary(layoutJson)) {
-                DSHLayoutEntity *entity = [layoutJson toModel: DSHLayoutEntity.class];
-                [self viewWithEntity: entity parentView: parentView];
-            }
-        }
+    NSURL *fileUrl = safe_turn_string_2_url(_layoutFileName);
+    if (fileUrl) {
+        DSHLayoutParser *parser = [DSHLayoutParser new];
+        view = [parser loadViewWithUrl: fileUrl];
     }
+    
+//    if (![NSString isNilOrEmpty: _layoutFileName]) {
+//        
+//        NSString *layoutStr = [NSString stringWithContentsOfFile: filePath encoding: NSUTF8StringEncoding error: nil];
+//        if (![NSString isNilOrEmpty: layoutStr]) {
+//            NSXMLParser *parser = [[NSXMLParser alloc] initWithData: ]
+//            
+////            NSDictionary *layoutJson = [layoutStr toJSON];
+////            if (_kind_of_dictionary(layoutJson)) {
+////                DSHLayoutEntity *entity = [layoutJson toModel: DSHLayoutEntity.class];
+////                [self viewWithEntity: entity parentView: parentView];
+////            }
+//        }
+    //}
     return view;
 }
 
@@ -120,7 +131,13 @@
     if (![NSString isNilOrEmpty: _type]) {
         view = (UIView *)[NSClassFromString(_type) new];
         if (_kind_of_(view, UIView)) {
-            _manager.window[@"view_label"] = view;
+            
+            if (_kind_of_(view, UIButton)) {
+                [((UIButton *)view) setTitleColor: [UIColor redColor] forState: UIControlStateNormal];
+                _manager.window[@"view_label"] = view;
+                
+            }
+            
             objc_setAssociatedObject(view, @"layoutKey", _key, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
             if (_properties) {
                 NSMutableArray *entityProperties = [NSMutableArray array];
