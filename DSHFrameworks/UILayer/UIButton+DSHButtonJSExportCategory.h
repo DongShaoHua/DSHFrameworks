@@ -16,6 +16,4 @@
 @end
 
 @interface UIButton (DSHButtonJSExportCategory)<DSHUIButtonJSExportProtocol>
-
-
 @end

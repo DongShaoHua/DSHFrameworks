@@ -8,19 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-
-#import "ScriptManager.h"
-
-@class DSHLayoutEntity;
-@class DSHLayoutEntityProperty;
+#import "DSHLayoutElement.h"
 
 @interface DSHViewManager : NSObject
 
-@property (strong, nonatomic) NSString *layoutFileName;
+@property (assign, nonatomic) BOOL enableDebug;
+@property (strong, nonatomic) NSMutableDictionary<NSString *, DSHLayoutElement *> *layouts;
 
-@property (strong, nonatomic) ScriptManager *manager;
-
-- (__kindof UIView *)viewWithFile:(NSString *)entityFileName parentView:(UIView *)parentView;
+- (NSArray<__kindof UIView *> *)viewWithFile:(NSString *)layoutFileName parentView:(UIView *)parentView;
 
 @end
 

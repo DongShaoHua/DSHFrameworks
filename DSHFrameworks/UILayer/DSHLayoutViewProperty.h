@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-typedef id (^PropertyValueHandleBlock)(NSString *propertyValue, __kindof UIView *parentView);
+typedef id (^PropertyValueHandleBlock)(NSString *propertyValue);
 
 @interface DSHLayoutViewProperty : NSObject
 
@@ -17,7 +17,7 @@ typedef id (^PropertyValueHandleBlock)(NSString *propertyValue, __kindof UIView 
 
 - (void)bindView:(UIView *)view;
 
-+ (instancetype)propertyWith:(NSString *)name andValue:(NSString *)value parentView:(__kindof UIView *)parentView;
++ (instancetype)propertyWith:(NSString *)name andValue:(NSString *)value;
 
 + (void)addPropertyHandleBlock:(NSString *)property block:(PropertyValueHandleBlock) block;
 

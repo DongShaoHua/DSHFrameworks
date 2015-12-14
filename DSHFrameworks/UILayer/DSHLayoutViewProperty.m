@@ -16,7 +16,7 @@ static NSMutableDictionary<NSString *, PropertyValueHandleBlock> *handleblock = 
 @implementation DSHLayoutViewProperty
 
 + (void)load {
-    [self addPropertyHandleBlock: @"frame" block:^id(NSString *propertyValue, __kindof UIView *parentView) {
+    [self addPropertyHandleBlock: @"frame" block:^id(NSString *propertyValue) {
         if (!_is_string_nil_or_empty(propertyValue)) {
             NSArray<NSString *> *values = [propertyValue componentsSeparatedByString: @","];
             if (values && values.count == 4) {CGFloat x = [values[0] floatValue];
@@ -24,33 +24,33 @@ static NSMutableDictionary<NSString *, PropertyValueHandleBlock> *handleblock = 
                 CGFloat width = [values[2] floatValue];
                 CGFloat height = [values[3] floatValue];
                 
-                if ([@"pw" isEqualToString: values[2]]) {
-                    width = parentView.frame.size.width;
-                } else {
-                    if ([@"sw" isEqualToString: values[2]]) {
-                        width = [DSHDevelopmentHelper getDeviceScreen].width;
-                    }
-                }
-                
-                if ([@"ph" isEqualToString: values[3]]) {
-                    height = parentView.frame.size.height;
-                } else {
-                    if ([@"sh" isEqualToString: values[3]]) {
-                        height = [DSHDevelopmentHelper getDeviceScreen].height;
-                    }
-                }
-                
+//                if ([@"pw" isEqualToString: values[2]]) {
+//                    width = parentView.frame.size.width;
+//                } else {
+//                    if ([@"sw" isEqualToString: values[2]]) {
+//                        width = [DSHDevelopmentHelper getDeviceScreen].width;
+//                    }
+//                }
+//                
+//                if ([@"ph" isEqualToString: values[3]]) {
+//                    height = parentView.frame.size.height;
+//                } else {
+//                    if ([@"sh" isEqualToString: values[3]]) {
+//                        height = [DSHDevelopmentHelper getDeviceScreen].height;
+//                    }
+//                }
+//                
                 return [NSValue valueWithCGRect: CGRectMake(x, y, width, height)];
             }
         }
         return nil;
     }];
     
-    [self addPropertyHandleBlock: @"backgroundColor" block: ^id(NSString *propertyValue, __kindof UIView *parentView) {
+    [self addPropertyHandleBlock: @"backgroundColor" block: ^id(NSString *propertyValue) {
         return [UIColor colorWithHexString: propertyValue];
     }];
     
-    [self addPropertyHandleBlock: @"image" block:^id(NSString *propertyValue, __kindof UIView *parentView) {
+    [self addPropertyHandleBlock: @"image" block:^id(NSString *propertyValue) {
         return [UIImage imageNamed: propertyValue];
     }];
 }
@@ -66,7 +66,7 @@ static NSMutableDictionary<NSString *, PropertyValueHandleBlock> *handleblock = 
     }
 }
 
-+ (instancetype)propertyWith:(NSString *)name andValue:(NSString *)value parentView:(__kindof UIView *)parentView{
++ (instancetype)propertyWith:(NSString *)name andValue:(NSString *)value{
     DSHLayoutViewProperty *property = nil;
     if (!_is_string_nil_or_empty(value)) {
         property = [DSHLayoutViewProperty new];
@@ -74,7 +74,7 @@ static NSMutableDictionary<NSString *, PropertyValueHandleBlock> *handleblock = 
         PropertyValueHandleBlock block = handleblock[property.name];
         property.value = value;
         if (block) {
-            property.value = block(value, parentView);
+            property.value = block(value);
         }
     }
     

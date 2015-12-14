@@ -21,17 +21,29 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-        _manager = [ScriptManager new];
+        _enableDebug = NO;
+        _layouts = [NSMutableDictionary dictionary];
     }
     return self;
 }
 
-- (__kindof UIView *)viewWithFile:(NSString *)filePath parentView:(UIView *)parentView {
-    _layoutFileName = filePath;
-    UIView *view = nil;
-    DSHLayoutParser *parser = [DSHLayoutParser new];
-    [parser loadViewWithUrl: _layoutFileName parentView: parentView];
-    return view;
+- (NSArray<__kindof UIView *> *)viewWithFile:(NSString *)layoutFileName parentView:(UIView *)parentView {
+    NSArray<__kindof UIView *> *views = nil;
+    if (_is_string_nil_or_empty(layoutFileName)) {
+        DSHLayoutElement *element = _layouts[layoutFileName];
+        if (element) {
+            views = [element viewWithElement: parentView];
+        } else {
+            DSHLayoutParser *parser = [DSHLayoutParser new];
+            element = [parser parserWithFile: layoutFileName];
+            if (element) {
+                views = [element viewWithElement: parentView];
+                [_layouts setObject: element forKey: layoutFileName];
+            }
+        }
+    }
+
+    return views;
 }
 
 @end

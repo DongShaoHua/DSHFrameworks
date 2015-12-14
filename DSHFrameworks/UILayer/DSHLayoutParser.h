@@ -7,11 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DSHLayoutElement.h"
 
 @interface DSHLayoutParser : NSObject
 
-@property (strong, nonatomic) NSMutableDictionary<NSString *, NSString *> *functions;
-
-- (NSArray<__kindof UIView *> *)loadViewWithUrl:(NSString *)filePath parentView:(__kindof UIView *)parentView;
+- (DSHLayoutElement *)parserWithFile:(NSString *)filePath;
 
 @end

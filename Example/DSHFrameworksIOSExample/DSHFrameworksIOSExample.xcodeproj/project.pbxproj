@@ -78,7 +78,8 @@
 		DAA8A5DD1C0F3C5F0023F934 /* HomeMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA8A5DB1C0F3C5F0023F934 /* HomeMenuCell.m */; };
 		DAA8A5DE1C0F3C5F0023F934 /* HomeMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAA8A5DC1C0F3C5F0023F934 /* HomeMenuCell.xib */; };
 		DAB388561C17BC9000F7C68C /* DSHViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB388551C17BC9000F7C68C /* DSHViewManager.m */; };
-		DAD354061C1965E600CCBA74 /* ScriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD354051C1965E600CCBA74 /* ScriptManager.m */; };
+		DABDC6FD1C1EC0E70037B4C7 /* DSHLayoutElement.m in Sources */ = {isa = PBXBuildFile; fileRef = DABDC6FC1C1EC0E70037B4C7 /* DSHLayoutElement.m */; };
+		DABDC7001C1EC30A0037B4C7 /* DSHLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = DABDC6FF1C1EC30A0037B4C7 /* DSHLayoutView.m */; };
 		DADADD421C0FDF6900753758 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DADADD401C0FDF6900753758 /* TestViewController.m */; };
 		DADADD431C0FDF6900753758 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DADADD411C0FDF6900753758 /* TestViewController.xib */; };
 		DADADD471C0FDFB600753758 /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DADADD451C0FDFB600753758 /* MyCollectionViewCell.m */; };
@@ -196,8 +197,10 @@
 		DAA8A5DC1C0F3C5F0023F934 /* HomeMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeMenuCell.xib; sourceTree = "<group>"; };
 		DAB388541C17BC9000F7C68C /* DSHViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSHViewManager.h; path = Views/DSHViewManager.h; sourceTree = "<group>"; };
 		DAB388551C17BC9000F7C68C /* DSHViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSHViewManager.m; path = Views/DSHViewManager.m; sourceTree = "<group>"; };
-		DAD354041C1965E600CCBA74 /* ScriptManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScriptManager.h; sourceTree = "<group>"; };
-		DAD354051C1965E600CCBA74 /* ScriptManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScriptManager.m; sourceTree = "<group>"; };
+		DABDC6FB1C1EC0E70037B4C7 /* DSHLayoutElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSHLayoutElement.h; sourceTree = "<group>"; };
+		DABDC6FC1C1EC0E70037B4C7 /* DSHLayoutElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSHLayoutElement.m; sourceTree = "<group>"; };
+		DABDC6FE1C1EC30A0037B4C7 /* DSHLayoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSHLayoutView.h; sourceTree = "<group>"; };
+		DABDC6FF1C1EC30A0037B4C7 /* DSHLayoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSHLayoutView.m; sourceTree = "<group>"; };
 		DADADD3F1C0FDF6900753758 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		DADADD401C0FDF6900753758 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		DADADD411C0FDF6900753758 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
@@ -364,8 +367,6 @@
 				DAA186D01C07352600CE003B /* DSHApplication.h */,
 				DAA186D11C07352600CE003B /* DSHApplication.m */,
 				DAA186D21C07352600CE003B /* Views */,
-				DAD354041C1965E600CCBA74 /* ScriptManager.h */,
-				DAD354051C1965E600CCBA74 /* ScriptManager.m */,
 			);
 			path = UILayer;
 			sourceTree = "<group>";
@@ -529,6 +530,10 @@
 				DAEC6AFC1C1A7B6C005C9150 /* DSHLayoutParser.m */,
 				DA71A00A1C1A9AD9000510D9 /* DSHLayoutViewProperty.h */,
 				DA71A00B1C1A9AD9000510D9 /* DSHLayoutViewProperty.m */,
+				DABDC6FB1C1EC0E70037B4C7 /* DSHLayoutElement.h */,
+				DABDC6FC1C1EC0E70037B4C7 /* DSHLayoutElement.m */,
+				DABDC6FE1C1EC30A0037B4C7 /* DSHLayoutView.h */,
+				DABDC6FF1C1EC30A0037B4C7 /* DSHLayoutView.m */,
 			);
 			name = LayoutHelper;
 			sourceTree = "<group>";
@@ -781,10 +786,11 @@
 				DA93AE701C08B59700E85BA5 /* DSHMainCell.m in Sources */,
 				DA71A0101C1AB3CF000510D9 /* UIButton+DSHButtonJSExportCategory.m in Sources */,
 				DAA187111C0735F500CE003B /* UILabel+DSHLabelCategory.m in Sources */,
+				DABDC6FD1C1EC0E70037B4C7 /* DSHLayoutElement.m in Sources */,
+				DABDC7001C1EC30A0037B4C7 /* DSHLayoutView.m in Sources */,
 				DAA186E51C07352600CE003B /* UIView+DSHViewCategory.m in Sources */,
 				DAA187001C07352600CE003B /* NSDictionary+DSHDictionaryCategory.m in Sources */,
 				DAE7B2171C0EBF6D00186E2B /* PushHelper.m in Sources */,
-				DAD354061C1965E600CCBA74 /* ScriptManager.m in Sources */,
 				DAB388561C17BC9000F7C68C /* DSHViewManager.m in Sources */,
 				DAEC6AFD1C1A7B6C005C9150 /* DSHLayoutParser.m in Sources */,
 				DAE4FDAC1C167AC300864B6B /* UITextView+DSHTextViewCategory.m in Sources */,

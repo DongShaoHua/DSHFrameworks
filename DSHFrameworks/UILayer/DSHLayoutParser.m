@@ -36,7 +36,9 @@
 
 @property (strong, nonatomic) JSContext *window;
 
-- (UIView *)viewWithElement:(GDataXMLElement *)element parentView:(UIView *)parentView;
+#if __has_include(header_file_for_gddataxmlnode)
+- (DSHLayoutView *)viewWithElement:(GDataXMLElement *)element parent:(DSHLayoutView *)parent;
+#endif
 
 @end
 
@@ -48,91 +50,80 @@
     self = [super init];
     if (self) {
         _window = [[JSContext alloc] init];
-        _functions = [NSMutableDictionary dictionary];
     }
     return self;
 }
 
-#if __has_include(header_file_for_gddataxmlnode)
-- (UIView *)viewWithElement:(GDataXMLElement *)element parentView:(UIView *)parentView {
-    UIView *view = nil;
-    if (element) {
-        view = (UIView *)[NSClassFromString(element.name) new];
-        if (_kind_of_(view, UIView)) {
-            if (parentView) {
-                [parentView addSubview: view];
-            }
-            
-            if (element.attributes) {
-                for (GDataXMLNode *attribute in element.attributes) {
-                    NSString *name = attribute.name;
-                    NSString *value = attribute.stringValue;
-                    if ([@"key" isEqualToString: name] && !_is_string_nil_or_empty(value)) {
-                        objc_setAssociatedObject(view, LayoutKeyForView, value, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-                        _window[value] = view;
-                    } else {
-                        DSHLayoutViewProperty *property = [DSHLayoutViewProperty propertyWith: name andValue: value parentView: parentView];
-                        if (property) {
-                            [property bindView: view];
-                        }
-                    }
-                }
-            }
-            
-            if (element.children) {
-                for (GDataXMLElement *child in element.children) {
-                    [self viewWithElement: child parentView: view];
-                }
-            }
-        }
-    }
-    return view;
-}
-#endif
-
-- (NSArray<__kindof UIView *> *)loadViewWithUrl:(NSString *)filePath parentView:(__kindof UIView *)parentView {
-    NSMutableArray<__kindof UIView *> *views = nil;
-    [_functions removeAllObjects];
+- (DSHLayoutElement *)parserWithFile:(NSString *)filePath {
+    DSHLayoutElement *element = nil;
 #if __has_include(header_file_for_gddataxmlnode)
     if ([[NSFileManager defaultManager] fileExistsAtPath: filePath]) {
         NSString *xmlString = [NSString stringWithContentsOfFile: filePath encoding: NSUTF8StringEncoding error: nil];
         if (!_is_string_nil_or_empty(xmlString)) {
             GDataXMLDocument *xmldocument = [[GDataXMLDocument alloc] initWithXMLString: xmlString error: nil];
             if (xmldocument) {
+                element = [DSHLayoutElement new];
                 GDataXMLElement *root = [xmldocument rootElement];
                 GDataXMLElement *vars = [[root elementsForName: @"Vars"] firstObject];
+                if (vars && vars.children) {
+                }
+                
                 GDataXMLElement *funcs = [[root elementsForName: @"Funcs"] firstObject];
                 if (funcs && funcs.children) {
                     for (GDataXMLElement *funcElement in funcs.children) {
                         NSString *name = funcElement.name;
                         NSString *value = funcElement.stringValue;
-                        if (!_is_string_nil_or_empty(value)) {
-                            [_functions setValue: value forKey: name];
+                        if (!_is_string_nil_or_empty(value) && !_is_string_nil_or_empty(name)) {
+                            [element.functions setValue: value forKey: name];
                         }
                     }
                 }
                 
                 GDataXMLElement *layouts = [[root elementsForName: @"Layouts"] firstObject];
                 if (layouts && layouts.children && layouts.childCount > 0) {
-                    views = [NSMutableArray array];
                     for (GDataXMLElement *viewElement in layouts.children) {
-                        UIView *view = [self viewWithElement: viewElement parentView: parentView];
-                        if (view) {
-                            [views addObject: view];
+                        DSHLayoutView *layoutView = [self viewWithElement: viewElement parent: nil];
+                        if (layoutView) {
+                            [element.layoutViews addObject: layoutView];
                         }
                     }
-                }
-                
-                NSString *initScript = _functions[@"init"];
-                if (!_is_string_nil_or_empty(initScript)) {
-                    [_window evaluateScript: initScript];
-                    NSLog(@"%@", [_window.exception toString]);
                 }
             }
         }
     }
 #endif
-    return views;
+    return element;
 }
+
+#if __has_include(header_file_for_gddataxmlnode)
+- (DSHLayoutView *)viewWithElement:(GDataXMLElement *)element parent:(DSHLayoutView *)parent {
+    DSHLayoutView *layoutView = nil;
+    if (element) {
+        layoutView = [DSHLayoutView new];
+        if (parent) {
+            [parent.subItems addObject: layoutView];
+        }
+        
+        layoutView.viewClassName = element.name;
+        if (element.attributes) {
+            for (GDataXMLNode *attribute in element.attributes) {
+                NSString *name = attribute.name;
+                NSString *value = attribute.stringValue;
+                if (!_is_string_nil_or_empty(name) && !_is_string_nil_or_empty(value)) {
+                    DSHLayoutViewProperty *property = [DSHLayoutViewProperty propertyWith: name andValue: value];
+                    [layoutView.viewProperties addObject: property];
+                }
+            }
+        }
+        
+        if (element.children) {
+            for (GDataXMLElement *child in element.children) {
+                [self viewWithElement: child parent: layoutView];
+            }
+        }
+    }
+    return layoutView;
+}
+#endif
 
 @end

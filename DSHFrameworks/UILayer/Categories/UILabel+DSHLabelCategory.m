@@ -26,6 +26,4 @@
     return [self.text boundingRectWithSize: limitedSize options: options attributes: attribute context: nil].size;
 }
 
-
-
 @end

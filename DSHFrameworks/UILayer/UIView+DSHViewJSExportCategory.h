@@ -38,9 +38,10 @@
 - (NSLayoutConstraint *)autoSetDimension:(ALDimension)dimension toSize:(CGFloat)size;
 - (NSArray<NSLayoutConstraint *> *)autoPinEdgesToSuperviewEdges;
 
+- (void)sizeToFit;
+
 @end
 
 @interface UIView (DSHViewJSExportCategory) <DSHViewJSExportProtocol>
-
 
 @end

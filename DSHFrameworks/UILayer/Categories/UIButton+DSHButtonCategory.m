@@ -17,7 +17,7 @@
 }
 
 - (void)setButtonContentLayout:(DSHButtonContentLayoutStyle)layoutStyle margin:(CGFloat)margin {
-    [self layoutSubviews];
+    [self layoutIfNeeded];
     
     CGSize totalContentSize = self.bounds.size;
     CGSize labelSize = self.titleLabel.frame.size;
