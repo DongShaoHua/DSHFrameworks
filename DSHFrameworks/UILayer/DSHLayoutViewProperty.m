@@ -16,7 +16,7 @@ static NSMutableDictionary<NSString *, PropertyValueHandleBlock> *handleblock = 
 @implementation DSHLayoutViewProperty
 
 + (void)load {
-    [self addPropertyHandleBlock: @"frame" block:^id(NSString *propertyValue) {
+    [self addPropertyHandleBlock: @"frame" block:^id(NSString *propertyValue, UIView *parent) {
         if (!_is_string_nil_or_empty(propertyValue)) {
             NSArray<NSString *> *values = [propertyValue componentsSeparatedByString: @","];
             if (values && values.count == 4) {CGFloat x = [values[0] floatValue];
@@ -46,16 +46,16 @@ static NSMutableDictionary<NSString *, PropertyValueHandleBlock> *handleblock = 
         return nil;
     }];
     
-    [self addPropertyHandleBlock: @"backgroundColor" block: ^id(NSString *propertyValue) {
+    [self addPropertyHandleBlock: @"backgroundColor" block: ^id(NSString *propertyValue, UIView *parent) {
         return [UIColor colorWithHexString: propertyValue];
     }];
     
-    [self addPropertyHandleBlock: @"image" block:^id(NSString *propertyValue) {
+    [self addPropertyHandleBlock: @"image" block:^id(NSString *propertyValue, UIView *parent) {
         return [UIImage imageNamed: propertyValue];
     }];
 }
 
-- (void)bindView:(UIView *)view {
+- (void)bindView:(UIView *)view WithParentView:(UIView *)parent {
     if (_kind_of_(view, UIView)) {
         @try {
             [view setValue: _value forKey: _name];
@@ -71,11 +71,7 @@ static NSMutableDictionary<NSString *, PropertyValueHandleBlock> *handleblock = 
     if (!_is_string_nil_or_empty(value)) {
         property = [DSHLayoutViewProperty new];
         property.name = name;
-        PropertyValueHandleBlock block = handleblock[property.name];
         property.value = value;
-        if (block) {
-            property.value = block(value);
-        }
     }
     
     return property;

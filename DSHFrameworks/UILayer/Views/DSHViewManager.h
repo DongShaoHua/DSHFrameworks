@@ -15,7 +15,7 @@
 @property (assign, nonatomic) BOOL enableDebug;
 @property (strong, nonatomic) NSMutableDictionary<NSString *, DSHLayoutElement *> *layouts;
 
-- (NSArray<__kindof UIView *> *)viewWithFile:(NSString *)layoutFileName parentView:(UIView *)parentView;
+- (NSArray<__kindof UIView *> *)viewWithFile:(NSString *)layoutFileName parent:(UIView *)parent;
 
 @end
 

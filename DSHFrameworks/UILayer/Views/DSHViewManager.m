@@ -27,17 +27,17 @@
     return self;
 }
 
-- (NSArray<__kindof UIView *> *)viewWithFile:(NSString *)layoutFileName parentView:(UIView *)parentView {
+- (NSArray<__kindof UIView *> *)viewWithFile:(NSString *)layoutFileName parent:(UIView *)parent {
     NSArray<__kindof UIView *> *views = nil;
     if (_is_string_nil_or_empty(layoutFileName)) {
         DSHLayoutElement *element = _layouts[layoutFileName];
         if (element) {
-            views = [element viewWithElement: parentView];
+            views = [element viewWithElement: parent];
         } else {
             DSHLayoutParser *parser = [DSHLayoutParser new];
             element = [parser parserWithFile: layoutFileName];
             if (element) {
-                views = [element viewWithElement: parentView];
+                views = [element viewWithElement: parent];
                 [_layouts setObject: element forKey: layoutFileName];
             }
         }
