@@ -17,6 +17,4 @@
 
 @interface UILabel (DSHLabelJSExportCategory)<DSHLabelJSExportProtocol>
 
-
-
 @end

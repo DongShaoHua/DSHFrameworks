@@ -22,6 +22,7 @@
 
 - (NSArray<__kindof UIView *> *)viewWithElement:(UIView *)parent environment:(JSContext *)window {
     NSMutableArray *views = [NSMutableArray array];
+    _parent = parent;
     for (DSHLayoutView *layoutview in _layoutViews) {
         UIView *view = [layoutview viewWithLayout: parent environment: window];
         if (view) {

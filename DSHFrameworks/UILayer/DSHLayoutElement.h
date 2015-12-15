@@ -12,6 +12,8 @@
 
 @interface DSHLayoutElement : NSObject
 
+@property (weak, nonatomic) UIView *parent;
+
 @property (strong, nonatomic) NSMutableDictionary<NSString *, id> *variables;
 @property (strong, nonatomic) NSMutableArray<DSHLayoutView *> *layoutViews;
 @property (strong, nonatomic) NSMutableDictionary<NSString *, NSString *> *functions;

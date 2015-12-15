@@ -12,7 +12,7 @@
                 <UIView key="view2" backgroundColor="#CCCCCCCC" />
                 <UIImageView key="image1" frame="50,50,50,50" image="logo-icon.png" alpha="0.8" />
             </UIView>
-            <UIView key="view3" frame="0,300,414,100" backgroundColor="#000000" />
+            <UIView key="view3" frame="0,240,sw,120" backgroundColor="#88cccccc" />
         </UIView>
     </Layouts>
     <Funcs>
@@ -23,9 +23,9 @@
                 btnTest.cornerRadius = 8;
                 btnTest.setViewBackgroundColor('#aacc881d');
                 view1.frame = CGRectMake(0, 64, 414, 250);
-                //view1.autoCenterInSuperview();
-                //view1.autoSetDimensionToSize(7, 300);
-                //view1.autoSetDimensionToSize(8, 200);
+                view1.autoCenterInSuperview();
+                view1.autoSetDimensionToSize(7, 300);
+                view1.autoSetDimensionToSize(8, 200);
                 
                 view2.autoPinEdgesToSuperviewEdges();
                 
