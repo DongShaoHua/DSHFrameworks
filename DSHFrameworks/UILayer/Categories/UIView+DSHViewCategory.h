@@ -8,7 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
+IB_DESIGNABLE
 @interface UIView (DSHViewCategory)
+
+/**
+ 视图的圆角半径
+ */
+@property (assign, nonatomic) IBInspectable CGFloat cornerRadius;
+/**
+ 视图的边宽和
+ */
+@property (assign, nonatomic) IBInspectable CGFloat borderWidth;
+/**
+ 视图的边的颜色
+ */
+@property (nonatomic) IBInspectable UIColor *borderColor;
 
 /**
  从与类相同名称的Nib文件中加载第一个View
@@ -59,17 +73,10 @@
 - (void)fedeOut:(NSTimeInterval)timeinterval completed:(dispatch_block_t)completed;
 
 /**
- 设置视图的圆角半径
- */
-- (void)setCornerRadius:(CGFloat)radius;
-/**
- 设置视图的边宽和边的颜色
- */
-- (void)setBorderWidth:(CGFloat)borderWidth andBorderColor:(UIColor *)borderColor;
-/**
  将视图剪切为圆形
  注：视图被剪切为圆形，但原视图的大小区域并未改变
  */
 - (void)clipToCircle;
 
 @end
+

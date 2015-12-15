@@ -26,11 +26,12 @@
     [DSHMainCell registerCellClassForTable: [self getListView]];
     [self.data addObjectsFromArray: @[@"1", @"2", @"3"]];
     NSString *layoutFile = [[NSBundle mainBundle] pathForResource: @"views.xml" ofType: nil];
-    DSHViewManager *manager = [DSHViewManager new];
+    DSHViewManager *manager = [[DSHViewManager alloc] initWithController: self];
+    
+    layoutFile = @"/Users/dongsh/Documents/DSHFrameworks/Example/DSHFrameworksIOSExample/DSHFrameworksIOSExample/views.xml";
+    manager.immediateMode = YES;
     
     [manager viewWithFile: layoutFile parent: self.view];
-    
-    
     [_textfield registerTextValid: ^(UITextField *textfield) {
         if (textfield.text.length > 6) {
             [textfield deleteBackward];

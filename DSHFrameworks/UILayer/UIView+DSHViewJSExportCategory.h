@@ -18,13 +18,18 @@
 @property(nonatomic, readonly) UIView *superview;
 
 /**
- 设置视图的圆角半径
+ 视图的圆角半径
  */
-- (void)setCornerRadius:(CGFloat)radius;
+@property (assign, nonatomic) CGFloat cornerRadius;
 /**
- 设置视图的边宽和边的颜色
+ 视图的边宽和
  */
-- (void)setBorderWidth:(CGFloat)borderWidth andBorderColor:(UIColor *)borderColor;
+@property (assign, nonatomic) CGFloat borderWidth;
+/**
+ 视图的边的颜色
+ */
+@property (nonatomic) UIColor *borderColor;
+
 /**
  将视图剪切为圆形
  注：视图被剪切为圆形，但原视图的大小区域并未改变

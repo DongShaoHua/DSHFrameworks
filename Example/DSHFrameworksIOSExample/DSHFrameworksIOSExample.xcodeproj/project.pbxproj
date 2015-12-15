@@ -80,6 +80,7 @@
 		DABDC6FD1C1EC0E70037B4C7 /* DSHLayoutElement.m in Sources */ = {isa = PBXBuildFile; fileRef = DABDC6FC1C1EC0E70037B4C7 /* DSHLayoutElement.m */; };
 		DABDC7001C1EC30A0037B4C7 /* DSHLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = DABDC6FF1C1EC30A0037B4C7 /* DSHLayoutView.m */; };
 		DAD873B61C1FB80600B9079B /* DSHViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD873B51C1FB80600B9079B /* DSHViewManager.m */; };
+		DAD873B91C1FC68800B9079B /* UILabel+DSHLabelJSExportCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD873B81C1FC68800B9079B /* UILabel+DSHLabelJSExportCategory.m */; };
 		DADADD421C0FDF6900753758 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DADADD401C0FDF6900753758 /* TestViewController.m */; };
 		DADADD431C0FDF6900753758 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DADADD411C0FDF6900753758 /* TestViewController.xib */; };
 		DADADD471C0FDFB600753758 /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DADADD451C0FDFB600753758 /* MyCollectionViewCell.m */; };
@@ -201,6 +202,8 @@
 		DABDC6FF1C1EC30A0037B4C7 /* DSHLayoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSHLayoutView.m; sourceTree = "<group>"; };
 		DAD873B41C1FB80600B9079B /* DSHViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSHViewManager.h; sourceTree = "<group>"; };
 		DAD873B51C1FB80600B9079B /* DSHViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSHViewManager.m; sourceTree = "<group>"; };
+		DAD873B71C1FC68800B9079B /* UILabel+DSHLabelJSExportCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+DSHLabelJSExportCategory.h"; sourceTree = "<group>"; };
+		DAD873B81C1FC68800B9079B /* UILabel+DSHLabelJSExportCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+DSHLabelJSExportCategory.m"; sourceTree = "<group>"; };
 		DADADD3F1C0FDF6900753758 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		DADADD401C0FDF6900753758 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		DADADD411C0FDF6900753758 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
@@ -263,6 +266,8 @@
 				DA71A00F1C1AB3CF000510D9 /* UIButton+DSHButtonJSExportCategory.m */,
 				DA71A0141C1ABC0A000510D9 /* UIView+DSHViewJSExportCategory.h */,
 				DA71A0151C1ABC0A000510D9 /* UIView+DSHViewJSExportCategory.m */,
+				DAD873B71C1FC68800B9079B /* UILabel+DSHLabelJSExportCategory.h */,
+				DAD873B81C1FC68800B9079B /* UILabel+DSHLabelJSExportCategory.m */,
 			);
 			name = JSExport;
 			sourceTree = "<group>";
@@ -770,6 +775,7 @@
 				DAA8A5DD1C0F3C5F0023F934 /* HomeMenuCell.m in Sources */,
 				DAA186451C0734DD00CE003B /* AppDelegate.m in Sources */,
 				DAA1870C1C07352600CE003B /* DSHHttpClient.m in Sources */,
+				DAD873B91C1FC68800B9079B /* UILabel+DSHLabelJSExportCategory.m in Sources */,
 				DADADD471C0FDFB600753758 /* MyCollectionViewCell.m in Sources */,
 				DAA8A5BD1C0F2BAF0023F934 /* UIImage+DSHImageCategory.m in Sources */,
 				DA925BB91C09F8540066BE2E /* UIWebView+DSHWebViewCategory.m in Sources */,
