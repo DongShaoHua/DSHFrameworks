@@ -6,6 +6,7 @@
 //  Copyright © 2015年 dongsh. All rights reserved.
 //
 
+#import <objc/runtime.h>
 #import "DSHLayoutViewProperty.h"
 #import "DSHDevelopmentHelper.h"
 #import "NSString+DSHStringCategory.h"
@@ -24,22 +25,29 @@ static NSMutableDictionary<NSString *, PropertyValueHandleBlock> *handleblock = 
                 CGFloat width = [values[2] floatValue];
                 CGFloat height = [values[3] floatValue];
                 
-//                if ([@"pw" isEqualToString: values[2]]) {
-//                    width = parentView.frame.size.width;
-//                } else {
-//                    if ([@"sw" isEqualToString: values[2]]) {
-//                        width = [DSHDevelopmentHelper getDeviceScreen].width;
-//                    }
-//                }
-//                
-//                if ([@"ph" isEqualToString: values[3]]) {
-//                    height = parentView.frame.size.height;
-//                } else {
-//                    if ([@"sh" isEqualToString: values[3]]) {
-//                        height = [DSHDevelopmentHelper getDeviceScreen].height;
-//                    }
-//                }
-//                
+                CGSize parentSize = { 0, 0 };
+                CGSize screenSize = [DSHDevelopmentHelper getDeviceScreen];
+                
+                if (_kind_of_(parent, UIView)) {
+                    parentSize = parent.bounds.size;
+                }
+                
+                if ([@"pw" isEqualToString: values[2]]) {
+                    width = parentSize.width;
+                } else {
+                    if ([@"sw" isEqualToString: values[2]]) {
+                        width = screenSize.width;
+                    }
+                }
+                
+                if ([@"ph" isEqualToString: values[3]]) {
+                    height = parentSize.height;
+                } else {
+                    if ([@"sh" isEqualToString: values[3]]) {
+                        height = screenSize.height;
+                    }
+                }
+                
                 return [NSValue valueWithCGRect: CGRectMake(x, y, width, height)];
             }
         }
@@ -55,15 +63,33 @@ static NSMutableDictionary<NSString *, PropertyValueHandleBlock> *handleblock = 
     }];
 }
 
+#define LayoutViewKey "LayoutViewKey"
 - (void)bindView:(UIView *)view WithParentView:(UIView *)parent {
     if (_kind_of_(view, UIView)) {
         @try {
-            [view setValue: _value forKey: _name];
+            PropertyValueHandleBlock block = handleblock[_name];
+            if (block) {
+                [view setValue: block(_value, parent) forKey: _name];
+            } else {
+                if ([@"key" isEqualToString: _name]) {
+                    objc_setAssociatedObject(view, LayoutViewKey, _value, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+                } else {
+                    [view setValue: _value forKey: _name];
+                }
+            }
         }
         @catch (NSException *exception) {
             
         }
     }
+}
+
++ (NSString *)getViewKey:(UIView *)view {
+    NSString *keyValue = nil;
+    if (_kind_of_(view, UIView)) {
+        keyValue = objc_getAssociatedObject(view, LayoutViewKey);
+    }
+    return keyValue;
 }
 
 + (instancetype)propertyWith:(NSString *)name andValue:(NSString *)value{

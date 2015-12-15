@@ -15,6 +15,7 @@
 @protocol DSHViewJSExportProtocol <JSExport>
 
 @property(assign, nonatomic) CGRect frame;
+@property(nonatomic, readonly) UIView *superview;
 
 /**
  设置视图的圆角半径
@@ -43,5 +44,4 @@
 @end
 
 @interface UIView (DSHViewJSExportCategory) <DSHViewJSExportProtocol>
-
 @end

@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <JavaScriptCore/JavaScriptCore.h>
 #import "DSHLayoutViewProperty.h"
 
 @class DSHLayoutView;
@@ -17,6 +18,6 @@
 @property (strong, nonatomic) NSMutableArray<DSHLayoutViewProperty *> *viewProperties;
 @property (strong, nonatomic) NSMutableArray<DSHLayoutView *> *subItems;
 
-- (__kindof UIView *)viewWithLayout:(UIView *)parentView;
+- (__kindof UIView *)viewWithLayout:(UIView *)parent environment:(JSContext *)window;
 
 @end

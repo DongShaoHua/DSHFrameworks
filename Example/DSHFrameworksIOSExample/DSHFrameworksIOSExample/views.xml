@@ -6,7 +6,7 @@
             <UIView key="view1" frame="30,30,250,200" backgroundColor="#ff0033cc" >
                 <UIButton key="btnTest" frame="0,0,50,50" backgroundColor="#ffffff" />
                 <UIView key="view2" backgroundColor="#CCCCCCCC" />
-                <UIImageView key="image1" frame="50,50,50,50" image="logo-icon.png" alpha="0.4" />
+                <UIImageView key="image1" frame="50,50,50,50" image="logo-icon.png" alpha="0.8" />
             </UIView>
         </UIView>
     </Layouts>

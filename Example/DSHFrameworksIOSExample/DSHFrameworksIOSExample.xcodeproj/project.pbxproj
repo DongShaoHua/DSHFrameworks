@@ -77,9 +77,9 @@
 		DAA8A5D91C0F34870023F934 /* HomeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAA8A5D71C0F34870023F934 /* HomeController.xib */; };
 		DAA8A5DD1C0F3C5F0023F934 /* HomeMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA8A5DB1C0F3C5F0023F934 /* HomeMenuCell.m */; };
 		DAA8A5DE1C0F3C5F0023F934 /* HomeMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAA8A5DC1C0F3C5F0023F934 /* HomeMenuCell.xib */; };
-		DAB388561C17BC9000F7C68C /* DSHViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB388551C17BC9000F7C68C /* DSHViewManager.m */; };
 		DABDC6FD1C1EC0E70037B4C7 /* DSHLayoutElement.m in Sources */ = {isa = PBXBuildFile; fileRef = DABDC6FC1C1EC0E70037B4C7 /* DSHLayoutElement.m */; };
 		DABDC7001C1EC30A0037B4C7 /* DSHLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = DABDC6FF1C1EC30A0037B4C7 /* DSHLayoutView.m */; };
+		DAD873B61C1FB80600B9079B /* DSHViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD873B51C1FB80600B9079B /* DSHViewManager.m */; };
 		DADADD421C0FDF6900753758 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DADADD401C0FDF6900753758 /* TestViewController.m */; };
 		DADADD431C0FDF6900753758 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DADADD411C0FDF6900753758 /* TestViewController.xib */; };
 		DADADD471C0FDFB600753758 /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DADADD451C0FDFB600753758 /* MyCollectionViewCell.m */; };
@@ -195,12 +195,12 @@
 		DAA8A5DA1C0F3C5F0023F934 /* HomeMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeMenuCell.h; sourceTree = "<group>"; };
 		DAA8A5DB1C0F3C5F0023F934 /* HomeMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeMenuCell.m; sourceTree = "<group>"; };
 		DAA8A5DC1C0F3C5F0023F934 /* HomeMenuCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeMenuCell.xib; sourceTree = "<group>"; };
-		DAB388541C17BC9000F7C68C /* DSHViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DSHViewManager.h; path = Views/DSHViewManager.h; sourceTree = "<group>"; };
-		DAB388551C17BC9000F7C68C /* DSHViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DSHViewManager.m; path = Views/DSHViewManager.m; sourceTree = "<group>"; };
 		DABDC6FB1C1EC0E70037B4C7 /* DSHLayoutElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSHLayoutElement.h; sourceTree = "<group>"; };
 		DABDC6FC1C1EC0E70037B4C7 /* DSHLayoutElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSHLayoutElement.m; sourceTree = "<group>"; };
 		DABDC6FE1C1EC30A0037B4C7 /* DSHLayoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSHLayoutView.h; sourceTree = "<group>"; };
 		DABDC6FF1C1EC30A0037B4C7 /* DSHLayoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSHLayoutView.m; sourceTree = "<group>"; };
+		DAD873B41C1FB80600B9079B /* DSHViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSHViewManager.h; sourceTree = "<group>"; };
+		DAD873B51C1FB80600B9079B /* DSHViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSHViewManager.m; sourceTree = "<group>"; };
 		DADADD3F1C0FDF6900753758 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		DADADD401C0FDF6900753758 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		DADADD411C0FDF6900753758 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
@@ -523,9 +523,9 @@
 		DAEC6AFA1C1A7B16005C9150 /* LayoutHelper */ = {
 			isa = PBXGroup;
 			children = (
+				DAD873B41C1FB80600B9079B /* DSHViewManager.h */,
+				DAD873B51C1FB80600B9079B /* DSHViewManager.m */,
 				DA71A00D1C1AB382000510D9 /* JSExport */,
-				DAB388541C17BC9000F7C68C /* DSHViewManager.h */,
-				DAB388551C17BC9000F7C68C /* DSHViewManager.m */,
 				DAEC6AFB1C1A7B6C005C9150 /* DSHLayoutParser.h */,
 				DAEC6AFC1C1A7B6C005C9150 /* DSHLayoutParser.m */,
 				DA71A00A1C1A9AD9000510D9 /* DSHLayoutViewProperty.h */,
@@ -775,6 +775,7 @@
 				DA925BB91C09F8540066BE2E /* UIWebView+DSHWebViewCategory.m in Sources */,
 				DAA186F11C07352600CE003B /* DSHViewController.m in Sources */,
 				DAA186F41C07352600CE003B /* DSHApplication.m in Sources */,
+				DAD873B61C1FB80600B9079B /* DSHViewManager.m in Sources */,
 				DA71A00C1C1A9AD9000510D9 /* DSHLayoutViewProperty.m in Sources */,
 				DA71A0161C1ABC0A000510D9 /* UIView+DSHViewJSExportCategory.m in Sources */,
 				DAA8A5D81C0F34870023F934 /* HomeController.m in Sources */,
@@ -791,7 +792,6 @@
 				DAA186E51C07352600CE003B /* UIView+DSHViewCategory.m in Sources */,
 				DAA187001C07352600CE003B /* NSDictionary+DSHDictionaryCategory.m in Sources */,
 				DAE7B2171C0EBF6D00186E2B /* PushHelper.m in Sources */,
-				DAB388561C17BC9000F7C68C /* DSHViewManager.m in Sources */,
 				DAEC6AFD1C1A7B6C005C9150 /* DSHLayoutParser.m in Sources */,
 				DAE4FDAC1C167AC300864B6B /* UITextView+DSHTextViewCategory.m in Sources */,
 				DAA8A5BA1C0F27D90023F934 /* UIColor+DSHColorCategory.m in Sources */,

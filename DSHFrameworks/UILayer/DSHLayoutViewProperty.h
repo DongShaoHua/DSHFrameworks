@@ -17,6 +17,8 @@ typedef id (^PropertyValueHandleBlock)(NSString *propertyValue, UIView *parent);
 
 - (void)bindView:(UIView *)view WithParentView:(UIView *)parent;
 
++ (NSString *)getViewKey:(UIView *)view;
+
 + (instancetype)propertyWith:(NSString *)name andValue:(NSString *)value;
 
 + (void)addPropertyHandleBlock:(NSString *)property block:(PropertyValueHandleBlock) block;

@@ -28,7 +28,7 @@
     NSString *layoutFile = [[NSBundle mainBundle] pathForResource: @"views.xml" ofType: nil];
     DSHViewManager *manager = [DSHViewManager new];
     
-    [manager viewWithFile: layoutFile parentView: self.view];
+    [manager viewWithFile: layoutFile parent: self.view];
     
     
     [_textfield registerTextValid: ^(UITextField *textfield) {

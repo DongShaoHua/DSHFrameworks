@@ -20,10 +20,10 @@
     return self;
 }
 
-- (NSArray<__kindof UIView *> *)viewWithElement:(UIView *)parentView {
+- (NSArray<__kindof UIView *> *)viewWithElement:(UIView *)parent environment:(JSContext *)window {
     NSMutableArray *views = [NSMutableArray array];
     for (DSHLayoutView *layoutview in _layoutViews) {
-        UIView *view = [layoutview viewWithLayout: parentView];
+        UIView *view = [layoutview viewWithLayout: parent environment: window];
         if (view) {
             [views addObject: view];
         }
